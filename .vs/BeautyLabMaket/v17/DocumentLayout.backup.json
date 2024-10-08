@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Freakovv\\OneDrive\\Desktop\\BeautyLab\\BeautyLabMaket\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{606AB9D5-9A09-46CD-8E69-F7D40CAC47D7}|BeautyLabMaket\\BeautyLabMaket.csproj|c:\\users\\freakovv\\onedrive\\desktop\\beautylab\\beautylabmaket\\beautylabmaket\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{606AB9D5-9A09-46CD-8E69-F7D40CAC47D7}|BeautyLabMaket\\BeautyLabMaket.csproj|solutionrelative:beautylabmaket\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\Freakovv\\OneDrive\\Desktop\\BeautyLab\\BeautyLabMaket\\BeautyLabMaket\\Form1.cs",
+              "RelativeDocumentMoniker": "BeautyLabMaket\\Form1.cs",
+              "ToolTip": "C:\\Users\\Freakovv\\OneDrive\\Desktop\\BeautyLab\\BeautyLabMaket\\BeautyLabMaket\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "BeautyLabMaket\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T20:14:51.963Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

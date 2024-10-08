@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "PzMI6oeoZ9o=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Freakovv\\OneDrive\\Desktop\\BeautyLab\\BeautyLabMaket\\BeautyLabMaket\\BeautyLabMaket.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Freakovv\\.nuget\\packages\\bunifu.form\\8.3.53\\bunifu.form.8.3.53.nupkg.sha512",
+    "C:\\Users\\Freakovv\\.nuget\\packages\\bunifu.licensing\\6.0.4\\bunifu.licensing.6.0.4.nupkg.sha512",
+    "C:\\Users\\Freakovv\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Freakovv\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Freakovv\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\Freakovv\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512",
+    "C:\\Users\\Freakovv\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Freakovv\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
