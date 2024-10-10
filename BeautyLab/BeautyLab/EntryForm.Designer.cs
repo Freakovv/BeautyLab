@@ -31,6 +31,8 @@
             components = new System.ComponentModel.Container();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntryForm));
             BorderForm = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
@@ -40,10 +42,10 @@
             pictureFlower = new PictureBox();
             TabEntry = new Guna.UI2.WinForms.Guna2TabControl();
             pageEntry = new TabPage();
+            textBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             textBoxLogin = new Guna.UI2.WinForms.Guna2TextBox();
             pictureUser = new PictureBox();
             PageReg = new TabPage();
-            pictureBox1 = new PictureBox();
             FormCaptionButton = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
             dragPanel = new Panel();
             dragControl = new Guna.UI2.WinForms.Guna2DragControl(components);
@@ -54,8 +56,6 @@
             TabEntry.SuspendLayout();
             pageEntry.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureUser).BeginInit();
-            PageReg.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             dragPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -112,13 +112,14 @@
             // 
             // TabEntry
             // 
+            TabEntry.Alignment = TabAlignment.Bottom;
             TabEntry.Controls.Add(pageEntry);
             TabEntry.Controls.Add(PageReg);
             TabEntry.ItemSize = new Size(80, 40);
-            TabEntry.Location = new Point(583, 44);
+            TabEntry.Location = new Point(567, 39);
             TabEntry.Name = "TabEntry";
             TabEntry.SelectedIndex = 0;
-            TabEntry.Size = new Size(421, 656);
+            TabEntry.Size = new Size(437, 661);
             TabEntry.TabButtonHoverState.BorderColor = Color.Empty;
             TabEntry.TabButtonHoverState.FillColor = Color.FromArgb(40, 52, 70);
             TabEntry.TabButtonHoverState.Font = new Font("Segoe UI Semibold", 10F);
@@ -137,27 +138,65 @@
             TabEntry.TabButtonSize = new Size(80, 40);
             TabEntry.TabIndex = 2;
             TabEntry.TabMenuBackColor = Color.FromArgb(33, 42, 57);
-            TabEntry.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            TabEntry.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalBottom;
             // 
             // pageEntry
             // 
             pageEntry.BackColor = Color.White;
+            pageEntry.Controls.Add(textBoxPassword);
             pageEntry.Controls.Add(textBoxLogin);
             pageEntry.Controls.Add(pictureUser);
-            pageEntry.Location = new Point(4, 44);
+            pageEntry.Location = new Point(4, 4);
             pageEntry.Name = "pageEntry";
             pageEntry.Padding = new Padding(3);
-            pageEntry.Size = new Size(413, 608);
+            pageEntry.Size = new Size(429, 613);
             pageEntry.TabIndex = 0;
             pageEntry.Text = "PageEntry";
+            // 
+            // textBoxPassword
+            // 
+            textBoxPassword.AcceptsReturn = true;
+            textBoxPassword.Animated = true;
+            textBoxPassword.BackColor = Color.Transparent;
+            textBoxPassword.BorderRadius = 25;
+            textBoxPassword.CustomizableEdges = customizableEdges1;
+            textBoxPassword.DefaultText = "";
+            textBoxPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            textBoxPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            textBoxPassword.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            textBoxPassword.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            textBoxPassword.FillColor = Color.FromArgb(239, 239, 239);
+            textBoxPassword.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            textBoxPassword.Font = new Font("Jura", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            textBoxPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            textBoxPassword.IconLeft = Properties.Resources.Lock1;
+            textBoxPassword.IconLeftOffset = new Point(12, 0);
+            textBoxPassword.IconLeftSize = new Size(23, 23);
+            textBoxPassword.Location = new Point(42, 308);
+            textBoxPassword.Margin = new Padding(12);
+            textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.PasswordChar = '⊛';
+            textBoxPassword.PlaceholderForeColor = Color.FromArgb(135, 128, 128);
+            textBoxPassword.PlaceholderText = "Пароль";
+            textBoxPassword.SelectedText = "";
+            textBoxPassword.ShadowDecoration.BorderRadius = 150;
+            textBoxPassword.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
+            textBoxPassword.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            textBoxPassword.ShadowDecoration.Depth = 21;
+            textBoxPassword.ShadowDecoration.Enabled = true;
+            textBoxPassword.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            textBoxPassword.ShadowDecoration.Shadow = new Padding(2, 0, 2, 5);
+            textBoxPassword.Size = new Size(338, 56);
+            textBoxPassword.TabIndex = 3;
+            textBoxPassword.TextOffset = new Point(0, -3);
             // 
             // textBoxLogin
             // 
             textBoxLogin.AcceptsReturn = true;
             textBoxLogin.Animated = true;
             textBoxLogin.BackColor = Color.Transparent;
-            textBoxLogin.BorderRadius = 20;
-            textBoxLogin.CustomizableEdges = customizableEdges1;
+            textBoxLogin.BorderRadius = 25;
+            textBoxLogin.CustomizableEdges = customizableEdges3;
             textBoxLogin.DefaultText = "";
             textBoxLogin.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             textBoxLogin.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -165,25 +204,35 @@
             textBoxLogin.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
             textBoxLogin.FillColor = Color.FromArgb(239, 239, 239);
             textBoxLogin.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            textBoxLogin.Font = new Font("Segoe UI", 9F);
+            textBoxLogin.Font = new Font("Jura", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point, 204);
             textBoxLogin.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            textBoxLogin.Location = new Point(82, 218);
+            textBoxLogin.IconLeft = Properties.Resources.mail1;
+            textBoxLogin.IconLeftOffset = new Point(12, 0);
+            textBoxLogin.IconLeftSize = new Size(27, 25);
+            textBoxLogin.Location = new Point(42, 228);
+            textBoxLogin.Margin = new Padding(12);
             textBoxLogin.Name = "textBoxLogin";
             textBoxLogin.PasswordChar = '\0';
+            textBoxLogin.PlaceholderForeColor = Color.FromArgb(135, 128, 128);
             textBoxLogin.PlaceholderText = "Логин";
             textBoxLogin.SelectedText = "";
-            textBoxLogin.ShadowDecoration.BorderRadius = 0;
-            textBoxLogin.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            textBoxLogin.ShadowDecoration.Shadow = new Padding(0);
-            textBoxLogin.Size = new Size(258, 41);
-            textBoxLogin.TabIndex = 3;
+            textBoxLogin.ShadowDecoration.BorderRadius = 150;
+            textBoxLogin.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
+            textBoxLogin.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            textBoxLogin.ShadowDecoration.Depth = 21;
+            textBoxLogin.ShadowDecoration.Enabled = true;
+            textBoxLogin.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            textBoxLogin.ShadowDecoration.Shadow = new Padding(2, 0, 2, 5);
+            textBoxLogin.Size = new Size(338, 56);
+            textBoxLogin.TabIndex = 1;
+            textBoxLogin.TextOffset = new Point(0, -3);
             // 
             // pictureUser
             // 
             pictureUser.Anchor = AnchorStyles.None;
             pictureUser.BackColor = Color.Transparent;
             pictureUser.Image = Properties.Resources.Group_3;
-            pictureUser.Location = new Point(109, 6);
+            pictureUser.Location = new Point(114, 8);
             pictureUser.Name = "pictureUser";
             pictureUser.Size = new Size(212, 200);
             pictureUser.SizeMode = PictureBoxSizeMode.Zoom;
@@ -193,25 +242,12 @@
             // PageReg
             // 
             PageReg.BackColor = Color.White;
-            PageReg.Controls.Add(pictureBox1);
-            PageReg.Location = new Point(4, 44);
+            PageReg.Location = new Point(4, 4);
             PageReg.Name = "PageReg";
             PageReg.Padding = new Padding(3);
-            PageReg.Size = new Size(413, 608);
+            PageReg.Size = new Size(429, 613);
             PageReg.TabIndex = 1;
             PageReg.Text = "PageReg";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.Group_3;
-            pictureBox1.Location = new Point(103, 6);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(200, 200);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
             // 
             // FormCaptionButton
             // 
@@ -292,8 +328,6 @@
             TabEntry.ResumeLayout(false);
             pageEntry.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureUser).EndInit();
-            PageReg.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             dragPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -312,7 +346,7 @@
         private Panel dragPanel;
         private Guna.UI2.WinForms.Guna2DragControl dragControl;
         private PictureBox pictureUser;
-        private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox textBoxLogin;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxPassword;
     }
 }
