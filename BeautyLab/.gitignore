@@ -1,0 +1,27 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Logs
+*.log
+
+# Publish Web Output
+*.publish.xml
+*.azurePubxml
+
+# git directories
+.git/
