@@ -34,10 +34,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             timer_animation = new System.Windows.Forms.Timer(components);
-            guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
+            pictureFlower = new Guna.UI2.WinForms.Guna2PictureBox();
+            pictureBeautyLab = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureFlower).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBeautyLab).BeginInit();
             SuspendLayout();
             // 
             // timer_animation
@@ -45,35 +45,35 @@
             timer_animation.Interval = 5;
             timer_animation.Tick += timer_animation_Tick;
             // 
-            // guna2PictureBox2
+            // pictureFlower
             // 
-            guna2PictureBox2.Anchor = AnchorStyles.None;
-            guna2PictureBox2.BackColor = Color.Transparent;
-            guna2PictureBox2.CustomizableEdges = customizableEdges1;
-            guna2PictureBox2.Image = Properties.Resources.icons8_цветок_64;
-            guna2PictureBox2.ImageRotate = 0F;
-            guna2PictureBox2.Location = new Point(135, 100);
-            guna2PictureBox2.Name = "guna2PictureBox2";
-            guna2PictureBox2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2PictureBox2.Size = new Size(80, 72);
-            guna2PictureBox2.TabIndex = 3;
-            guna2PictureBox2.TabStop = false;
-            guna2PictureBox2.UseTransparentBackground = true;
+            pictureFlower.Anchor = AnchorStyles.None;
+            pictureFlower.BackColor = Color.Transparent;
+            pictureFlower.CustomizableEdges = customizableEdges1;
+            pictureFlower.Image = Properties.Resources.icons8_цветок_64;
+            pictureFlower.ImageRotate = 0F;
+            pictureFlower.Location = new Point(135, 100);
+            pictureFlower.Name = "pictureFlower";
+            pictureFlower.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            pictureFlower.Size = new Size(80, 72);
+            pictureFlower.TabIndex = 3;
+            pictureFlower.TabStop = false;
+            pictureFlower.UseTransparentBackground = true;
             // 
-            // guna2PictureBox1
+            // pictureBeautyLab
             // 
-            guna2PictureBox1.Anchor = AnchorStyles.None;
-            guna2PictureBox1.BackColor = Color.Transparent;
-            guna2PictureBox1.CustomizableEdges = customizableEdges3;
-            guna2PictureBox1.Image = Properties.Resources.BeautyLab;
-            guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(221, 107);
-            guna2PictureBox1.Name = "guna2PictureBox1";
-            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2PictureBox1.Size = new Size(312, 60);
-            guna2PictureBox1.TabIndex = 2;
-            guna2PictureBox1.TabStop = false;
-            guna2PictureBox1.UseTransparentBackground = true;
+            pictureBeautyLab.Anchor = AnchorStyles.None;
+            pictureBeautyLab.BackColor = Color.Transparent;
+            pictureBeautyLab.CustomizableEdges = customizableEdges3;
+            pictureBeautyLab.Image = Properties.Resources.BeautyLab;
+            pictureBeautyLab.ImageRotate = 0F;
+            pictureBeautyLab.Location = new Point(221, 107);
+            pictureBeautyLab.Name = "pictureBeautyLab";
+            pictureBeautyLab.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            pictureBeautyLab.Size = new Size(312, 60);
+            pictureBeautyLab.TabIndex = 2;
+            pictureBeautyLab.TabStop = false;
+            pictureBeautyLab.UseTransparentBackground = true;
             // 
             // BeginAnimation
             // 
@@ -82,22 +82,27 @@
             AutoSize = true;
             BackColor = Color.Black;
             ClientSize = new Size(670, 300);
-            Controls.Add(guna2PictureBox2);
-            Controls.Add(guna2PictureBox1);
+            Controls.Add(pictureFlower);
+            Controls.Add(pictureBeautyLab);
+            ForeColor = Color.Transparent;
             FormBorderStyle = FormBorderStyle.None;
             Name = "BeginAnimation";
+            Opacity = 0D;
             RightToLeft = RightToLeft.No;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "BeginAnimation";
+            TopMost = true;
             TransparencyKey = Color.Black;
+            FormClosing += BeginAnimation_FormClosing;
             Load += BeginAnimation_Load;
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureFlower).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBeautyLab).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private System.Windows.Forms.Timer timer_animation;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox pictureFlower;
+        private Guna.UI2.WinForms.Guna2PictureBox pictureBeautyLab;
     }
 }

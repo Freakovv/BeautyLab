@@ -20,14 +20,11 @@ namespace BeautyLab
 
 
         private int animation_type = 1;
-        private int animation_seconds = 3;
+        private int staySeconds = 3;
         private void BeginAnimation_Load(object sender, EventArgs e)
         {
-            Opacity = 0;
             timer_animation.Start();
         }
-
-
 
         private void timer_animation_Tick(object sender, EventArgs e)
         {
@@ -35,7 +32,7 @@ namespace BeautyLab
             {
                 //start
                 case 1:
-                    if (Opacity != 1.0)
+                    if (Opacity != 1)
                     {
                         Opacity += 0.05;
                     }
@@ -47,8 +44,8 @@ namespace BeautyLab
                     break;
                 //waiting
                 case 2:
-                    if (animation_seconds != 0)
-                        --animation_seconds;
+                    if (staySeconds != 0)
+                        --staySeconds;
                     else
                     {
                         animation_type = 3;
@@ -64,9 +61,17 @@ namespace BeautyLab
                     else
                     {
                         timer_animation.Stop();
+                        BeautyLab.EntryForm adEntryForm = new EntryForm();
+                        this.Hide();
+                        adEntryForm.Show();
                     }
                     break;
             }
+        }
+
+        private void BeginAnimation_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

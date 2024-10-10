@@ -16,5 +16,15 @@ namespace BeautyLab
         {
             InitializeComponent();
         }
+
+        private void EntryForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FormCaptionButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
