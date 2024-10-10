@@ -197,7 +197,7 @@
             PageReg.Location = new Point(4, 44);
             PageReg.Name = "PageReg";
             PageReg.Padding = new Padding(3);
-            PageReg.Size = new Size(260, 408);
+            PageReg.Size = new Size(413, 608);
             PageReg.TabIndex = 1;
             PageReg.Text = "PageReg";
             // 
@@ -206,7 +206,7 @@
             pictureBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.Group_3;
-            pictureBox1.Location = new Point(200, 3);
+            pictureBox1.Location = new Point(103, 6);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(200, 200);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
