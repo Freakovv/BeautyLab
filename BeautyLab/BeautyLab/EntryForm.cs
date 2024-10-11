@@ -26,5 +26,20 @@ namespace BeautyLab
         {
             Application.Exit();
         }
+
+        private void buttonEnter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelRemember_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
