@@ -124,6 +124,123 @@
     <value>48</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnCloseTerms.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EAAACxABrSO9dQAAA1hJREFUaEPtmbtuE0EUhiNuBSWXissDUCE55+BUlmaWiILWAkFJTZ0QJCJASuiT
+        CBCPgIAiCRIg8Q4geAACFUkQZNaWIY4HnbHXcs7Mrnd2vZsU/qRfivZy5j/ruZyZTEyMGTMmN7peP9qU
+        MBUKnAsFvgolfA0l/FIS/5Ho71DiF3NP4FwjwKqenzjC45ROc3rygpL4REn4EUrUPlISviuBi40anudx
+        C2fn2uWzSsBzJfAvN+YriqEkPt2pVc7wdgpBBXArFLDNjeSWwC0lrtzk7Y0MXakcVxJfWA2PWErCM2qL
+        t58Lfb1yUkl8yxsrSkrCOrXJfWSi9+VLM9+XwA+6fukE9+NNGd0mTjS4uR8vlITbPGjZUnLyBveVij8S
+        TocSN3nA0iVgO9MUS/O8FeygJHCF+0uEVkevRSqo6ubdO/b1GJlng6p1PU7kpRlULnKfsVB5wIPEKqjq
+        3XdrWu/t6dbivH2fqfXontbttt79+F6H01PW/ThR2cF9OqEii+oUHsCpyHzEkCQi8xE+SVC9RUUj92th
+        qkpHAJeoKwwaMrTbuvX4vvUsXXM969P1GqKC3K+FKYkdL8ep9XDWNsZ+Cf7l+88sPLDiJSqAWe7XQkl8
+        bb04RElJjMy8Ebzkfi3MxsN6cbicSXT2jNl9ZDZv1oTP3K9FnlLZmcQgecx3tcn9WnjN/w6ZJPhXJzqd
+        vOZpKm1xvxa5E6A+70wgeYpNo1QJ5OpCrgE7yJB1IoWGd6HMg9hlvtOxf408SaQZxJmmUZf53oB1DuzM
+        SaSZRn0XsgTz/WdGlYSAGe7Xgg6drBdjVHopISeB+7UwxZzADf6yU65iLmGq5L+EKeaupiurlcBvqU/z
+        qHTlAWI1WE4nmI8UJeFjnqQELHCfsRzCDU2rIarnuM9E6ESABzo4wRL3N5Tf09VTh2NTj1uZNvUEnVVa
+        AUuWEljnvrygs0oetDzBMvfjDe1DlYQ3dvBipQSs6VrtGPeTie7hLqzzRoqSErg6ssPdiN4hbwkzEyyP
+        7Mu7oLPKQmYngT9zD9i0mHNTgSu0wFhGPNWNAUs0bfN2CodWRyo7UtdO+41vUHngvcIWARVZdOhE5zZU
+        s9PGg3Z25h94VJKYXR586t2boaoydWE2ZsyYRP4DcAskwhiRpG0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="txtTerms.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtTerms.DefaultText" xml:space="preserve">
+    <value>Условия использования приложения для мастеров салона красоты
+
+Дата вступления в силу: [12.10.2024]
+
+
+Добро пожаловать в приложение для мастеров салона красоты! 
+Прежде чем начать пользоваться нашим приложением, пожалуйста, ознакомьтесь с данными условиями использования. 
+Ваше использование приложения означает ваше согласие с этими условиями.
+
+
+1. Общие положения
+
+  1.1. Настоящие условия регулируют порядок использования приложения, предназначенного для мастеров салонов красоты, которые могут управлять записями клиентов, вести учет услуг и получать уведомления. 
+  1.2. Приложение предоставляет инструменты для организации рабочих процессов, управления расписанием и взаимодействия с клиентами.
+
+
+2. Регистрация и учетная запись
+  
+  2.1. Для использования приложения требуется создание учетной записи. При регистрации пользователь обязуется предоставить актуальные и достоверные данные.
+  2.2. Вы несете ответственность за сохранение конфиденциальности данных своей учетной записи, включая пароль.
+  2.3. Любые действия, совершенные с использованием вашей учетной записи, считаются выполненными вами.
+
+
+3. Использование приложения
+  
+  3.1. Пользователи обязуются использовать приложение исключительно для профессиональной деятельности в рамках работы салона красоты. 
+  3.2. Запрещается использовать приложение для незаконных целей, распространения ложной информации или мошенничества.
+  3.3. Приложение предоставляет возможность управления расписанием, записи клиентов и ведения отчетности по оказанным услугам. Пользователи несут ответственность за актуальность данных в приложении.
+
+
+4. Платежи и подписка
+
+  4.1. Приложение может предоставлять дополнительные платные функции, доступ к которым возможен по подписке. Условия подписки, включая стоимость и период, будут указаны в приложении.
+  4.2. Оплата за подписку производится через указанные способы, предоставленные в приложении. В случае невнесения оплаты доступ к дополнительным функциям может быть приостановлен.
+
+
+5. Конфиденциальность
+
+  5.1. Приложение собирает и обрабатывает персональные данные пользователей в соответствии с нашей Политикой конфиденциальности. 
+  5.2. Мастера салона обязуются обеспечить безопасность данных своих клиентов и не раскрывать их третьим лицам.
+
+
+6. Ограничение ответственности
+
+  6.1. Мы не несем ответственности за любые ошибки, сбои в работе приложения или утерю данных, если это связано с техническими проблемами или неправильным использованием приложения. 
+  6.2. Мы не несем ответственности за финансовые потери или упущенные выгоды, связанные с использованием приложения.
+
+
+7. Изменения в условиях
+
+  7.1. Мы оставляем за собой право изменять данные условия использования. О любых изменениях будет сообщено пользователям заблаговременно через приложение. 
+  7.2. Продолжение использования приложения после изменения условий будет считаться согласием с обновленными условиями.
+
+
+8. Контактная информация
+Если у вас возникли вопросы или предложения по использованию приложения, пожалуйста, свяжитесь с нами по адресу: beautylab.service@gmail.com</value>
+  </data>
+  <data name="linkLabelToPage1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="picLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ8AAAA2CAYAAADZCEvGAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
@@ -182,6 +299,33 @@
         ce2kgRn0TNUWsox/bZIH/YfAzG07D6mPif1wPNVzMW/+QyE2OkkrdSiKCro24nvFmB3jdvK66eDcv/8V
         xUfrbMQkXlwum/p3t1LF9hyj+I6xvSnKqvkWDThLUk1J7tNOX73vGX8BkFa4fN7C7qEAAAAASUVORK5C
         YII=
+</value>
+  </data>
+  <data name="linkLabelToPage2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGgAAAAkCAYAAABlhn+2AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAW
+        JQAAFiUBSVIk8AAABNhJREFUaEPtmt1R5DAMgCmBDo4S6ODo4Hg5iPMCHSwdQAdcB3tDbHjcEihhS8hc
+        kjkeKYEbOXFW1iay7GQXbibfjF7Wjn8kW5atPTlZ+D+oMnNbZXotkToz9yDVVXHZ/DTntK2FA1Ar/ZEq
+        lTJllZt1mb2c0XYXZoIqPUXAUMuOOhC9ojNzT8uGKC/Xp7V6/l5lT7e10q/IUO/LTjoAsQai1Lm53+0k
+        /UjLFyYy1UCA20mVKkpatjCROQwEO8e1Ay6Qli9MYBYDZQbOI9vO31x/o+ULE5jDQHVuViEDvWUvZ7Uy
+        mzorHmhZDLBDYcdW6jn6vINvy2x9BlJnxYUT+9uMOx+CJdy+REb7n8NATW7Wrh1a5sC7bIqR6txsenca
+        CO1txNkuntc61+99/7xsrcvOigvanhR7od9vl5WxhT3ZQLAzGmXKtg39Sssd5e36tFFFW0/pj0bpG1on
+        RJ0XD7tJmQ0txzRK30UYZUTMJuXq8GUM1LotvXVthJT+Bq4FKy1ilWLjQLQ46hL2DNkunOpaP8JuatTz
+        zZDYnWYVazZ4jHAJ5/oawjMQ02cDz2diA+Vm077L8QIddlEbvqSK70DW5+6+E11u4e1v109RwplB6zi6
+        RSOqy4Hvd7GLt8l2Ln9U8dLgCit5ioASadtjNOrprv8OVihjJKtwt6JzMCivcHwehuqGQIvwnZZx2F3Y
+        jYGWYY5qIBD7cCp0B94KVXo79J13vgkXQZ13Lpc5D6VgBYYCEozUsFEGAh8NlUJS5uYc3uLse1xufoAf
+        9Q7/XK9pH2NUSv8e+w4Mho0jdTP9fIQul8OGy258gfMVg86wLS3DRBlIqoAhusO/Dxakhz9EduS7PvzG
+        4bR0bLa9yG84sIHqa7Oi5UP4Y+B38dEMBHTKtisHknu0fAwwLt6Bf64gPJaH0xhPoRPnA6S0h4Og0C4+
+        qoEAFL2wvpeyF373E+TDaUqKQjlS2sOvKnAE0HLM0Q2E4/8YxQIk/E4KkVMUypHSHo7gQoHF0Q0k6nCE
+        LgGIDMSH30OkKJQjpT0X2EhSLyJ9xQ6AQ9ThAA1Ehuiu4xkpYiemKJQjtj1I+/djF5zDIn3FDCCEqEPC
+        0F0HX2RDoSomVqEhYtvDeTG4htByikhfMQMIIeoQQY2Dx4AnS+9IY3x2mB3j3gCRvuacEA4SaNkQ+KF1
+        qH984EpTFH2oHwhxJXghcyAi8+oK3BtwfAPtnjiCbqnOi1993yN3HZqigDsSrUP5rKeelDfAoxrIe0UO
+        rCCSDhh8h3PQi2zolcJ/hebrhpC6rJi5Y45mIFAEPku4FbSX12HqOrwoT+l37k+S9tLbt29KyLvQOiE6
+        he/SKQHdpOweIM5AMKDuv9cSsf8LgIQTfQFgJoPzOpLUAQZPJnRHIlGgrW+TdjaVvT8Xbz74XGxl0F3b
+        /0ZAjgwFM7DgaLusoDO2H1tuVt7cyGDSBQzFRDpeXsdKOAyl+H+SNKzbgYuv5xoTBJQ25n69AOYAgjry
+        M6NiaZW9hVUHbmRsIg68AzhDhvD+g8e4Ooc1lNsZdLcTad00pLzNipuPF84fSLwOwf9JhRs4B0wKck4x
+        eZUx7IPkBCPDHPCcaHkI793wulhRHU0Rd5bTPhciwAaaY8FhFgPNwGKgL473BJQQ7HC4mOAf59YX8Kl5
+        HZAAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="picReg.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

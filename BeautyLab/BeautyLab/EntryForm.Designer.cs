@@ -29,28 +29,32 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntryForm));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntryForm));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             BorderForm = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             pictureCircle = new PictureBox();
             panelLabel = new Panel();
@@ -58,6 +62,7 @@
             pictureFlower = new PictureBox();
             Tabs = new Guna.UI2.WinForms.Guna2TabControl();
             TabEntry = new TabPage();
+            linkLabelToPage1 = new PictureBox();
             picLogin = new PictureBox();
             checkBoxRememberMe = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             labelRemember = new Label();
@@ -67,8 +72,9 @@
             btnEnter = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             SHADOWBUTTON = new Guna.UI2.WinForms.Guna2GradientButton();
             TabReg = new TabPage();
+            linkLabelToPage2 = new PictureBox();
             guna2CustomCheckBox1 = new Guna.UI2.WinForms.Guna2CustomCheckBox();
-            label1 = new Label();
+            lblTerms = new Label();
             txtPassReg2 = new Guna.UI2.WinForms.Guna2TextBox();
             txtPassReg1 = new Guna.UI2.WinForms.Guna2TextBox();
             txtLogReg = new Guna.UI2.WinForms.Guna2TextBox();
@@ -76,22 +82,27 @@
             picUserReg = new PictureBox();
             btnReg = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             SHADOWBUTTON1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            txtTerms = new Guna.UI2.WinForms.Guna2TextBox();
             FormCaptionButton = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
             dragPanel = new Panel();
             dragControl = new Guna.UI2.WinForms.Guna2DragControl(components);
             timerShow = new System.Windows.Forms.Timer(components);
+            btnCloseTerms = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureCircle).BeginInit();
             panelLabel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureLabel).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureFlower).BeginInit();
             Tabs.SuspendLayout();
             TabEntry.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)linkLabelToPage1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picLogin).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picUser).BeginInit();
             TabReg.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)linkLabelToPage2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picReg).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picUserReg).BeginInit();
             dragPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnCloseTerms).BeginInit();
             SuspendLayout();
             // 
             // BorderForm
@@ -105,7 +116,6 @@
             // 
             // pictureCircle
             // 
-            pictureCircle.Dock = DockStyle.Left;
             pictureCircle.Image = Properties.Resources.Ellipse_11;
             pictureCircle.Location = new Point(0, 0);
             pictureCircle.Name = "pictureCircle";
@@ -177,6 +187,7 @@
             // TabEntry
             // 
             TabEntry.BackColor = Color.White;
+            TabEntry.Controls.Add(linkLabelToPage1);
             TabEntry.Controls.Add(picLogin);
             TabEntry.Controls.Add(checkBoxRememberMe);
             TabEntry.Controls.Add(labelRemember);
@@ -192,6 +203,19 @@
             TabEntry.Size = new Size(416, 613);
             TabEntry.TabIndex = 0;
             TabEntry.Text = "PageEntry";
+            // 
+            // linkLabelToPage1
+            // 
+            linkLabelToPage1.Anchor = AnchorStyles.None;
+            linkLabelToPage1.BackColor = Color.Transparent;
+            linkLabelToPage1.Cursor = Cursors.Hand;
+            linkLabelToPage1.Image = (Image)resources.GetObject("linkLabelToPage1.Image");
+            linkLabelToPage1.Location = new Point(165, 505);
+            linkLabelToPage1.Name = "linkLabelToPage1";
+            linkLabelToPage1.Size = new Size(101, 23);
+            linkLabelToPage1.SizeMode = PictureBoxSizeMode.Zoom;
+            linkLabelToPage1.TabIndex = 12;
+            linkLabelToPage1.TabStop = false;
             // 
             // picLogin
             // 
@@ -214,16 +238,16 @@
             checkBoxRememberMe.CheckedState.BorderRadius = 5;
             checkBoxRememberMe.CheckedState.BorderThickness = 0;
             checkBoxRememberMe.CheckedState.FillColor = Color.FromArgb(227, 89, 164);
-            checkBoxRememberMe.CustomizableEdges = customizableEdges1;
+            checkBoxRememberMe.CustomizableEdges = customizableEdges5;
             checkBoxRememberMe.Location = new Point(124, 402);
             checkBoxRememberMe.Margin = new Padding(0);
             checkBoxRememberMe.Name = "checkBoxRememberMe";
             checkBoxRememberMe.Padding = new Padding(1, 1, 1, 5);
             checkBoxRememberMe.RightToLeft = RightToLeft.Yes;
             checkBoxRememberMe.ShadowDecoration.BorderRadius = 30;
-            customizableEdges2.BottomLeft = false;
-            customizableEdges2.BottomRight = false;
-            checkBoxRememberMe.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            customizableEdges6.BottomLeft = false;
+            customizableEdges6.BottomRight = false;
+            checkBoxRememberMe.ShadowDecoration.CustomizableEdges = customizableEdges6;
             checkBoxRememberMe.ShadowDecoration.Depth = 15;
             checkBoxRememberMe.ShadowDecoration.Enabled = true;
             checkBoxRememberMe.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -253,7 +277,7 @@
             txtPassword.Animated = true;
             txtPassword.BackColor = Color.Transparent;
             txtPassword.BorderRadius = 25;
-            txtPassword.CustomizableEdges = customizableEdges3;
+            txtPassword.CustomizableEdges = customizableEdges7;
             txtPassword.DefaultText = "";
             txtPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -274,7 +298,7 @@
             txtPassword.SelectedText = "";
             txtPassword.ShadowDecoration.BorderRadius = 150;
             txtPassword.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges8;
             txtPassword.ShadowDecoration.Depth = 21;
             txtPassword.ShadowDecoration.Enabled = true;
             txtPassword.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -289,7 +313,7 @@
             txtLogin.Animated = true;
             txtLogin.BackColor = Color.Transparent;
             txtLogin.BorderRadius = 25;
-            txtLogin.CustomizableEdges = customizableEdges5;
+            txtLogin.CustomizableEdges = customizableEdges9;
             txtLogin.DefaultText = "";
             txtLogin.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtLogin.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -311,7 +335,7 @@
             txtLogin.SelectedText = "";
             txtLogin.ShadowDecoration.BorderRadius = 150;
             txtLogin.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtLogin.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtLogin.ShadowDecoration.CustomizableEdges = customizableEdges10;
             txtLogin.ShadowDecoration.Depth = 21;
             txtLogin.ShadowDecoration.Enabled = true;
             txtLogin.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -428,7 +452,7 @@
             SHADOWBUTTON.BackColor = Color.Transparent;
             SHADOWBUTTON.BackgroundImageLayout = ImageLayout.Stretch;
             SHADOWBUTTON.BorderRadius = 25;
-            SHADOWBUTTON.CustomizableEdges = customizableEdges7;
+            SHADOWBUTTON.CustomizableEdges = customizableEdges11;
             SHADOWBUTTON.DisabledState.BorderColor = Color.DarkGray;
             SHADOWBUTTON.DisabledState.CustomBorderColor = Color.DarkGray;
             SHADOWBUTTON.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -441,7 +465,7 @@
             SHADOWBUTTON.Location = new Point(110, 432);
             SHADOWBUTTON.Margin = new Padding(3, 2, 3, 2);
             SHADOWBUTTON.Name = "SHADOWBUTTON";
-            SHADOWBUTTON.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            SHADOWBUTTON.ShadowDecoration.CustomizableEdges = customizableEdges12;
             SHADOWBUTTON.ShadowDecoration.Enabled = true;
             SHADOWBUTTON.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             SHADOWBUTTON.ShadowDecoration.Shadow = new Padding(1, 1, 1, 3);
@@ -453,8 +477,9 @@
             // TabReg
             // 
             TabReg.BackColor = Color.White;
+            TabReg.Controls.Add(linkLabelToPage2);
             TabReg.Controls.Add(guna2CustomCheckBox1);
-            TabReg.Controls.Add(label1);
+            TabReg.Controls.Add(lblTerms);
             TabReg.Controls.Add(txtPassReg2);
             TabReg.Controls.Add(txtPassReg1);
             TabReg.Controls.Add(txtLogReg);
@@ -466,9 +491,22 @@
             TabReg.Location = new Point(4, 4);
             TabReg.Name = "TabReg";
             TabReg.Padding = new Padding(3);
-            TabReg.Size = new Size(413, 613);
+            TabReg.Size = new Size(416, 613);
             TabReg.TabIndex = 1;
             TabReg.Text = "PageReg";
+            // 
+            // linkLabelToPage2
+            // 
+            linkLabelToPage2.Anchor = AnchorStyles.None;
+            linkLabelToPage2.BackColor = Color.Transparent;
+            linkLabelToPage2.Cursor = Cursors.Hand;
+            linkLabelToPage2.Image = (Image)resources.GetObject("linkLabelToPage2.Image");
+            linkLabelToPage2.Location = new Point(183, 573);
+            linkLabelToPage2.Name = "linkLabelToPage2";
+            linkLabelToPage2.Size = new Size(75, 17);
+            linkLabelToPage2.SizeMode = PictureBoxSizeMode.Zoom;
+            linkLabelToPage2.TabIndex = 18;
+            linkLabelToPage2.TabStop = false;
             // 
             // guna2CustomCheckBox1
             // 
@@ -478,15 +516,15 @@
             guna2CustomCheckBox1.CheckedState.BorderRadius = 5;
             guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
             guna2CustomCheckBox1.CheckedState.FillColor = Color.FromArgb(227, 89, 164);
-            guna2CustomCheckBox1.CustomizableEdges = customizableEdges9;
+            guna2CustomCheckBox1.CustomizableEdges = customizableEdges13;
             guna2CustomCheckBox1.Font = new Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             guna2CustomCheckBox1.Location = new Point(95, 485);
             guna2CustomCheckBox1.Margin = new Padding(0);
             guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
             guna2CustomCheckBox1.ShadowDecoration.BorderRadius = 30;
-            customizableEdges10.BottomLeft = false;
-            customizableEdges10.BottomRight = false;
-            guna2CustomCheckBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            customizableEdges14.BottomLeft = false;
+            customizableEdges14.BottomRight = false;
+            guna2CustomCheckBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2CustomCheckBox1.ShadowDecoration.Depth = 15;
             guna2CustomCheckBox1.ShadowDecoration.Enabled = true;
             guna2CustomCheckBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -498,17 +536,19 @@
             guna2CustomCheckBox1.UncheckedState.BorderThickness = 1;
             guna2CustomCheckBox1.UncheckedState.FillColor = Color.Transparent;
             // 
-            // label1
+            // lblTerms
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Jura", 12.7499981F, FontStyle.Underline, GraphicsUnit.Point, 204);
-            label1.ForeColor = Color.FromArgb(135, 128, 128);
-            label1.Location = new Point(117, 481);
-            label1.Name = "label1";
-            label1.Size = new Size(209, 23);
-            label1.TabIndex = 17;
-            label1.Text = "Условия использования";
+            lblTerms.AutoSize = true;
+            lblTerms.BackColor = Color.Transparent;
+            lblTerms.Cursor = Cursors.Hand;
+            lblTerms.Font = new Font("Jura", 12.7499981F, FontStyle.Underline, GraphicsUnit.Point, 204);
+            lblTerms.ForeColor = Color.FromArgb(135, 128, 128);
+            lblTerms.Location = new Point(117, 481);
+            lblTerms.Name = "lblTerms";
+            lblTerms.Size = new Size(209, 23);
+            lblTerms.TabIndex = 17;
+            lblTerms.Text = "Условия использования";
+            lblTerms.Click += lblTerms_Click;
             // 
             // txtPassReg2
             // 
@@ -516,7 +556,7 @@
             txtPassReg2.Animated = true;
             txtPassReg2.BackColor = Color.Transparent;
             txtPassReg2.BorderRadius = 25;
-            txtPassReg2.CustomizableEdges = customizableEdges11;
+            txtPassReg2.CustomizableEdges = customizableEdges15;
             txtPassReg2.DefaultText = "";
             txtPassReg2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtPassReg2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -528,7 +568,7 @@
             txtPassReg2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassReg2.IconLeft = Properties.Resources.Lock1;
             txtPassReg2.IconLeftOffset = new Point(15, 0);
-            txtPassReg2.Location = new Point(42, 370);
+            txtPassReg2.Location = new Point(42, 393);
             txtPassReg2.Margin = new Padding(24, 25, 24, 25);
             txtPassReg2.Name = "txtPassReg2";
             txtPassReg2.PasswordChar = '⊛';
@@ -537,7 +577,7 @@
             txtPassReg2.SelectedText = "";
             txtPassReg2.ShadowDecoration.BorderRadius = 150;
             txtPassReg2.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtPassReg2.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtPassReg2.ShadowDecoration.CustomizableEdges = customizableEdges16;
             txtPassReg2.ShadowDecoration.Depth = 21;
             txtPassReg2.ShadowDecoration.Enabled = true;
             txtPassReg2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -552,7 +592,7 @@
             txtPassReg1.Animated = true;
             txtPassReg1.BackColor = Color.Transparent;
             txtPassReg1.BorderRadius = 25;
-            txtPassReg1.CustomizableEdges = customizableEdges13;
+            txtPassReg1.CustomizableEdges = customizableEdges17;
             txtPassReg1.DefaultText = "";
             txtPassReg1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtPassReg1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -564,7 +604,7 @@
             txtPassReg1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassReg1.IconLeft = Properties.Resources.Lock1;
             txtPassReg1.IconLeftOffset = new Point(15, 0);
-            txtPassReg1.Location = new Point(42, 302);
+            txtPassReg1.Location = new Point(42, 312);
             txtPassReg1.Margin = new Padding(24, 25, 24, 25);
             txtPassReg1.Name = "txtPassReg1";
             txtPassReg1.PasswordChar = '⊛';
@@ -573,7 +613,7 @@
             txtPassReg1.SelectedText = "";
             txtPassReg1.ShadowDecoration.BorderRadius = 150;
             txtPassReg1.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtPassReg1.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtPassReg1.ShadowDecoration.CustomizableEdges = customizableEdges18;
             txtPassReg1.ShadowDecoration.Depth = 21;
             txtPassReg1.ShadowDecoration.Enabled = true;
             txtPassReg1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -588,7 +628,7 @@
             txtLogReg.Animated = true;
             txtLogReg.BackColor = Color.Transparent;
             txtLogReg.BorderRadius = 25;
-            txtLogReg.CustomizableEdges = customizableEdges15;
+            txtLogReg.CustomizableEdges = customizableEdges19;
             txtLogReg.DefaultText = "";
             txtLogReg.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtLogReg.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -610,7 +650,7 @@
             txtLogReg.SelectedText = "";
             txtLogReg.ShadowDecoration.BorderRadius = 150;
             txtLogReg.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtLogReg.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtLogReg.ShadowDecoration.CustomizableEdges = customizableEdges20;
             txtLogReg.ShadowDecoration.Depth = 21;
             txtLogReg.ShadowDecoration.Enabled = true;
             txtLogReg.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -636,7 +676,7 @@
             picUserReg.Anchor = AnchorStyles.None;
             picUserReg.BackColor = Color.Transparent;
             picUserReg.Image = Properties.Resources.Group_3;
-            picUserReg.Location = new Point(107, 3);
+            picUserReg.Location = new Point(108, 3);
             picUserReg.Name = "picUserReg";
             picUserReg.Size = new Size(212, 200);
             picUserReg.SizeMode = PictureBoxSizeMode.Zoom;
@@ -739,7 +779,7 @@
             SHADOWBUTTON1.BackColor = Color.Transparent;
             SHADOWBUTTON1.BackgroundImageLayout = ImageLayout.Stretch;
             SHADOWBUTTON1.BorderRadius = 25;
-            SHADOWBUTTON1.CustomizableEdges = customizableEdges17;
+            SHADOWBUTTON1.CustomizableEdges = customizableEdges21;
             SHADOWBUTTON1.DisabledState.BorderColor = Color.DarkGray;
             SHADOWBUTTON1.DisabledState.CustomBorderColor = Color.DarkGray;
             SHADOWBUTTON1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -752,7 +792,7 @@
             SHADOWBUTTON1.Location = new Point(112, 512);
             SHADOWBUTTON1.Margin = new Padding(3, 2, 3, 2);
             SHADOWBUTTON1.Name = "SHADOWBUTTON1";
-            SHADOWBUTTON1.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            SHADOWBUTTON1.ShadowDecoration.CustomizableEdges = customizableEdges22;
             SHADOWBUTTON1.ShadowDecoration.Enabled = true;
             SHADOWBUTTON1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             SHADOWBUTTON1.ShadowDecoration.Shadow = new Padding(1, 1, 1, 3);
@@ -760,6 +800,34 @@
             SHADOWBUTTON1.TabIndex = 7;
             SHADOWBUTTON1.Text = "Войти";
             SHADOWBUTTON1.TextOffset = new Point(0, -3);
+            // 
+            // txtTerms
+            // 
+            txtTerms.Animated = true;
+            txtTerms.BackColor = Color.Transparent;
+            txtTerms.CustomizableEdges = customizableEdges3;
+            txtTerms.DefaultText = resources.GetString("txtTerms.DefaultText");
+            txtTerms.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtTerms.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtTerms.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtTerms.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtTerms.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtTerms.Font = new Font("Jura", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            txtTerms.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtTerms.Location = new Point(14, 84);
+            txtTerms.Margin = new Padding(5);
+            txtTerms.Multiline = true;
+            txtTerms.Name = "txtTerms";
+            txtTerms.PasswordChar = '\0';
+            txtTerms.PlaceholderText = "";
+            txtTerms.ScrollBars = ScrollBars.Vertical;
+            txtTerms.SelectedText = "";
+            txtTerms.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtTerms.ShadowDecoration.Enabled = true;
+            txtTerms.ShadowDecoration.Shadow = new Padding(4);
+            txtTerms.Size = new Size(467, 549);
+            txtTerms.TabIndex = 19;
+            txtTerms.Visible = false;
             // 
             // FormCaptionButton
             // 
@@ -824,12 +892,30 @@
             timerShow.Interval = 5;
             timerShow.Tick += timerShow_Tick;
             // 
+            // btnCloseTerms
+            // 
+            btnCloseTerms.Cursor = Cursors.Hand;
+            btnCloseTerms.CustomizableEdges = customizableEdges1;
+            btnCloseTerms.Image = (Image)resources.GetObject("btnCloseTerms.Image");
+            btnCloseTerms.ImageRotate = 0F;
+            btnCloseTerms.Location = new Point(428, 96);
+            btnCloseTerms.Name = "btnCloseTerms";
+            btnCloseTerms.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnCloseTerms.Size = new Size(22, 23);
+            btnCloseTerms.SizeMode = PictureBoxSizeMode.Zoom;
+            btnCloseTerms.TabIndex = 13;
+            btnCloseTerms.TabStop = false;
+            btnCloseTerms.Visible = false;
+            btnCloseTerms.Click += btnCloseTerms_Click;
+            // 
             // EntryForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1000, 700);
+            Controls.Add(btnCloseTerms);
+            Controls.Add(txtTerms);
             Controls.Add(panelLabel);
             Controls.Add(pictureCircle);
             Controls.Add(Tabs);
@@ -847,13 +933,16 @@
             Tabs.ResumeLayout(false);
             TabEntry.ResumeLayout(false);
             TabEntry.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)linkLabelToPage1).EndInit();
             ((System.ComponentModel.ISupportInitialize)picLogin).EndInit();
             ((System.ComponentModel.ISupportInitialize)picUser).EndInit();
             TabReg.ResumeLayout(false);
             TabReg.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)linkLabelToPage2).EndInit();
             ((System.ComponentModel.ISupportInitialize)picReg).EndInit();
             ((System.ComponentModel.ISupportInitialize)picUserReg).EndInit();
             dragPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnCloseTerms).EndInit();
             ResumeLayout(false);
         }
 
@@ -887,7 +976,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtLogReg;
         private Guna.UI2.WinForms.Guna2TextBox txtPassReg2;
         private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
-        private Label label1;
+        private Label lblTerms;
 
         private void btnEnter_Paint(object sender, PaintEventArgs e)
         {
@@ -901,5 +990,10 @@
             int padding = 5;
             e.Graphics.DrawImage(img, new Rectangle(padding, padding, btnEnter.Width - 2 * padding, btnEnter.Height - 2 * padding)); // Масштабируем с отступами
         }
+
+        private PictureBox linkLabelToPage1;
+        private PictureBox linkLabelToPage2;
+        private Guna.UI2.WinForms.Guna2TextBox txtTerms;
+        private Guna.UI2.WinForms.Guna2PictureBox btnCloseTerms;
     }
 }

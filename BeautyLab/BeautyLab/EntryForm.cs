@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.AnimatorNS;
 
 namespace BeautyLab
 {
@@ -42,5 +43,29 @@ namespace BeautyLab
             timerShow.Start();
         }
 
+        private void lblTerms_Click(object sender, EventArgs e)
+        {
+            Animator animator = new Animator();
+            Animator animator2 = new Animator();
+            animator.AnimationType = AnimationType.Transparent;
+            animator2.AnimationType = AnimationType.Transparent;
+
+            animator.HideSync(panelLabel);
+            animator.ShowSync(txtTerms);
+            animator2.ShowSync(btnCloseTerms);
+            btnCloseTerms.BringToFront();
+        }
+
+        private void btnCloseTerms_Click(object sender, EventArgs e)
+        {
+            Animator animator = new Animator();
+            Animator animator2 = new Animator();
+            animator.AnimationType = AnimationType.Transparent;
+            animator2.AnimationType = AnimationType.Transparent;
+
+            animator2.HideSync(btnCloseTerms);
+            animator.HideSync(txtTerms);
+            animator.ShowSync(panelLabel);
+        }
     }
 }
