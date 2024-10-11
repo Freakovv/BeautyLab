@@ -21,25 +21,26 @@ namespace BeautyLab
         {
             Application.Exit();
         }
-
         private void FormCaptionButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        private void buttonEnter_Click(object sender, EventArgs e)
+        private void timerShow_Tick(object sender, EventArgs e)
         {
-
+            if (Opacity < 1)
+            {
+                Opacity += 0.05;
+            }
+            else
+            {
+                timerShow.Stop();
+            }
         }
 
-        private void labelRemember_Click(object sender, EventArgs e)
+        private void EntryForm_Load(object sender, EventArgs e)
         {
-
+            timerShow.Start();
         }
 
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
