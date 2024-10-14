@@ -11,5 +11,6 @@ The project plans:
 - Ensuring security by encrypting data;
 - Ability to record and edit business sessions;
 - Adding and removing masters through the admin panel.
+- Generating and exporting reports
 
 [Figma](https://www.figma.com/design/mfiWleU6xugTDSnKq2qn60/Untitled?node-id=0-1&t=fdeSRxSOokNNJXeH-1)
