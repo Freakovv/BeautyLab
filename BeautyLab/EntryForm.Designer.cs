@@ -31,34 +31,34 @@ namespace BeautyLab
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges57 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges58 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges59 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges60 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges61 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges62 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges63 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges64 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges65 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges66 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges67 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges68 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges69 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges70 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges71 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges72 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntryForm));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             BorderForm = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             pictureCircle = new PictureBox();
             panelLabel = new Panel();
@@ -75,6 +75,7 @@ namespace BeautyLab
             picUser = new PictureBox();
             btnEnter = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             SHADOWBUTTON = new Guna.UI2.WinForms.Guna2GradientButton();
+            eyeShow = new PictureBox();
             TabReg = new TabPage();
             btnReg = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             linkLabelToPage2 = new PictureBox();
@@ -101,6 +102,7 @@ namespace BeautyLab
             ((System.ComponentModel.ISupportInitialize)linkLabelToPage1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picLogin).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picUser).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)eyeShow).BeginInit();
             TabReg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)linkLabelToPage2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picReg).BeginInit();
@@ -201,6 +203,7 @@ namespace BeautyLab
             TabEntry.Controls.Add(picUser);
             TabEntry.Controls.Add(btnEnter);
             TabEntry.Controls.Add(SHADOWBUTTON);
+            TabEntry.Controls.Add(eyeShow);
             TabEntry.Font = new Font("Jura", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point, 204);
             TabEntry.Location = new Point(4, 4);
             TabEntry.Name = "TabEntry";
@@ -214,7 +217,7 @@ namespace BeautyLab
             linkLabelToPage1.BackColor = Color.Transparent;
             linkLabelToPage1.Cursor = Cursors.Hand;
             linkLabelToPage1.Image = (Image)resources.GetObject("linkLabelToPage1.Image");
-            linkLabelToPage1.Location = new Point(165, 494);
+            linkLabelToPage1.Location = new Point(157, 494);
             linkLabelToPage1.Name = "linkLabelToPage1";
             linkLabelToPage1.Size = new Size(101, 23);
             linkLabelToPage1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -226,7 +229,7 @@ namespace BeautyLab
             // 
             picLogin.BackColor = Color.Transparent;
             picLogin.Image = (Image)resources.GetObject("picLogin.Image");
-            picLogin.Location = new Point(165, 165);
+            picLogin.Location = new Point(157, 165);
             picLogin.Name = "picLogin";
             picLogin.Size = new Size(101, 26);
             picLogin.SizeMode = PictureBoxSizeMode.Zoom;
@@ -241,16 +244,16 @@ namespace BeautyLab
             checkBoxRememberMe.CheckedState.BorderRadius = 5;
             checkBoxRememberMe.CheckedState.BorderThickness = 0;
             checkBoxRememberMe.CheckedState.FillColor = Color.FromArgb(227, 89, 164);
-            checkBoxRememberMe.CustomizableEdges = customizableEdges7;
-            checkBoxRememberMe.Location = new Point(130, 402);
+            checkBoxRememberMe.CustomizableEdges = customizableEdges55;
+            checkBoxRememberMe.Location = new Point(122, 402);
             checkBoxRememberMe.Margin = new Padding(0);
             checkBoxRememberMe.Name = "checkBoxRememberMe";
             checkBoxRememberMe.Padding = new Padding(1, 1, 1, 5);
             checkBoxRememberMe.RightToLeft = RightToLeft.Yes;
             checkBoxRememberMe.ShadowDecoration.BorderRadius = 30;
-            customizableEdges8.BottomLeft = false;
-            customizableEdges8.BottomRight = false;
-            checkBoxRememberMe.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            customizableEdges56.BottomLeft = false;
+            customizableEdges56.BottomRight = false;
+            checkBoxRememberMe.ShadowDecoration.CustomizableEdges = customizableEdges56;
             checkBoxRememberMe.ShadowDecoration.Depth = 15;
             checkBoxRememberMe.ShadowDecoration.Enabled = true;
             checkBoxRememberMe.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -268,7 +271,7 @@ namespace BeautyLab
             labelRemember.BackColor = Color.Transparent;
             labelRemember.Font = new Font("Jura", 12.7499981F, FontStyle.Regular, GraphicsUnit.Point, 204);
             labelRemember.ForeColor = Color.FromArgb(135, 128, 128);
-            labelRemember.Location = new Point(153, 399);
+            labelRemember.Location = new Point(145, 399);
             labelRemember.Name = "labelRemember";
             labelRemember.Size = new Size(141, 23);
             labelRemember.TabIndex = 5;
@@ -280,7 +283,7 @@ namespace BeautyLab
             txtPassword.Animated = true;
             txtPassword.BackColor = Color.Transparent;
             txtPassword.BorderRadius = 25;
-            txtPassword.CustomizableEdges = customizableEdges9;
+            txtPassword.CustomizableEdges = customizableEdges57;
             txtPassword.DefaultText = "";
             txtPassword.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtPassword.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -292,7 +295,7 @@ namespace BeautyLab
             txtPassword.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassword.IconLeft = Properties.Resources.Lock1;
             txtPassword.IconLeftOffset = new Point(15, 0);
-            txtPassword.Location = new Point(42, 312);
+            txtPassword.Location = new Point(34, 312);
             txtPassword.Margin = new Padding(24, 25, 24, 25);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '⊛';
@@ -301,7 +304,7 @@ namespace BeautyLab
             txtPassword.SelectedText = "";
             txtPassword.ShadowDecoration.BorderRadius = 150;
             txtPassword.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges58;
             txtPassword.ShadowDecoration.Depth = 21;
             txtPassword.ShadowDecoration.Enabled = true;
             txtPassword.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -317,7 +320,7 @@ namespace BeautyLab
             txtLogin.Animated = true;
             txtLogin.BackColor = Color.Transparent;
             txtLogin.BorderRadius = 25;
-            txtLogin.CustomizableEdges = customizableEdges11;
+            txtLogin.CustomizableEdges = customizableEdges59;
             txtLogin.DefaultText = "";
             txtLogin.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtLogin.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -330,7 +333,7 @@ namespace BeautyLab
             txtLogin.IconLeft = Properties.Resources.mail1;
             txtLogin.IconLeftOffset = new Point(12, 0);
             txtLogin.IconLeftSize = new Size(27, 25);
-            txtLogin.Location = new Point(42, 231);
+            txtLogin.Location = new Point(34, 231);
             txtLogin.Margin = new Padding(25);
             txtLogin.Name = "txtLogin";
             txtLogin.PasswordChar = '\0';
@@ -339,7 +342,7 @@ namespace BeautyLab
             txtLogin.SelectedText = "";
             txtLogin.ShadowDecoration.BorderRadius = 150;
             txtLogin.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtLogin.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtLogin.ShadowDecoration.CustomizableEdges = customizableEdges60;
             txtLogin.ShadowDecoration.Depth = 21;
             txtLogin.ShadowDecoration.Enabled = true;
             txtLogin.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -353,7 +356,7 @@ namespace BeautyLab
             // 
             picUser.BackColor = Color.Transparent;
             picUser.Image = Properties.Resources.Group_3;
-            picUser.Location = new Point(110, 1);
+            picUser.Location = new Point(102, 1);
             picUser.Name = "picUser";
             picUser.Size = new Size(212, 200);
             picUser.SizeMode = PictureBoxSizeMode.Zoom;
@@ -378,11 +381,11 @@ namespace BeautyLab
             btnEnter.ButtonTextMarginLeft = 0;
             btnEnter.ColorContrastOnClick = 45;
             btnEnter.ColorContrastOnHover = 45;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            btnEnter.CustomizableEdges = borderEdges2;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            btnEnter.CustomizableEdges = borderEdges8;
             btnEnter.DialogResult = DialogResult.None;
             btnEnter.DisabledBorderColor = Color.Empty;
             btnEnter.DisabledFillColor = Color.FromArgb(242, 220, 232);
@@ -407,7 +410,7 @@ namespace BeautyLab
             btnEnter.IdleIconLeftImage = null;
             btnEnter.IdleIconRightImage = null;
             btnEnter.IndicateFocus = false;
-            btnEnter.Location = new Point(110, 432);
+            btnEnter.Location = new Point(102, 432);
             btnEnter.Name = "btnEnter";
             btnEnter.OnDisabledState.BorderColor = Color.Empty;
             btnEnter.OnDisabledState.BorderRadius = 50;
@@ -448,6 +451,7 @@ namespace BeautyLab
             btnEnter.TextMarginLeft = 0;
             btnEnter.TextPadding = new Padding(0, -2, 0, 0);
             btnEnter.UseDefaultRadiusAndThickness = true;
+            btnEnter.Click += btnEnter_Click;
             btnEnter.Paint += btnEnter_Paint;
             // 
             // SHADOWBUTTON
@@ -456,7 +460,7 @@ namespace BeautyLab
             SHADOWBUTTON.BackColor = Color.Transparent;
             SHADOWBUTTON.BackgroundImageLayout = ImageLayout.Stretch;
             SHADOWBUTTON.BorderRadius = 25;
-            SHADOWBUTTON.CustomizableEdges = customizableEdges13;
+            SHADOWBUTTON.CustomizableEdges = customizableEdges61;
             SHADOWBUTTON.DisabledState.BorderColor = Color.DarkGray;
             SHADOWBUTTON.DisabledState.CustomBorderColor = Color.DarkGray;
             SHADOWBUTTON.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -466,10 +470,10 @@ namespace BeautyLab
             SHADOWBUTTON.FillColor2 = Color.FromArgb(222, 89, 227);
             SHADOWBUTTON.Font = new Font("Jura", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             SHADOWBUTTON.ForeColor = Color.White;
-            SHADOWBUTTON.Location = new Point(110, 432);
+            SHADOWBUTTON.Location = new Point(102, 432);
             SHADOWBUTTON.Margin = new Padding(3, 2, 3, 2);
             SHADOWBUTTON.Name = "SHADOWBUTTON";
-            SHADOWBUTTON.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            SHADOWBUTTON.ShadowDecoration.CustomizableEdges = customizableEdges62;
             SHADOWBUTTON.ShadowDecoration.Enabled = true;
             SHADOWBUTTON.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             SHADOWBUTTON.ShadowDecoration.Shadow = new Padding(1, 1, 1, 3);
@@ -477,6 +481,18 @@ namespace BeautyLab
             SHADOWBUTTON.TabIndex = 7;
             SHADOWBUTTON.Text = "Войти";
             SHADOWBUTTON.TextOffset = new Point(0, -3);
+            // 
+            // eyeShow
+            // 
+            eyeShow.Image = Properties.Resources.iconShow1;
+            eyeShow.Location = new Point(379, 327);
+            eyeShow.Name = "eyeShow";
+            eyeShow.Size = new Size(25, 25);
+            eyeShow.SizeMode = PictureBoxSizeMode.Zoom;
+            eyeShow.TabIndex = 13;
+            eyeShow.TabStop = false;
+            eyeShow.MouseDown += eyeShow_MouseDown;
+            eyeShow.MouseUp += eyeShow_MouseUp;
             // 
             // TabReg
             // 
@@ -495,7 +511,7 @@ namespace BeautyLab
             TabReg.Location = new Point(4, 4);
             TabReg.Name = "TabReg";
             TabReg.Padding = new Padding(3);
-            TabReg.Size = new Size(416, 613);
+            TabReg.Size = new Size(416, 652);
             TabReg.TabIndex = 1;
             TabReg.Text = "PageReg";
             // 
@@ -517,11 +533,11 @@ namespace BeautyLab
             btnReg.ButtonTextMarginLeft = 0;
             btnReg.ColorContrastOnClick = 45;
             btnReg.ColorContrastOnHover = 45;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            btnReg.CustomizableEdges = borderEdges3;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            btnReg.CustomizableEdges = borderEdges9;
             btnReg.DialogResult = DialogResult.None;
             btnReg.DisabledBorderColor = Color.Empty;
             btnReg.DisabledFillColor = Color.FromArgb(242, 220, 232);
@@ -546,7 +562,7 @@ namespace BeautyLab
             btnReg.IdleIconLeftImage = null;
             btnReg.IdleIconRightImage = null;
             btnReg.IndicateFocus = false;
-            btnReg.Location = new Point(112, 512);
+            btnReg.Location = new Point(104, 512);
             btnReg.Name = "btnReg";
             btnReg.OnDisabledState.BorderColor = Color.Empty;
             btnReg.OnDisabledState.BorderRadius = 50;
@@ -594,7 +610,7 @@ namespace BeautyLab
             linkLabelToPage2.BackColor = Color.Transparent;
             linkLabelToPage2.Cursor = Cursors.Hand;
             linkLabelToPage2.Image = (Image)resources.GetObject("linkLabelToPage2.Image");
-            linkLabelToPage2.Location = new Point(194, 576);
+            linkLabelToPage2.Location = new Point(186, 576);
             linkLabelToPage2.Name = "linkLabelToPage2";
             linkLabelToPage2.Size = new Size(50, 14);
             linkLabelToPage2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -610,15 +626,15 @@ namespace BeautyLab
             guna2CustomCheckBox1.CheckedState.BorderRadius = 5;
             guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
             guna2CustomCheckBox1.CheckedState.FillColor = Color.FromArgb(227, 89, 164);
-            guna2CustomCheckBox1.CustomizableEdges = customizableEdges15;
+            guna2CustomCheckBox1.CustomizableEdges = customizableEdges63;
             guna2CustomCheckBox1.Font = new Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            guna2CustomCheckBox1.Location = new Point(95, 485);
+            guna2CustomCheckBox1.Location = new Point(87, 485);
             guna2CustomCheckBox1.Margin = new Padding(0);
             guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
             guna2CustomCheckBox1.ShadowDecoration.BorderRadius = 30;
-            customizableEdges16.BottomLeft = false;
-            customizableEdges16.BottomRight = false;
-            guna2CustomCheckBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            customizableEdges64.BottomLeft = false;
+            customizableEdges64.BottomRight = false;
+            guna2CustomCheckBox1.ShadowDecoration.CustomizableEdges = customizableEdges64;
             guna2CustomCheckBox1.ShadowDecoration.Depth = 15;
             guna2CustomCheckBox1.ShadowDecoration.Enabled = true;
             guna2CustomCheckBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -637,7 +653,7 @@ namespace BeautyLab
             lblTerms.Cursor = Cursors.Hand;
             lblTerms.Font = new Font("Jura", 12.7499981F, FontStyle.Underline, GraphicsUnit.Point, 204);
             lblTerms.ForeColor = Color.FromArgb(135, 128, 128);
-            lblTerms.Location = new Point(117, 481);
+            lblTerms.Location = new Point(109, 481);
             lblTerms.Name = "lblTerms";
             lblTerms.Size = new Size(209, 23);
             lblTerms.TabIndex = 17;
@@ -650,7 +666,7 @@ namespace BeautyLab
             txtPassReg2.Animated = true;
             txtPassReg2.BackColor = Color.Transparent;
             txtPassReg2.BorderRadius = 25;
-            txtPassReg2.CustomizableEdges = customizableEdges17;
+            txtPassReg2.CustomizableEdges = customizableEdges65;
             txtPassReg2.DefaultText = "";
             txtPassReg2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtPassReg2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -662,7 +678,7 @@ namespace BeautyLab
             txtPassReg2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassReg2.IconLeft = Properties.Resources.Lock1;
             txtPassReg2.IconLeftOffset = new Point(15, 0);
-            txtPassReg2.Location = new Point(42, 393);
+            txtPassReg2.Location = new Point(34, 393);
             txtPassReg2.Margin = new Padding(24, 25, 24, 25);
             txtPassReg2.Name = "txtPassReg2";
             txtPassReg2.PasswordChar = '⊛';
@@ -671,7 +687,7 @@ namespace BeautyLab
             txtPassReg2.SelectedText = "";
             txtPassReg2.ShadowDecoration.BorderRadius = 150;
             txtPassReg2.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtPassReg2.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            txtPassReg2.ShadowDecoration.CustomizableEdges = customizableEdges66;
             txtPassReg2.ShadowDecoration.Depth = 21;
             txtPassReg2.ShadowDecoration.Enabled = true;
             txtPassReg2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -687,7 +703,7 @@ namespace BeautyLab
             txtPassReg1.Animated = true;
             txtPassReg1.BackColor = Color.Transparent;
             txtPassReg1.BorderRadius = 25;
-            txtPassReg1.CustomizableEdges = customizableEdges19;
+            txtPassReg1.CustomizableEdges = customizableEdges67;
             txtPassReg1.DefaultText = "";
             txtPassReg1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtPassReg1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -699,7 +715,7 @@ namespace BeautyLab
             txtPassReg1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPassReg1.IconLeft = Properties.Resources.Lock1;
             txtPassReg1.IconLeftOffset = new Point(15, 0);
-            txtPassReg1.Location = new Point(42, 312);
+            txtPassReg1.Location = new Point(34, 312);
             txtPassReg1.Margin = new Padding(24, 25, 24, 25);
             txtPassReg1.Name = "txtPassReg1";
             txtPassReg1.PasswordChar = '⊛';
@@ -708,7 +724,7 @@ namespace BeautyLab
             txtPassReg1.SelectedText = "";
             txtPassReg1.ShadowDecoration.BorderRadius = 150;
             txtPassReg1.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtPassReg1.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            txtPassReg1.ShadowDecoration.CustomizableEdges = customizableEdges68;
             txtPassReg1.ShadowDecoration.Depth = 21;
             txtPassReg1.ShadowDecoration.Enabled = true;
             txtPassReg1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -724,7 +740,7 @@ namespace BeautyLab
             txtLogReg.Animated = true;
             txtLogReg.BackColor = Color.Transparent;
             txtLogReg.BorderRadius = 25;
-            txtLogReg.CustomizableEdges = customizableEdges21;
+            txtLogReg.CustomizableEdges = customizableEdges69;
             txtLogReg.DefaultText = "";
             txtLogReg.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtLogReg.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -737,7 +753,7 @@ namespace BeautyLab
             txtLogReg.IconLeft = Properties.Resources.mail1;
             txtLogReg.IconLeftOffset = new Point(12, 0);
             txtLogReg.IconLeftSize = new Size(27, 25);
-            txtLogReg.Location = new Point(42, 231);
+            txtLogReg.Location = new Point(34, 231);
             txtLogReg.Margin = new Padding(25);
             txtLogReg.Name = "txtLogReg";
             txtLogReg.PasswordChar = '\0';
@@ -746,7 +762,7 @@ namespace BeautyLab
             txtLogReg.SelectedText = "";
             txtLogReg.ShadowDecoration.BorderRadius = 150;
             txtLogReg.ShadowDecoration.Color = Color.FromArgb(135, 128, 128);
-            txtLogReg.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            txtLogReg.ShadowDecoration.CustomizableEdges = customizableEdges70;
             txtLogReg.ShadowDecoration.Depth = 21;
             txtLogReg.ShadowDecoration.Enabled = true;
             txtLogReg.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -760,7 +776,7 @@ namespace BeautyLab
             // 
             picReg.BackColor = Color.Transparent;
             picReg.Image = (Image)resources.GetObject("picReg.Image");
-            picReg.Location = new Point(132, 163);
+            picReg.Location = new Point(124, 163);
             picReg.Name = "picReg";
             picReg.Size = new Size(173, 31);
             picReg.SizeMode = PictureBoxSizeMode.Zoom;
@@ -771,7 +787,7 @@ namespace BeautyLab
             // 
             picUserReg.BackColor = Color.Transparent;
             picUserReg.Image = Properties.Resources.Group_3;
-            picUserReg.Location = new Point(110, 1);
+            picUserReg.Location = new Point(102, 1);
             picUserReg.Name = "picUserReg";
             picUserReg.Size = new Size(212, 200);
             picUserReg.SizeMode = PictureBoxSizeMode.Zoom;
@@ -784,7 +800,7 @@ namespace BeautyLab
             SHADOWBUTTON1.BackColor = Color.Transparent;
             SHADOWBUTTON1.BackgroundImageLayout = ImageLayout.Stretch;
             SHADOWBUTTON1.BorderRadius = 25;
-            SHADOWBUTTON1.CustomizableEdges = customizableEdges23;
+            SHADOWBUTTON1.CustomizableEdges = customizableEdges71;
             SHADOWBUTTON1.DisabledState.BorderColor = Color.DarkGray;
             SHADOWBUTTON1.DisabledState.CustomBorderColor = Color.DarkGray;
             SHADOWBUTTON1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -794,10 +810,10 @@ namespace BeautyLab
             SHADOWBUTTON1.FillColor2 = Color.FromArgb(222, 89, 227);
             SHADOWBUTTON1.Font = new Font("Jura", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             SHADOWBUTTON1.ForeColor = Color.White;
-            SHADOWBUTTON1.Location = new Point(112, 512);
+            SHADOWBUTTON1.Location = new Point(104, 512);
             SHADOWBUTTON1.Margin = new Padding(3, 2, 3, 2);
             SHADOWBUTTON1.Name = "SHADOWBUTTON1";
-            SHADOWBUTTON1.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            SHADOWBUTTON1.ShadowDecoration.CustomizableEdges = customizableEdges72;
             SHADOWBUTTON1.ShadowDecoration.Enabled = true;
             SHADOWBUTTON1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             SHADOWBUTTON1.ShadowDecoration.Shadow = new Padding(1, 1, 1, 3);
@@ -810,7 +826,7 @@ namespace BeautyLab
             // 
             txtTerms.Animated = true;
             txtTerms.BackColor = Color.Transparent;
-            txtTerms.CustomizableEdges = customizableEdges5;
+            txtTerms.CustomizableEdges = customizableEdges53;
             txtTerms.DefaultText = resources.GetString("txtTerms.DefaultText");
             txtTerms.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtTerms.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -827,7 +843,7 @@ namespace BeautyLab
             txtTerms.PlaceholderText = "";
             txtTerms.ScrollBars = ScrollBars.Vertical;
             txtTerms.SelectedText = "";
-            txtTerms.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            txtTerms.ShadowDecoration.CustomizableEdges = customizableEdges54;
             txtTerms.ShadowDecoration.Enabled = true;
             txtTerms.ShadowDecoration.Shadow = new Padding(4);
             txtTerms.Size = new Size(467, 549);
@@ -855,11 +871,11 @@ namespace BeautyLab
             FormCaptionButton.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Close;
             FormCaptionButton.ColorContrastOnClick = 30;
             FormCaptionButton.ColorContrastOnHover = 30;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            FormCaptionButton.CustomizableEdges = borderEdges1;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            FormCaptionButton.CustomizableEdges = borderEdges7;
             FormCaptionButton.DefaultBorderColor = Color.White;
             FormCaptionButton.DefaultColor = Color.White;
             FormCaptionButton.DialogResult = DialogResult.None;
@@ -887,10 +903,10 @@ namespace BeautyLab
             // 
             dragPanel.BackColor = Color.Transparent;
             dragPanel.Controls.Add(FormCaptionButton);
-            dragPanel.CustomizableEdges = customizableEdges3;
+            dragPanel.CustomizableEdges = customizableEdges51;
             dragPanel.Location = new Point(0, 0);
             dragPanel.Name = "dragPanel";
-            dragPanel.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            dragPanel.ShadowDecoration.CustomizableEdges = customizableEdges52;
             dragPanel.Size = new Size(1000, 38);
             dragPanel.TabIndex = 13;
             dragPanel.UseTransparentBackground = true;
@@ -903,12 +919,12 @@ namespace BeautyLab
             // btnCloseTerms
             // 
             btnCloseTerms.Cursor = Cursors.Hand;
-            btnCloseTerms.CustomizableEdges = customizableEdges1;
+            btnCloseTerms.CustomizableEdges = customizableEdges49;
             btnCloseTerms.Image = (Image)resources.GetObject("btnCloseTerms.Image");
             btnCloseTerms.ImageRotate = 0F;
             btnCloseTerms.Location = new Point(428, 96);
             btnCloseTerms.Name = "btnCloseTerms";
-            btnCloseTerms.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnCloseTerms.ShadowDecoration.CustomizableEdges = customizableEdges50;
             btnCloseTerms.Size = new Size(22, 23);
             btnCloseTerms.SizeMode = PictureBoxSizeMode.Zoom;
             btnCloseTerms.TabIndex = 13;
@@ -945,6 +961,7 @@ namespace BeautyLab
             ((System.ComponentModel.ISupportInitialize)linkLabelToPage1).EndInit();
             ((System.ComponentModel.ISupportInitialize)picLogin).EndInit();
             ((System.ComponentModel.ISupportInitialize)picUser).EndInit();
+            ((System.ComponentModel.ISupportInitialize)eyeShow).EndInit();
             TabReg.ResumeLayout(false);
             TabReg.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)linkLabelToPage2).EndInit();
@@ -956,6 +973,95 @@ namespace BeautyLab
         }
 
         #endregion
+
+        //front-end
+        private void btnEnter_Paint(object sender, PaintEventArgs e)
+        {
+            Image img = Image.FromFile("Resources/Rectangle.png");
+            int padding = 5;
+            e.Graphics.DrawImage(img, new Rectangle(padding, padding, btnEnter.Width - 2 * padding, btnEnter.Height - 2 * padding));
+        }
+        private void btnReg_Paint(object sender, PaintEventArgs e)
+        {
+            Image img = Image.FromFile("Resources/Rectangle.png");
+            int padding = 5;
+            e.Graphics.DrawImage(img, new Rectangle(padding, padding, btnEnter.Width - 2 * padding, btnEnter.Height - 2 * padding));
+        }
+        private void EntryForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        private void FormCaptionButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void timerShow_Tick(object sender, EventArgs e)
+        {
+            if (Opacity < 1)
+            {
+                Opacity += 0.05;
+            }
+            else
+            {
+                timerShow.Stop();
+            }
+        }
+        private void lblTerms_Click(object sender, EventArgs e)
+        {
+            Animator animator = new Animator();
+            Animator animator2 = new Animator();
+            animator.AnimationType = AnimationType.Transparent;
+            animator2.AnimationType = AnimationType.Transparent;
+
+            animator.HideSync(panelLabel);
+            animator.ShowSync(txtTerms);
+            animator2.ShowSync(btnCloseTerms);
+            btnCloseTerms.BringToFront();
+        }
+        private void btnCloseTerms_Click(object sender, EventArgs e)
+        {
+            Animator animator = new Animator();
+            Animator animator2 = new Animator();
+            animator.AnimationType = AnimationType.Transparent;
+            animator2.AnimationType = AnimationType.Transparent;
+
+            animator2.HideSync(btnCloseTerms);
+            animator.HideSync(txtTerms);
+            animator.ShowSync(panelLabel);
+        }
+        private void linkLabelToPage1_Click(object sender, EventArgs e)
+        {
+            Tabs.SelectTab(TabReg);
+        }
+        private void linkLabelToPage2_Click(object sender, EventArgs e)
+        {
+            Tabs.SelectTab(TabEntry);
+        }
+        void ButtonsStateLogin(object s, EventArgs e)
+        {
+            if (txtLogin.Text.Length > 0 && txtPassword.Text.Length > 0)
+            {
+                btnEnter.Enabled = true;
+            }
+            else
+            {
+                btnEnter.Enabled = false;
+            }
+        }
+        void ButtonsStateReg(object s, EventArgs e)
+        {
+            if (txtLogReg.Text.Length > 0 && txtPassReg1.Text.Length > 0 && txtPassReg2.Text.Length > 0)
+            {
+                btnReg.Enabled = true;
+                btnReg.IdleFillColor = Color.FromArgb(227, 89, 164);
+            }
+            else
+            {
+                btnReg.Enabled = false;
+                btnReg.IdleFillColor = Color.FromArgb(242, 220, 232);
+            }
+        }
+
 
         private Guna.UI2.WinForms.Guna2BorderlessForm BorderForm;
         private PictureBox pictureCircle;
@@ -984,80 +1090,12 @@ namespace BeautyLab
         private Guna.UI2.WinForms.Guna2TextBox txtPassReg2;
         private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
         private Label lblTerms;
-
-        private void btnEnter_Paint(object sender, PaintEventArgs e)
-        {
-            Image img = Image.FromFile("Resources/Rectangle.png");
-            int padding = 5;
-            e.Graphics.DrawImage(img, new Rectangle(padding, padding, btnEnter.Width - 2 * padding, btnEnter.Height - 2 * padding)); 
-        }
-        private void btnReg_Paint(object sender, PaintEventArgs e)
-        {
-            Image img = Image.FromFile("Resources/Rectangle.png");
-            int padding = 5;
-            e.Graphics.DrawImage(img, new Rectangle(padding, padding, btnEnter.Width - 2 * padding, btnEnter.Height - 2 * padding)); 
-        }
-
+        private Guna.UI2.WinForms.Guna2Panel dragPanel;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnReg;
         private PictureBox linkLabelToPage1;
         private PictureBox linkLabelToPage2;
         private Guna.UI2.WinForms.Guna2TextBox txtTerms;
         private Guna.UI2.WinForms.Guna2PictureBox btnCloseTerms;
-
-        private void EntryForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-        private void FormCaptionButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-        private void timerShow_Tick(object sender, EventArgs e)
-        {
-            if (Opacity < 1)
-            {
-                Opacity += 0.05;
-            }
-            else
-            {
-                timerShow.Stop();
-            }
-        }
-
-        private void lblTerms_Click(object sender, EventArgs e)
-        {
-            Animator animator = new Animator();
-            Animator animator2 = new Animator();
-            animator.AnimationType = AnimationType.Transparent;
-            animator2.AnimationType = AnimationType.Transparent;
-
-            animator.HideSync(panelLabel);
-            animator.ShowSync(txtTerms);
-            animator2.ShowSync(btnCloseTerms);
-            btnCloseTerms.BringToFront();
-        }
-
-        private void btnCloseTerms_Click(object sender, EventArgs e)
-        {
-            Animator animator = new Animator();
-            Animator animator2 = new Animator();
-            animator.AnimationType = AnimationType.Transparent;
-            animator2.AnimationType = AnimationType.Transparent;
-
-            animator2.HideSync(btnCloseTerms);
-            animator.HideSync(txtTerms);
-            animator.ShowSync(panelLabel);
-        }
-        
-        private void linkLabelToPage1_Click(object sender, EventArgs e)
-        {
-            Tabs.SelectTab(TabReg);
-        }
-
-        private void linkLabelToPage2_Click(object sender, EventArgs e)
-        {
-            Tabs.SelectTab(TabEntry);
-        }
-        private Guna.UI2.WinForms.Guna2Panel dragPanel;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnReg;
+        private PictureBox eyeShow;
     }
 }

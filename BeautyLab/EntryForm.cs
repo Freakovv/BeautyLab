@@ -17,38 +17,30 @@ namespace BeautyLab
         public EntryForm()
         {
             InitializeComponent();
-        }
 
+        }
+        private DataBase dataBase = new DataBase();
 
         private void EntryForm_Load(object sender, EventArgs e)
         {
             timerShow.Start();
         }
 
-        void ButtonsStateLogin(object s, EventArgs e)
+        private void btnEnter_Click(object sender, EventArgs e)
         {
-            if (txtLogin.Text.Length > 0 && txtPassword.Text.Length > 0)
-            {
-                btnEnter.Enabled = true;
-            }
-            else
-            {
-                btnEnter.Enabled = false;
-            }
+
         }
 
-        void ButtonsStateReg(object s, EventArgs e)
+        private void eyeShow_MouseDown(object sender, MouseEventArgs e)
         {
-            if (txtLogReg.Text.Length > 0 && txtPassReg1.Text.Length > 0 && txtPassReg2.Text.Length > 0)
-            {
-                btnReg.Enabled = true;
-                btnReg.IdleFillColor = Color.FromArgb(227, 89, 164);
-            }
-            else
-            {
-                btnReg.Enabled = false;
-                btnReg.IdleFillColor = Color.FromArgb(242, 220, 232);
-            }
+            txtPassword.PasswordChar = '\0';
+            eyeShow.Image = Properties.Resources.iconShow2;
+        }
+
+        private void eyeShow_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPassword.PasswordChar = '\u229b';
+            eyeShow.Image = Properties.Resources.iconShow1;
         }
     }
 }
