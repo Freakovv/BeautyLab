@@ -94,6 +94,7 @@ namespace BeautyLab
             dragPanel = new Guna2Panel();
             FadeIn = new System.Windows.Forms.Timer(components);
             btnCloseTerms = new Guna2PictureBox();
+            MessageDialog = new Guna2MessageDialog();
             ((System.ComponentModel.ISupportInitialize)pictureCircle).BeginInit();
             panelLabel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureLabel).BeginInit();
@@ -190,6 +191,7 @@ namespace BeautyLab
             Tabs.TabIndex = 2;
             Tabs.TabMenuBackColor = Color.FromArgb(33, 42, 57);
             Tabs.TabMenuOrientation = TabMenuOrientation.HorizontalBottom;
+            Tabs.TabMenuVisible = false;
             // 
             // TabEntry
             // 
@@ -208,7 +210,7 @@ namespace BeautyLab
             TabEntry.Location = new Point(4, 4);
             TabEntry.Name = "TabEntry";
             TabEntry.Padding = new Padding(3);
-            TabEntry.Size = new Size(416, 613);
+            TabEntry.Size = new Size(416, 652);
             TabEntry.TabIndex = 0;
             TabEntry.Text = "PageEntry";
             // 
@@ -511,7 +513,7 @@ namespace BeautyLab
             TabReg.Location = new Point(4, 4);
             TabReg.Name = "TabReg";
             TabReg.Padding = new Padding(3);
-            TabReg.Size = new Size(416, 613);
+            TabReg.Size = new Size(416, 652);
             TabReg.TabIndex = 1;
             TabReg.Text = "PageReg";
             // 
@@ -933,6 +935,15 @@ namespace BeautyLab
             btnCloseTerms.Visible = false;
             btnCloseTerms.Click += btnCloseTerms_Click;
             // 
+            // MessageDialog
+            // 
+            MessageDialog.Buttons = MessageDialogButtons.OK;
+            MessageDialog.Caption = null;
+            MessageDialog.Icon = MessageDialogIcon.None;
+            MessageDialog.Parent = this;
+            MessageDialog.Style = MessageDialogStyle.Light;
+            MessageDialog.Text = null;
+            // 
             // EntryForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1089,7 +1100,7 @@ namespace BeautyLab
         }
         private void HideOverlay()
         {
-            _overlay.Close();
+            _overlay.Hide();
         }
         private static void ShowErrorMessage(string msg)
         {
@@ -1135,5 +1146,6 @@ namespace BeautyLab
         private Guna.UI2.WinForms.Guna2TextBox txtTerms;
         private Guna.UI2.WinForms.Guna2PictureBox btnCloseTerms;
         private PictureBox eyeShow;
+        private Guna2MessageDialog MessageDialog;
     }
 }

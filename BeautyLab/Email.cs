@@ -46,13 +46,15 @@ namespace BeautyLab
                 smtpClient.Send(mail);
 
                 message.Icon = MessageDialogIcon.Information;
+                message.Caption = "Информация";
                 message.Text = "Письмо было успешно отправлено. Проверьте почту";
                 message.Show();
             }
             catch (Exception ex)
             {
                 message.Icon = MessageDialogIcon.Error;
-                message.Text = $"Произошла ошибка при отправке письма:\n+{ex.Message}";
+                message.Caption = "Ошибка";
+                message.Text = ex.Message;
                 message.Show();
             }
         }

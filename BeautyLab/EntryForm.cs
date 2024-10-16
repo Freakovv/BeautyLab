@@ -22,13 +22,9 @@ namespace BeautyLab
 {
     public partial class EntryForm : Form
     {
-        public EntryForm()
-        {
-            InitializeComponent();
+        public EntryForm() => InitializeComponent();
 
-        }
-
-        private DataBase dataBase = new DataBase();
+        private readonly DataBase _dataBase = new DataBase();
 
         private void EntryForm_Load(object sender, EventArgs e)
         {
@@ -41,17 +37,10 @@ namespace BeautyLab
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
+            if(!ValidLoginTxtBoxes())
+                return;
 
-        }
-
-        private void SendMail(string userName, string subject, string userEmail)
-        {
-            Email emailSender = new Email(MessageDialog);
-
-            _securityCode = emailSender.GetSecurityCode();
-            string message = Email.GetEmailBody(userName, _securityCode);
-
-            emailSender.Send(userEmail, subject, message);
+            //TODO: Авторизация
         }
 
         private void btnReg_Click(object sender, EventArgs e)
@@ -60,39 +49,71 @@ namespace BeautyLab
             string password = txtPassReg1.Text;
             string subject = "Вход";
 
-            if (!CheckRegTxtBoxes())
+            if (!ValidRegTxtBoxes())
             {
+                return;
+            }
+
+            if (_dataBase.AccountExists(email))
+            {
+                ShowErrorMessage("Аккаунт с таким email уже существует");
                 return;
             }
 
             _localEmail = email;
             _localHashPassword = HashPassword(password);
 
-            SendMail("пользователь", subject, email);
-            VerificationForm code = new VerificationForm(_securityCode);
-            code.FormBorderStyle = FormBorderStyle.None;
-            code.StartPosition = FormStartPosition.Manual;
-            code.ShowInTaskbar = false;
-            code.Owner = this;
+            Email emailSender = new Email(MessageDialog);
+            _securityCode = emailSender.GetSecurityCode();
+            string message = Email.GetEmailBody("пользователь", _securityCode);
+            emailSender.Send(email, subject, message);
 
-            // Расчет центра диалогового окна
-            int centerX = this.Left + (this.Width - code.Width) / 2;
-            int centerY = this.Top + (this.Height - code.Height) / 2;
-
-            code.Location = new Point(centerX, centerY);
+            VerificationForm verification = new VerificationForm(_securityCode);
+            CustomizeForm(ref verification);
 
             ShowOverlay();
-
-            code.ShowDialog();
-            bool result = code.getResult();
+            verification.ShowDialog();
             HideOverlay();
 
-            MessageBox.Show(Convert.ToString(result));
+            bool result = verification.getResult();
 
-            //TODO: Сделать класс базы данных и переход 
+            if (result)
+            {
+                _dataBase.OpenConnection();
+                _dataBase.InsertEmailAndPassword(_localEmail, _localHashPassword);
+                _dataBase.CloseConnection();
+            }
+            else
+            {
+                MessageDialog.Icon = MessageDialogIcon.Information;
+                MessageDialog.Show("Регистрация отменена", "Информация");
+            }
         }
 
-        private bool CheckRegTxtBoxes()
+        private void CustomizeForm(ref VerificationForm Form)
+        {
+            Form.FormBorderStyle = FormBorderStyle.None;
+            Form.StartPosition = FormStartPosition.Manual;
+            Form.ShowInTaskbar = false;
+            Form.Owner = this;
+
+            int centerX = Left + (Width - Form.Width) / 2;
+            int centerY = Top + (Height - Form.Height) / 2;
+
+            Form.Location = new Point(centerX, centerY);
+        }
+
+        private bool ValidLoginTxtBoxes()
+        {
+            if (txtLogin.Text.IsNullOrEmpty() || txtPassword.Text.IsNullOrEmpty())
+            {
+                ShowErrorMessage("Поля не могут быть пустыми!");
+                return false;
+            }
+
+            return true;
+        }
+        private bool ValidRegTxtBoxes()
         {
             if (string.IsNullOrWhiteSpace(txtLogReg.Text) ||
                 string.IsNullOrWhiteSpace(txtPassReg1.Text) ||
