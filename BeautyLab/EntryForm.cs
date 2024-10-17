@@ -1,160 +1,180 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security;
-using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Guna.UI2.AnimatorNS;
-using Guna.UI2.WinForms;
-using Microsoft.IdentityModel.Tokens;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Drawing;
-using System.Runtime.CompilerServices;
+using Guna.UI2.WinForms;
 
 namespace BeautyLab
 {
     public partial class EntryForm : Form
     {
-        public EntryForm() => InitializeComponent();
-
         private readonly DataBase _dataBase = new DataBase();
+        private int _securityCode;
+        private string _localEmail = string.Empty;
+        private string? _localPassword;
+
+        public EntryForm() => InitializeComponent();
 
         private void EntryForm_Load(object sender, EventArgs e)
         {
             FadeIn.Start();
         }
 
-        private int _securityCode;
-        private string _localEmail;
-        private string _localHashPassword;
-
+        // Вход в аккаунт
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            if(!ValidLoginTxtBoxes())
+            if (!ValidateLoginInputs())
                 return;
 
-            //TODO: Авторизация
+            string login = txtLogin.Text;
+            string password = txtPassword.Text;
+
+            if (_dataBase.GetAccess(login, password))
+            {
+                ShowWelcomeMessage(login);
+            }
         }
 
+        // Регистрация аккаунта
         private void btnReg_Click(object sender, EventArgs e)
         {
-            string email = txtLogReg.Text;
-            string password = txtPassReg1.Text;
-            string subject = "Вход";
+            if (!ValidateRegistrationInputs())
+                return;
 
-            if (!ValidRegTxtBoxes())
+            _localEmail = txtLogReg.Text;
+            _localPassword = txtPassReg1.Text;
+
+            if (_dataBase.AccountExists(_localEmail))
             {
+                ShowErrorMsg("Аккаунт с таким email уже существует");
                 return;
             }
 
-            if (_dataBase.AccountExists(email))
+            SendVerificationEmail();
+            if (VerifyAccount())
             {
-                ShowErrorMessage("Аккаунт с таким email уже существует");
-                return;
-            }
-
-            _localEmail = email;
-            _localHashPassword = HashPassword(password);
-
-            Email emailSender = new Email(MessageDialog);
-            _securityCode = emailSender.GetSecurityCode();
-            string message = Email.GetEmailBody("пользователь", _securityCode);
-            emailSender.Send(email, subject, message);
-
-            VerificationForm verification = new VerificationForm(_securityCode);
-            CustomizeForm(ref verification);
-
-            ShowOverlay();
-            verification.ShowDialog();
-            HideOverlay();
-
-            bool result = verification.getResult();
-
-            if (result)
-            {
-                _dataBase.OpenConnection();
-                _dataBase.InsertEmailAndPassword(_localEmail, _localHashPassword);
-                _dataBase.CloseConnection();
+                _dataBase.InsertEmailAndPassword(_localEmail, _localPassword);
             }
             else
             {
-                MessageDialog.Icon = MessageDialogIcon.Information;
-                MessageDialog.Show("Регистрация отменена", "Информация");
+                ShowInfoMsg("Регистрация отменена");
             }
         }
 
-        private void CustomizeForm(ref VerificationForm Form)
+        // Отправка письма
+        private void SendVerificationEmail()
         {
-            Form.FormBorderStyle = FormBorderStyle.None;
-            Form.StartPosition = FormStartPosition.Manual;
-            Form.ShowInTaskbar = false;
-            Form.Owner = this;
-
-            int centerX = Left + (Width - Form.Width) / 2;
-            int centerY = Top + (Height - Form.Height) / 2;
-
-            Form.Location = new Point(centerX, centerY);
+            string subject = "Вход";
+            Email emailSender = new Email(MessageDialog);
+            _securityCode = emailSender.GenerateSecurityCode();
+            string message = Email.GetEmailBody("пользователь", _securityCode);
+            emailSender.Send(_localEmail, subject, message);
         }
 
-        private bool ValidLoginTxtBoxes()
+        // Окно для ввода кода верификации
+        private bool VerifyAccount()
         {
-            if (txtLogin.Text.IsNullOrEmpty() || txtPassword.Text.IsNullOrEmpty())
+            VerificationForm verification = new VerificationForm(_securityCode);
+            CustomizeForm(ref verification);
+            ShowOverlay();
+            verification.ShowDialog();
+            HideOverlay();
+            return verification.getResult();
+        }
+
+        // Настройка окна
+        private void CustomizeForm(ref VerificationForm form)
+        {
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.StartPosition = FormStartPosition.Manual;
+            form.ShowInTaskbar = false;
+            form.Owner = this;
+
+            form.Location = CenterFormPosition(form);
+        }
+
+        // Центрирование формы
+        private Point CenterFormPosition(Form form)
+        {
+            int centerX = Left + (Width - form.Width) / 2;
+            int centerY = Top + (Height - form.Height) / 2;
+            return new Point(centerX, centerY);
+        }
+
+        // Валидация данных для входа
+        private bool ValidateLoginInputs()
+        {
+            if (IsEmpty(txtLogin.Text) || IsEmpty(txtPassword.Text))
             {
-                ShowErrorMessage("Поля не могут быть пустыми!");
+                ShowErrorMsg("Поля не могут быть пустыми");
+                return false;
+            }
+
+            if (txtPassword.Text.Length < 6)
+            {
+                ShowErrorMsg("Неверный пароль");
                 return false;
             }
 
             return true;
         }
-        private bool ValidRegTxtBoxes()
+
+        // Валидация данных для регистрации
+        private bool ValidateRegistrationInputs()
         {
-            if (string.IsNullOrWhiteSpace(txtLogReg.Text) ||
-                string.IsNullOrWhiteSpace(txtPassReg1.Text) ||
-                string.IsNullOrWhiteSpace(txtPassReg2.Text))
+            if (IsAnyFieldEmpty(txtLogReg.Text, txtPassReg1.Text, txtPassReg2.Text))
             {
-                ShowErrorMessage("Поля не могут быть пустыми!");
+                ShowErrorMsg("Поля не могут быть пустыми!");
                 return false;
             }
 
-            if (txtPassReg1.Text != txtPassReg2.Text)
+            if (!ArePasswordsMatching(txtPassReg1.Text, txtPassReg2.Text))
             {
-                ShowErrorMessage("Пароли не совпадают");
+                ShowErrorMsg("Пароли не совпадают");
                 return false;
             }
 
             if (txtPassReg1.Text.Length <= 5)
             {
-                ShowErrorMessage("Слишком короткий пароль!");
+                ShowErrorMsg("Слишком короткий пароль!");
                 return false;
             }
 
-            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-            if (!Regex.IsMatch(txtLogReg.Text, pattern))
+            if (!IsValidEmail(txtLogReg.Text))
             {
-                ShowErrorMessage("Некорректный формат адреса электронной почты!");
+                ShowErrorMsg("Некорректный формат адреса электронной почты!");
                 return false;
             }
+
+            if (!checkBoxTerms.Checked)
+            {
+                ShowErrorMsg("Вы должны принять условия использования для регистрации");
+                return false;
+            }
+
             return true;
         }
 
-        public static string HashPassword(string password)
-        {
-            using SHA256 sha256 = SHA256.Create();
-            byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
-            StringBuilder builder = new StringBuilder();
-            foreach (byte b in bytes)
-            {
-                builder.Append(b.ToString("x2"));
-            }
+        private bool IsEmpty(string input) => string.IsNullOrEmpty(input);
 
-            return builder.ToString();
+        private bool IsAnyFieldEmpty(params string[] inputs) => inputs.Any(IsEmpty);
+
+        private bool ArePasswordsMatching(string pass1, string pass2) => pass1 == pass2;
+
+        private bool IsValidEmail(string email)
+        {
+            const string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, pattern);
+        }
+
+        private void ShowWelcomeMessage(string login)
+        {
+            string msg = "Добро пожаловать";
+            if (!IsValidEmail(login)) msg += ", " + login + "!";
+            
+            MessageDialog.Icon = MessageDialogIcon.Information;
+            MessageDialog.Show(msg, "Вход");
         }
 
     }

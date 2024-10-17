@@ -5,15 +5,8 @@ namespace BeautyLab
 {
     partial class EntryForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -24,11 +17,6 @@ namespace BeautyLab
         }
 
         #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
@@ -80,7 +68,7 @@ namespace BeautyLab
             TabReg = new TabPage();
             btnReg = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             linkLabelToPage2 = new PictureBox();
-            guna2CustomCheckBox1 = new Guna2CustomCheckBox();
+            checkBoxTerms = new Guna2CustomCheckBox();
             lblTerms = new Label();
             txtPassReg2 = new Guna2TextBox();
             txtPassReg1 = new Guna2TextBox();
@@ -210,7 +198,7 @@ namespace BeautyLab
             TabEntry.Location = new Point(4, 4);
             TabEntry.Name = "TabEntry";
             TabEntry.Padding = new Padding(3);
-            TabEntry.Size = new Size(416, 652);
+            TabEntry.Size = new Size(416, 613);
             TabEntry.TabIndex = 0;
             TabEntry.Text = "PageEntry";
             // 
@@ -314,7 +302,7 @@ namespace BeautyLab
             txtPassword.Size = new Size(338, 56);
             txtPassword.TabIndex = 3;
             txtPassword.TextOffset = new Point(0, -3);
-            txtPassword.TextChanged += ButtonsStateLogin;
+            txtPassword.TextChanged += UpdateButtonStateLogin;
             // 
             // txtLogin
             // 
@@ -352,7 +340,7 @@ namespace BeautyLab
             txtLogin.Size = new Size(338, 56);
             txtLogin.TabIndex = 1;
             txtLogin.TextOffset = new Point(0, -3);
-            txtLogin.TextChanged += ButtonsStateLogin;
+            txtLogin.TextChanged += UpdateButtonStateLogin;
             // 
             // picUser
             // 
@@ -501,7 +489,7 @@ namespace BeautyLab
             TabReg.BackColor = Color.White;
             TabReg.Controls.Add(btnReg);
             TabReg.Controls.Add(linkLabelToPage2);
-            TabReg.Controls.Add(guna2CustomCheckBox1);
+            TabReg.Controls.Add(checkBoxTerms);
             TabReg.Controls.Add(lblTerms);
             TabReg.Controls.Add(txtPassReg2);
             TabReg.Controls.Add(txtPassReg1);
@@ -621,33 +609,32 @@ namespace BeautyLab
             linkLabelToPage2.TabStop = false;
             linkLabelToPage2.Click += linkLabelToPage2_Click;
             // 
-            // guna2CustomCheckBox1
+            // checkBoxTerms
             // 
-            guna2CustomCheckBox1.Animated = true;
-            guna2CustomCheckBox1.Checked = true;
-            guna2CustomCheckBox1.CheckedState.BorderColor = Color.Transparent;
-            guna2CustomCheckBox1.CheckedState.BorderRadius = 5;
-            guna2CustomCheckBox1.CheckedState.BorderThickness = 0;
-            guna2CustomCheckBox1.CheckedState.FillColor = Color.FromArgb(227, 89, 164);
-            guna2CustomCheckBox1.CustomizableEdges = customizableEdges15;
-            guna2CustomCheckBox1.Font = new Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            guna2CustomCheckBox1.Location = new Point(87, 485);
-            guna2CustomCheckBox1.Margin = new Padding(0);
-            guna2CustomCheckBox1.Name = "guna2CustomCheckBox1";
-            guna2CustomCheckBox1.ShadowDecoration.BorderRadius = 30;
+            checkBoxTerms.Animated = true;
+            checkBoxTerms.CheckedState.BorderColor = Color.Transparent;
+            checkBoxTerms.CheckedState.BorderRadius = 5;
+            checkBoxTerms.CheckedState.BorderThickness = 0;
+            checkBoxTerms.CheckedState.FillColor = Color.FromArgb(227, 89, 164);
+            checkBoxTerms.CustomizableEdges = customizableEdges15;
+            checkBoxTerms.Font = new Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            checkBoxTerms.Location = new Point(87, 485);
+            checkBoxTerms.Margin = new Padding(0);
+            checkBoxTerms.Name = "checkBoxTerms";
+            checkBoxTerms.ShadowDecoration.BorderRadius = 30;
             customizableEdges16.BottomLeft = false;
             customizableEdges16.BottomRight = false;
-            guna2CustomCheckBox1.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            guna2CustomCheckBox1.ShadowDecoration.Depth = 15;
-            guna2CustomCheckBox1.ShadowDecoration.Enabled = true;
-            guna2CustomCheckBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            guna2CustomCheckBox1.ShadowDecoration.Shadow = new Padding(1, 1, 1, 3);
-            guna2CustomCheckBox1.Size = new Size(20, 20);
-            guna2CustomCheckBox1.TabIndex = 16;
-            guna2CustomCheckBox1.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
-            guna2CustomCheckBox1.UncheckedState.BorderRadius = 5;
-            guna2CustomCheckBox1.UncheckedState.BorderThickness = 1;
-            guna2CustomCheckBox1.UncheckedState.FillColor = Color.Transparent;
+            checkBoxTerms.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            checkBoxTerms.ShadowDecoration.Depth = 15;
+            checkBoxTerms.ShadowDecoration.Enabled = true;
+            checkBoxTerms.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            checkBoxTerms.ShadowDecoration.Shadow = new Padding(1, 1, 1, 3);
+            checkBoxTerms.Size = new Size(20, 20);
+            checkBoxTerms.TabIndex = 16;
+            checkBoxTerms.UncheckedState.BorderColor = Color.FromArgb(125, 137, 149);
+            checkBoxTerms.UncheckedState.BorderRadius = 5;
+            checkBoxTerms.UncheckedState.BorderThickness = 1;
+            checkBoxTerms.UncheckedState.FillColor = Color.Transparent;
             // 
             // lblTerms
             // 
@@ -698,7 +685,7 @@ namespace BeautyLab
             txtPassReg2.Size = new Size(338, 56);
             txtPassReg2.TabIndex = 15;
             txtPassReg2.TextOffset = new Point(0, -3);
-            txtPassReg2.TextChanged += ButtonsStateReg;
+            txtPassReg2.TextChanged += UpdateButtonStateReg;
             // 
             // txtPassReg1
             // 
@@ -735,7 +722,7 @@ namespace BeautyLab
             txtPassReg1.Size = new Size(338, 56);
             txtPassReg1.TabIndex = 14;
             txtPassReg1.TextOffset = new Point(0, -3);
-            txtPassReg1.TextChanged += ButtonsStateReg;
+            txtPassReg1.TextChanged += UpdateButtonStateReg;
             // 
             // txtLogReg
             // 
@@ -773,7 +760,7 @@ namespace BeautyLab
             txtLogReg.Size = new Size(338, 56);
             txtLogReg.TabIndex = 13;
             txtLogReg.TextOffset = new Point(0, -3);
-            txtLogReg.TextChanged += ButtonsStateReg;
+            txtLogReg.TextChanged += UpdateButtonStateReg;
             // 
             // picReg
             // 
@@ -986,132 +973,6 @@ namespace BeautyLab
 
         #endregion
 
-        //front-end
-        private void btnEnter_Paint(object sender, PaintEventArgs e)
-        {
-            Image img = Image.FromFile("Resources/Rectangle.png");
-            int padding = 5;
-            e.Graphics.DrawImage(img, new Rectangle(padding, padding, btnEnter.Width - 2 * padding, btnEnter.Height - 2 * padding));
-        }
-        private void btnReg_Paint(object sender, PaintEventArgs e)
-        {
-            Image img = Image.FromFile("Resources/Rectangle.png");
-            int padding = 5;
-            e.Graphics.DrawImage(img, new Rectangle(padding, padding, btnEnter.Width - 2 * padding, btnEnter.Height - 2 * padding));
-        }
-        private void EntryForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-        private void FormCaptionButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-        private void FadeIn_Tick(object sender, EventArgs e)
-        {
-            if (Opacity < 1)
-            {
-                Opacity += 0.05;
-            }
-            else
-            {
-                FadeIn.Stop();
-            }
-        }
-        private void lblTerms_Click(object sender, EventArgs e)
-        {
-            Animator animator = new Animator();
-            Animator animator2 = new Animator();
-            animator.AnimationType = AnimationType.Transparent;
-            animator2.AnimationType = AnimationType.Transparent;
-
-            animator.HideSync(panelLabel);
-            animator.ShowSync(txtTerms);
-            animator2.ShowSync(btnCloseTerms);
-            btnCloseTerms.BringToFront();
-        }
-        private void btnCloseTerms_Click(object sender, EventArgs e)
-        {
-            Animator animator = new Animator();
-            Animator animator2 = new Animator();
-            animator.AnimationType = AnimationType.Transparent;
-            animator2.AnimationType = AnimationType.Transparent;
-
-            animator2.HideSync(btnCloseTerms);
-            animator.HideSync(txtTerms);
-            animator.ShowSync(panelLabel);
-        }
-        private void linkLabelToPage1_Click(object sender, EventArgs e)
-        {
-            Tabs.SelectTab(TabReg);
-        }
-        private void linkLabelToPage2_Click(object sender, EventArgs e)
-        {
-            Tabs.SelectTab(TabEntry);
-        }
-        void ButtonsStateLogin(object s, EventArgs e)
-        {
-            if (txtLogin.Text.Length > 0 && txtPassword.Text.Length > 0)
-            {
-                btnEnter.Enabled = true;
-            }
-            else
-            {
-                btnEnter.Enabled = false;
-            }
-        }
-        void ButtonsStateReg(object s, EventArgs e)
-        {
-            if (txtLogReg.Text.Length > 0 && txtPassReg1.Text.Length > 0 && txtPassReg2.Text.Length > 0)
-            {
-                btnReg.Enabled = true;
-                btnReg.IdleFillColor = Color.FromArgb(227, 89, 164);
-            }
-            else
-            {
-                btnReg.Enabled = false;
-                btnReg.IdleFillColor = Color.FromArgb(242, 220, 232);
-            }
-        }
-        private void eyeShow_MouseDown(object sender, MouseEventArgs e)
-        {
-            txtPassword.PasswordChar = '\0';
-            eyeShow.Image = Properties.Resources.iconShow2;
-        }
-
-        private void eyeShow_MouseUp(object sender, MouseEventArgs e)
-        {
-            txtPassword.PasswordChar = '\u229b';
-            eyeShow.Image = Properties.Resources.iconShow1;
-        }
-
-        private readonly Form _overlay = new Form();
-        private void ShowOverlay()
-        {
-            _overlay.FormBorderStyle = FormBorderStyle.None;
-            _overlay.StartPosition = FormStartPosition.Manual;
-            _overlay.Opacity = 0.5;
-            _overlay.BackColor = Color.Black;
-            _overlay.ShowInTaskbar = false;
-            _overlay.Size = this.Size;
-            _overlay.Location = this.Location;
-            _overlay.Owner = this;
-            _overlay.Show();
-        }
-        private void HideOverlay()
-        {
-            _overlay.Hide();
-        }
-        private static void ShowErrorMessage(string msg)
-        {
-            Guna2MessageDialog messageDialog = new Guna2MessageDialog();
-            messageDialog.Icon = MessageDialogIcon.Error;
-            messageDialog.Caption = "Ошибка";
-            messageDialog.Text = msg;
-            messageDialog.Show();
-        }
-
-
         private Guna.UI2.WinForms.Guna2BorderlessForm BorderForm;
         private PictureBox pictureCircle;
         private Panel panelLabel;
@@ -1137,7 +998,7 @@ namespace BeautyLab
         private Guna.UI2.WinForms.Guna2TextBox txtPassReg1;
         private Guna.UI2.WinForms.Guna2TextBox txtLogReg;
         private Guna.UI2.WinForms.Guna2TextBox txtPassReg2;
-        private Guna.UI2.WinForms.Guna2CustomCheckBox guna2CustomCheckBox1;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxTerms;
         private Label lblTerms;
         private Guna.UI2.WinForms.Guna2Panel dragPanel;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnReg;
@@ -1147,5 +1008,123 @@ namespace BeautyLab
         private Guna.UI2.WinForms.Guna2PictureBox btnCloseTerms;
         private PictureBox eyeShow;
         private Guna2MessageDialog MessageDialog;
+
+        //front-end
+
+        private void PaintButtonBackground(object sender, PaintEventArgs e)
+        {
+            Image img = Image.FromFile("Resources/Rectangle.png");
+            int padding = 5;
+            var button = sender as Bunifu.UI.WinForms.BunifuButton.BunifuButton2;
+            if (button != null)
+            {
+                e.Graphics.DrawImage(img, new Rectangle(padding, padding, button.Width - 2 * padding, button.Height - 2 * padding));
+            }
+        }
+
+        private void btnEnter_Paint(object sender, PaintEventArgs e) => PaintButtonBackground(sender, e);
+        private void btnReg_Paint(object sender, PaintEventArgs e) => PaintButtonBackground(sender, e);
+
+        private void EntryForm_FormClosing(object sender, FormClosingEventArgs e) => Application.Exit();
+
+        private void FormCaptionButton_Click(object sender, EventArgs e) => Application.Exit();
+
+        private void FadeIn_Tick(object sender, EventArgs e)
+        {
+            if (Opacity < 1)
+            {
+                Opacity += 0.05;
+            }
+            else
+            {
+                FadeIn.Stop();
+            }
+        }
+
+        private void lblTerms_Click(object sender, EventArgs e)
+        {
+            var animator = new Animator { AnimationType = AnimationType.Transparent };
+            var animator2 = new Animator { AnimationType = AnimationType.Transparent };
+
+            animator.HideSync(panelLabel);
+            animator.ShowSync(txtTerms);
+            animator2.ShowSync(btnCloseTerms);
+            btnCloseTerms.BringToFront();
+        }
+
+        private void btnCloseTerms_Click(object sender, EventArgs e)
+        {
+            var animator = new Animator { AnimationType = AnimationType.Transparent };
+            var animator2 = new Animator { AnimationType = AnimationType.Transparent };
+
+            animator2.HideSync(btnCloseTerms);
+            animator.HideSync(txtTerms);
+            animator.ShowSync(panelLabel);
+        }
+
+        private void SwitchToTab(TabPage tab)
+        {
+            Tabs.SelectTab(tab);
+        }
+
+        private void linkLabelToPage1_Click(object sender, EventArgs e) => SwitchToTab(TabReg);
+        private void linkLabelToPage2_Click(object sender, EventArgs e) => SwitchToTab(TabEntry);
+
+        private void UpdateButtonStateLogin(object sender, EventArgs e)
+        {
+            btnEnter.Enabled = txtLogin.Text.Length > 0 && txtPassword.Text.Length > 0;
+        }
+
+        private void UpdateButtonStateReg(object sender, EventArgs e)
+        {
+            bool isFilled = txtLogReg.Text.Length > 0 && txtPassReg1.Text.Length > 0 && txtPassReg2.Text.Length > 0;
+            btnReg.Enabled = isFilled;
+            btnReg.IdleFillColor = isFilled ? Color.FromArgb(227, 89, 164) : Color.FromArgb(242, 220, 232);
+        }
+
+        private void eyeShow_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPassword.PasswordChar = '\0';
+            eyeShow.Image = Properties.Resources.iconShow2;
+        }
+
+        private void eyeShow_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPassword.PasswordChar = '\u229b';
+            eyeShow.Image = Properties.Resources.iconShow1;
+        }
+
+        private readonly Form _overlay = new Form();
+
+        private void ShowOverlay()
+        {
+            _overlay.FormBorderStyle = FormBorderStyle.None;
+            _overlay.StartPosition = FormStartPosition.Manual;
+            _overlay.Opacity = 0.5;
+            _overlay.BackColor = Color.Black;
+            _overlay.ShowInTaskbar = false;
+            _overlay.Size = Size;
+            _overlay.Location = Location;
+            _overlay.Owner = this;
+            _overlay.Show();
+        }
+
+        private void HideOverlay() => _overlay.Hide();
+
+        private void ShowErrorMsg(string message, string caption = "Ошибка")
+        {
+            MessageDialog.Icon = MessageDialogIcon.Error;
+            MessageDialog.Caption = caption;
+            MessageDialog.Text = message;
+            MessageDialog.Show();
+        }
+
+        private void ShowInfoMsg(string message, string caption = "Информация")
+        {
+            MessageDialog.Icon = MessageDialogIcon.Information;
+            MessageDialog.Caption = caption;
+            MessageDialog.Text = message;
+            MessageDialog.Show();
+        }
     }
 }

@@ -22,12 +22,9 @@ namespace BeautyLab
 
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            int localCode;
-            try
-            {
-                localCode = int.Parse(txtCode.Text);
-            }
-            catch (Exception exception)
+            var isValidCode = int.TryParse(txtCode.Text, out int localCode);
+
+            if (!isValidCode)
             {
                 labelError.Text = "Неверный формат кода";
                 labelError.ForeColor = Color.Red;
