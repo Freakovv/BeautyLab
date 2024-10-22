@@ -9,12 +9,15 @@ namespace BeautyLab
 {
     public partial class EntryForm : Form
     {
-        private readonly DataBase _dataBase = new DataBase();
+        private readonly DataBase _dataBase;
         private int _securityCode;
         private string _localEmail = string.Empty;
         private string? _localPassword;
 
-        public EntryForm() => InitializeComponent();
+        public EntryForm(){
+            _dataBase = new DataBase(this);
+            InitializeComponent();
+        }
 
         private void EntryForm_Load(object sender, EventArgs e)
         {
@@ -33,6 +36,10 @@ namespace BeautyLab
             if (_dataBase.GetAccess(login, password))
             {
                 ShowWelcomeMessage(login);
+            }
+            else
+            {
+                ShowErrorMsg("Неверный логин или пароль");
             }
         }
 

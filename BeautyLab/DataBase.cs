@@ -5,14 +5,24 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 using Microsoft.Data.SqlClient;
 
 namespace BeautyLab
 {
     internal class DataBase
     {
+        Guna2MessageDialog msg;
+
+        public DataBase(Form form) {
+            msg = new Guna2MessageDialog();
+            msg.Parent = form;
+            msg.Buttons = MessageDialogButtons.OK;
+        }
+
         private readonly SqlConnection _homeConnection = new SqlConnection(
-            @"Data Source=DESKTOP-16N2RPD\FREAKOVVSERVER;Initial Catalog=BeautyLab; Integrated Security=True; TrustServerCertificate=True");
+            //@"Data Source=DESKTOP-16N2RPD\FREAKOVVSERVER;Initial Catalog=BeautyLab; Integrated Security=True; TrustServerCertificate=True");
+            @"Data Source=DESKTOP-MF1UJ07\FREAKOVVSERVER;Initial Catalog=BeautyLab; Integrated Security=True; TrustServerCertificate=True");
 
         public void OpenConnection()
         {
@@ -37,7 +47,7 @@ namespace BeautyLab
             command.Parameters.AddWithValue("@Email", email);
             command.Parameters.AddWithValue("@Password", hashedPassword);
 
-            ExecuteNonQuery(command, "Email and password inserted successfully.");
+            ExecuteNonQuery(command, "Спасибо за регистрацию!", "Успешно");
         }
 
         public void InsertLoginNameSurname(string email, string login, string name, string surname)
@@ -48,7 +58,7 @@ namespace BeautyLab
             command.Parameters.AddWithValue("@Surname", surname);
             command.Parameters.AddWithValue("@Email", email);
 
-            ExecuteNonQuery(command, "Login, name, and surname inserted successfully.");
+            ExecuteNonQuery(command, "Данные сохранены", "Успешно");
         }
 
         public bool AccountExists(string email)
@@ -72,17 +82,20 @@ namespace BeautyLab
             return ExecuteScalar(command) > 0;
         }
 
-        private void ExecuteNonQuery(SqlCommand command, string successMessage)
+        private void ExecuteNonQuery(SqlCommand command, string successMessage, string caption = "Ошибка базы данных")
         {
+            msg.Caption = caption;
+            msg.Icon = MessageDialogIcon.Error;
+
             try
             {
                 OpenConnection();
                 command.ExecuteNonQuery();
-                MessageBox.Show(successMessage);
+                msg.Show(successMessage);
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Database error: " + ex.Message);
+                msg.Show(ex.Message);
             }
             finally
             {
@@ -100,7 +113,7 @@ namespace BeautyLab
             catch (SqlException ex)
             {
                 MessageBox.Show("Database access error: " + ex.Message);
-                return 0; // Return 0 for error cases
+                return 0;
             }
             finally
             {
