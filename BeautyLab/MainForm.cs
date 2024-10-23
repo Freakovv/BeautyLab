@@ -4,11 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.InteropServices.Marshalling;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
 
 namespace BeautyLab
 {
@@ -19,9 +17,15 @@ namespace BeautyLab
             InitializeComponent();
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
+            AnimateForm animation = new AnimateForm(this);
+            animation.Start(true);
         }
-        
     }
 }

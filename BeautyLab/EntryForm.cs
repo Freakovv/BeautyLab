@@ -9,15 +9,12 @@ namespace BeautyLab
 {
     public partial class EntryForm : Form
     {
-        private readonly DataBase _dataBase;
+        private readonly DataBase _dataBase = new DataBase();
         private int _securityCode;
         private string _localEmail = string.Empty;
         private string? _localPassword;
 
-        public EntryForm(){
-            _dataBase = new DataBase(this);
-            InitializeComponent();
-        }
+        public EntryForm() => InitializeComponent();
 
         private void EntryForm_Load(object sender, EventArgs e)
         {
@@ -109,7 +106,7 @@ namespace BeautyLab
             return new Point(centerX, centerY);
         }
 
-        // Валидация данных для входа
+        // Валидация для входа
         private bool ValidateLoginInputs()
         {
             if (IsEmpty(txtLogin.Text) || IsEmpty(txtPassword.Text))
@@ -120,14 +117,14 @@ namespace BeautyLab
 
             if (txtPassword.Text.Length < 6)
             {
-                ShowErrorMsg("Неверный пароль");
+                ShowErrorMsg("Неверный логин или пароль");
                 return false;
             }
 
             return true;
         }
 
-        // Валидация данных для регистрации
+        // Валидация для регистрации
         private bool ValidateRegistrationInputs()
         {
             if (IsAnyFieldEmpty(txtLogReg.Text, txtPassReg1.Text, txtPassReg2.Text))
@@ -169,11 +166,7 @@ namespace BeautyLab
 
         private bool ArePasswordsMatching(string pass1, string pass2) => pass1 == pass2;
 
-        private bool IsValidEmail(string email)
-        {
-            const string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-            return Regex.IsMatch(email, pattern);
-        }
+        private bool IsValidEmail(string email) => Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
 
         private void ShowWelcomeMessage(string login)
         {

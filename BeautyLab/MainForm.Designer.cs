@@ -1,11 +1,16 @@
-﻿using System.Runtime.InteropServices;
-
-namespace BeautyLab
+﻿namespace BeautyLab
 {
     partial class MainForm
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -16,38 +21,40 @@ namespace BeautyLab
         }
 
         #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             BorderForm = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
-            adminHome = new TabPage();
-            bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
-            adminRecord = new TabPage();
-            adminMaterial = new TabPage();
-            adminReport = new TabPage();
-            guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            tabPage5 = new TabPage();
-            guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            tabPage6 = new TabPage();
-            guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            tabPage7 = new TabPage();
-            guna2ShadowPanel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            tabPage8 = new TabPage();
-            guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            adminHome.SuspendLayout();
-            bunifuPages1.SuspendLayout();
-            adminRecord.SuspendLayout();
-            adminMaterial.SuspendLayout();
-            adminReport.SuspendLayout();
-            tabPage5.SuspendLayout();
-            tabPage6.SuspendLayout();
-            tabPage7.SuspendLayout();
-            tabPage8.SuspendLayout();
+            Tabs = new Guna.UI2.WinForms.Guna2TabControl();
+            tabPage1 = new TabPage();
+            panel1 = new Panel();
+            btnExit = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
+            textContact = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            groupTabs = new Guna.UI2.WinForms.Guna2GroupBox();
+            textSettings = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnProfile = new Guna.UI2.WinForms.Guna2CircleButton();
+            btnContact = new Guna.UI2.WinForms.Guna2CircleButton();
+            textHome = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            btnSettings = new Guna.UI2.WinForms.Guna2CircleButton();
+            guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            tabPage2 = new TabPage();
+            Tabs.SuspendLayout();
+            tabPage1.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).BeginInit();
             SuspendLayout();
             // 
             // BorderForm
@@ -55,308 +62,335 @@ namespace BeautyLab
             BorderForm.BorderRadius = 10;
             BorderForm.ContainerControl = this;
             BorderForm.DockIndicatorTransparencyValue = 0.6D;
-            BorderForm.DragForm = false;
             BorderForm.TransparentWhileDrag = true;
             // 
-            // adminHome
+            // Tabs
             // 
-            adminHome.BackgroundImage = (Image)resources.GetObject("adminHome.BackgroundImage");
-            adminHome.BackgroundImageLayout = ImageLayout.Stretch;
-            adminHome.Controls.Add(bunifuShadowPanel2);
-            adminHome.Location = new Point(4, 4);
-            adminHome.Name = "adminHome";
-            adminHome.Padding = new Padding(3);
-            adminHome.Size = new Size(1432, 772);
-            adminHome.TabIndex = 0;
-            adminHome.Text = "adminHome";
-            adminHome.UseVisualStyleBackColor = true;
+            Tabs.Controls.Add(tabPage1);
+            Tabs.Controls.Add(tabPage2);
+            Tabs.ItemSize = new Size(180, 40);
+            Tabs.Location = new Point(-10, -10);
+            Tabs.Name = "Tabs";
+            Tabs.SelectedIndex = 0;
+            Tabs.Size = new Size(1300, 780);
+            Tabs.TabButtonHoverState.BorderColor = Color.Empty;
+            Tabs.TabButtonHoverState.FillColor = Color.FromArgb(40, 52, 70);
+            Tabs.TabButtonHoverState.Font = new Font("Segoe UI Semibold", 10F);
+            Tabs.TabButtonHoverState.ForeColor = Color.White;
+            Tabs.TabButtonHoverState.InnerColor = Color.FromArgb(40, 52, 70);
+            Tabs.TabButtonIdleState.BorderColor = Color.Empty;
+            Tabs.TabButtonIdleState.FillColor = Color.FromArgb(33, 42, 57);
+            Tabs.TabButtonIdleState.Font = new Font("Segoe UI Semibold", 10F);
+            Tabs.TabButtonIdleState.ForeColor = Color.FromArgb(156, 160, 167);
+            Tabs.TabButtonIdleState.InnerColor = Color.FromArgb(33, 42, 57);
+            Tabs.TabButtonSelectedState.BorderColor = Color.Empty;
+            Tabs.TabButtonSelectedState.FillColor = Color.FromArgb(29, 37, 49);
+            Tabs.TabButtonSelectedState.Font = new Font("Segoe UI Semibold", 10F);
+            Tabs.TabButtonSelectedState.ForeColor = Color.White;
+            Tabs.TabButtonSelectedState.InnerColor = Color.FromArgb(76, 132, 255);
+            Tabs.TabButtonSize = new Size(180, 40);
+            Tabs.TabIndex = 0;
+            Tabs.TabMenuBackColor = Color.Transparent;
+            Tabs.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
+            Tabs.TabMenuVisible = false;
             // 
-            // bunifuPages1
+            // tabPage1
             // 
-            bunifuPages1.Alignment = TabAlignment.Bottom;
-            bunifuPages1.AllowTransitions = false;
-            bunifuPages1.Controls.Add(adminHome);
-            bunifuPages1.Controls.Add(adminRecord);
-            bunifuPages1.Controls.Add(adminMaterial);
-            bunifuPages1.Controls.Add(adminReport);
-            bunifuPages1.Controls.Add(tabPage5);
-            bunifuPages1.Controls.Add(tabPage6);
-            bunifuPages1.Controls.Add(tabPage7);
-            bunifuPages1.Controls.Add(tabPage8);
-            bunifuPages1.Location = new Point(0, 0);
-            bunifuPages1.Multiline = true;
-            bunifuPages1.Name = "bunifuPages1";
-            bunifuPages1.Page = adminMaterial;
-            bunifuPages1.PageIndex = 2;
-            bunifuPages1.PageName = "adminMaterial";
-            bunifuPages1.PageTitle = "adminMaterial";
-            bunifuPages1.SelectedIndex = 0;
-            bunifuPages1.Size = new Size(1440, 800);
-            bunifuPages1.TabIndex = 2;
-            animation1.AnimateOnlyDifferences = false;
-            animation1.BlindCoeff = (PointF)resources.GetObject("animation1.BlindCoeff");
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = (PointF)resources.GetObject("animation1.MosaicCoeff");
-            animation1.MosaicShift = (PointF)resources.GetObject("animation1.MosaicShift");
-            animation1.MosaicSize = 0;
-            animation1.Padding = new Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = (PointF)resources.GetObject("animation1.ScaleCoeff");
-            animation1.SlideCoeff = (PointF)resources.GetObject("animation1.SlideCoeff");
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            bunifuPages1.Transition = animation1;
-            bunifuPages1.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            tabPage1.BackgroundImage = (Image)resources.GetObject("tabPage1.BackgroundImage");
+            tabPage1.BackgroundImageLayout = ImageLayout.Stretch;
+            tabPage1.Controls.Add(panel1);
+            tabPage1.Controls.Add(textContact);
+            tabPage1.Controls.Add(groupTabs);
+            tabPage1.Controls.Add(textSettings);
+            tabPage1.Controls.Add(btnProfile);
+            tabPage1.Controls.Add(btnContact);
+            tabPage1.Controls.Add(textHome);
+            tabPage1.Controls.Add(btnSettings);
+            tabPage1.Controls.Add(guna2CirclePictureBox1);
+            tabPage1.Location = new Point(4, 5);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(1292, 771);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "tabPage1";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
-            // adminRecord
+            // panel1
             // 
-            adminRecord.BackgroundImage = (Image)resources.GetObject("adminRecord.BackgroundImage");
-            adminRecord.BackgroundImageLayout = ImageLayout.Stretch;
-            adminRecord.Controls.Add(bunifuShadowPanel1);
-            adminRecord.Location = new Point(4, 4);
-            adminRecord.Name = "adminRecord";
-            adminRecord.Padding = new Padding(3);
-            adminRecord.Size = new Size(1432, 772);
-            adminRecord.TabIndex = 1;
-            adminRecord.Text = "adminRecord";
-            adminRecord.UseVisualStyleBackColor = true;
+            panel1.Controls.Add(btnExit);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1289, 43);
+            panel1.TabIndex = 11;
             // 
-            // adminMaterial
+            // btnExit
             // 
-            adminMaterial.BackgroundImage = (Image)resources.GetObject("adminMaterial.BackgroundImage");
-            adminMaterial.BackgroundImageLayout = ImageLayout.Stretch;
-            adminMaterial.Controls.Add(guna2ShadowPanel1);
-            adminMaterial.Location = new Point(4, 4);
-            adminMaterial.Name = "adminMaterial";
-            adminMaterial.Padding = new Padding(3);
-            adminMaterial.Size = new Size(1432, 772);
-            adminMaterial.TabIndex = 2;
-            adminMaterial.Text = "adminMaterial";
-            adminMaterial.UseVisualStyleBackColor = true;
+            btnExit.AllowAnimations = true;
+            btnExit.AllowBorderColorChanges = true;
+            btnExit.AllowDefaults = true;
+            btnExit.AllowMouseEffects = true;
+            btnExit.AnimationSpeed = 200;
+            btnExit.AutoSizeCaptions = true;
+            btnExit.BackColor = Color.Transparent;
+            btnExit.BackgroundColor = Color.FromArgb(233, 233, 233);
+            btnExit.BackHoverColor = Color.LightGray;
+            btnExit.BackPressedColor = Color.Silver;
+            btnExit.BorderColor = Color.LightGray;
+            btnExit.BorderHoverColor = Color.DarkGray;
+            btnExit.BorderPressedColor = Color.DarkGray;
+            btnExit.BorderRadius = 1;
+            btnExit.BorderStyle = Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderStyles.Solid;
+            btnExit.BorderThickness = 1;
+            btnExit.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Minimize;
+            btnExit.ColorContrastOnClick = 30;
+            btnExit.ColorContrastOnHover = 30;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            btnExit.CustomizableEdges = borderEdges2;
+            btnExit.DefaultBorderColor = Color.Silver;
+            btnExit.DefaultColor = Color.Gainsboro;
+            btnExit.DialogResult = DialogResult.None;
+            btnExit.IconColor = Color.Black;
+            btnExit.IconHoverColor = Color.Black;
+            btnExit.IconPressedColor = Color.Black;
+            btnExit.Image = (Image)resources.GetObject("btnExit.Image");
+            btnExit.ImageMargin = new Padding(1, 1, 0, 0);
+            btnExit.ImageSize = new Size(20, 20);
+            btnExit.Location = new Point(1238, 4);
+            btnExit.Name = "btnExit";
+            btnExit.ShowBorders = true;
+            btnExit.Size = new Size(48, 42);
+            btnExit.TabIndex = 2;
+            btnExit.Click += btnExit_Click;
             // 
-            // adminReport
+            // textContact
             // 
-            adminReport.BackgroundImage = (Image)resources.GetObject("adminReport.BackgroundImage");
-            adminReport.BackgroundImageLayout = ImageLayout.Stretch;
-            adminReport.Controls.Add(guna2ShadowPanel3);
-            adminReport.Location = new Point(4, 4);
-            adminReport.Name = "adminReport";
-            adminReport.Padding = new Padding(3);
-            adminReport.Size = new Size(1432, 772);
-            adminReport.TabIndex = 3;
-            adminReport.Text = "adminReport";
-            adminReport.UseVisualStyleBackColor = true;
+            textContact.BackColor = Color.FromArgb(224, 224, 224);
+            textContact.Font = new Font("Jura SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            textContact.ForeColor = Color.FromArgb(135, 128, 128);
+            textContact.Location = new Point(24, 596);
+            textContact.Name = "textContact";
+            textContact.Size = new Size(78, 24);
+            textContact.TabIndex = 10;
+            textContact.Text = "Контакты";
             // 
-            // guna2ShadowPanel3
+            // groupTabs
             // 
-            guna2ShadowPanel3.BackColor = Color.Transparent;
-            guna2ShadowPanel3.FillColor = Color.FromArgb(224, 224, 224);
-            guna2ShadowPanel3.Location = new Point(-208, 70);
-            guna2ShadowPanel3.Name = "guna2ShadowPanel3";
-            guna2ShadowPanel3.Radius = 120;
-            guna2ShadowPanel3.ShadowColor = Color.Black;
-            guna2ShadowPanel3.Size = new Size(425, 609);
-            guna2ShadowPanel3.TabIndex = 1;
+            groupTabs.BorderColor = Color.Transparent;
+            groupTabs.BorderRadius = 15;
+            groupTabs.CustomBorderColor = Color.Transparent;
+            groupTabs.CustomizableEdges = customizableEdges7;
+            groupTabs.FillColor = Color.Transparent;
+            groupTabs.Font = new Font("Segoe UI", 9F);
+            groupTabs.ForeColor = Color.Transparent;
+            groupTabs.Location = new Point(123, 49);
+            groupTabs.Name = "groupTabs";
+            groupTabs.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            groupTabs.Size = new Size(1000, 56);
+            groupTabs.TabIndex = 3;
+            groupTabs.TextAlign = HorizontalAlignment.Center;
+            groupTabs.UseTransparentBackground = true;
             // 
-            // tabPage5
+            // textSettings
             // 
-            tabPage5.BackgroundImage = (Image)resources.GetObject("tabPage5.BackgroundImage");
-            tabPage5.BackgroundImageLayout = ImageLayout.Stretch;
-            tabPage5.Controls.Add(guna2ShadowPanel4);
-            tabPage5.Location = new Point(4, 4);
-            tabPage5.Name = "tabPage5";
-            tabPage5.Padding = new Padding(3);
-            tabPage5.Size = new Size(1432, 772);
-            tabPage5.TabIndex = 4;
-            tabPage5.Text = "tabPage5";
-            tabPage5.UseVisualStyleBackColor = true;
+            textSettings.BackColor = Color.FromArgb(224, 224, 224);
+            textSettings.Font = new Font("Jura SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            textSettings.ForeColor = Color.FromArgb(135, 128, 128);
+            textSettings.Location = new Point(21, 447);
+            textSettings.Name = "textSettings";
+            textSettings.Size = new Size(90, 24);
+            textSettings.TabIndex = 9;
+            textSettings.Text = "Настройки";
             // 
-            // guna2ShadowPanel4
+            // btnProfile
             // 
-            guna2ShadowPanel4.BackColor = Color.Transparent;
-            guna2ShadowPanel4.FillColor = Color.FromArgb(224, 224, 224);
-            guna2ShadowPanel4.Location = new Point(-208, 70);
-            guna2ShadowPanel4.Name = "guna2ShadowPanel4";
-            guna2ShadowPanel4.Radius = 120;
-            guna2ShadowPanel4.ShadowColor = Color.Black;
-            guna2ShadowPanel4.Size = new Size(425, 609);
-            guna2ShadowPanel4.TabIndex = 1;
+            btnProfile.BackColor = Color.Transparent;
+            btnProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnProfile.BorderColor = Color.Transparent;
+            btnProfile.BorderThickness = 2;
+            btnProfile.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnProfile.CheckedState.BorderColor = Color.FromArgb(227, 89, 164);
+            btnProfile.CheckedState.CustomBorderColor = Color.Transparent;
+            btnProfile.CheckedState.FillColor = Color.Transparent;
+            btnProfile.CheckedState.ForeColor = Color.Transparent;
+            btnProfile.CheckedState.Image = (Image)resources.GetObject("resource.Image");
+            btnProfile.CustomBorderColor = Color.Transparent;
+            btnProfile.DisabledState.BorderColor = Color.DarkGray;
+            btnProfile.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnProfile.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnProfile.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnProfile.FillColor = Color.Empty;
+            btnProfile.Font = new Font("Segoe UI", 9F);
+            btnProfile.ForeColor = Color.White;
+            btnProfile.HoverState.BorderColor = Color.DarkGray;
+            btnProfile.HoverState.CustomBorderColor = Color.Transparent;
+            btnProfile.HoverState.FillColor = Color.Transparent;
+            btnProfile.HoverState.ForeColor = Color.Transparent;
+            btnProfile.Image = (Image)resources.GetObject("btnProfile.Image");
+            btnProfile.ImageOffset = new Point(1, 0);
+            btnProfile.ImageSize = new Size(90, 90);
+            btnProfile.Location = new Point(7, 183);
+            btnProfile.Name = "btnProfile";
+            btnProfile.PressedColor = Color.FromArgb(227, 89, 164);
+            btnProfile.PressedDepth = 1;
+            btnProfile.ShadowDecoration.BorderRadius = 0;
+            btnProfile.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            btnProfile.ShadowDecoration.Depth = 0;
+            btnProfile.Size = new Size(110, 110);
+            btnProfile.TabIndex = 4;
+            btnProfile.UseTransparentBackground = true;
             // 
-            // tabPage6
+            // btnContact
             // 
-            tabPage6.BackgroundImage = (Image)resources.GetObject("tabPage6.BackgroundImage");
-            tabPage6.BackgroundImageLayout = ImageLayout.Stretch;
-            tabPage6.Controls.Add(guna2ShadowPanel5);
-            tabPage6.Location = new Point(4, 4);
-            tabPage6.Name = "tabPage6";
-            tabPage6.Padding = new Padding(3);
-            tabPage6.Size = new Size(1432, 772);
-            tabPage6.TabIndex = 5;
-            tabPage6.Text = "tabPage6";
-            tabPage6.UseVisualStyleBackColor = true;
+            btnContact.BackColor = Color.Transparent;
+            btnContact.BackgroundImageLayout = ImageLayout.Stretch;
+            btnContact.BorderColor = Color.Empty;
+            btnContact.BorderThickness = 2;
+            btnContact.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnContact.CheckedState.BorderColor = Color.FromArgb(227, 89, 164);
+            btnContact.CheckedState.CustomBorderColor = Color.Transparent;
+            btnContact.CheckedState.FillColor = Color.Transparent;
+            btnContact.CheckedState.ForeColor = Color.Transparent;
+            btnContact.CheckedState.Image = (Image)resources.GetObject("resource.Image1");
+            btnContact.DisabledState.BorderColor = Color.DarkGray;
+            btnContact.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnContact.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnContact.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnContact.FillColor = Color.Empty;
+            btnContact.Font = new Font("Segoe UI", 9F);
+            btnContact.ForeColor = Color.White;
+            btnContact.HoverState.BorderColor = Color.DarkGray;
+            btnContact.HoverState.CustomBorderColor = Color.Transparent;
+            btnContact.HoverState.FillColor = Color.Transparent;
+            btnContact.HoverState.ForeColor = Color.Transparent;
+            btnContact.Image = (Image)resources.GetObject("btnContact.Image");
+            btnContact.ImageOffset = new Point(1, 0);
+            btnContact.ImageSize = new Size(90, 90);
+            btnContact.Location = new Point(7, 483);
+            btnContact.Name = "btnContact";
+            btnContact.ShadowDecoration.BorderRadius = 0;
+            btnContact.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnContact.ShadowDecoration.Depth = 0;
+            btnContact.Size = new Size(110, 110);
+            btnContact.TabIndex = 6;
+            btnContact.UseTransparentBackground = true;
             // 
-            // guna2ShadowPanel5
+            // textHome
             // 
-            guna2ShadowPanel5.BackColor = Color.Transparent;
-            guna2ShadowPanel5.FillColor = Color.FromArgb(224, 224, 224);
-            guna2ShadowPanel5.Location = new Point(-208, 70);
-            guna2ShadowPanel5.Name = "guna2ShadowPanel5";
-            guna2ShadowPanel5.Radius = 120;
-            guna2ShadowPanel5.ShadowColor = Color.Black;
-            guna2ShadowPanel5.Size = new Size(425, 609);
-            guna2ShadowPanel5.TabIndex = 1;
+            textHome.BackColor = Color.FromArgb(224, 224, 224);
+            textHome.Font = new Font("Jura SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            textHome.ForeColor = Color.FromArgb(135, 128, 128);
+            textHome.Location = new Point(27, 295);
+            textHome.Name = "textHome";
+            textHome.Size = new Size(75, 24);
+            textHome.TabIndex = 8;
+            textHome.Text = "Профиль";
             // 
-            // tabPage7
+            // btnSettings
             // 
-            tabPage7.BackgroundImage = (Image)resources.GetObject("tabPage7.BackgroundImage");
-            tabPage7.BackgroundImageLayout = ImageLayout.Stretch;
-            tabPage7.Controls.Add(guna2ShadowPanel6);
-            tabPage7.Location = new Point(4, 4);
-            tabPage7.Name = "tabPage7";
-            tabPage7.Padding = new Padding(3);
-            tabPage7.Size = new Size(1432, 772);
-            tabPage7.TabIndex = 6;
-            tabPage7.Text = "tabPage7";
-            tabPage7.UseVisualStyleBackColor = true;
+            btnSettings.BackColor = Color.Transparent;
+            btnSettings.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSettings.BorderColor = Color.Empty;
+            btnSettings.BorderThickness = 2;
+            btnSettings.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnSettings.CheckedState.BorderColor = Color.FromArgb(227, 89, 164);
+            btnSettings.CheckedState.CustomBorderColor = Color.Transparent;
+            btnSettings.CheckedState.FillColor = Color.Transparent;
+            btnSettings.CheckedState.ForeColor = Color.Transparent;
+            btnSettings.CheckedState.Image = (Image)resources.GetObject("resource.Image2");
+            btnSettings.DisabledState.BorderColor = Color.DarkGray;
+            btnSettings.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSettings.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSettings.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSettings.FillColor = Color.Empty;
+            btnSettings.Font = new Font("Segoe UI", 9F);
+            btnSettings.ForeColor = Color.White;
+            btnSettings.HoverState.BorderColor = Color.DarkGray;
+            btnSettings.HoverState.CustomBorderColor = Color.Transparent;
+            btnSettings.HoverState.FillColor = Color.Transparent;
+            btnSettings.HoverState.ForeColor = Color.Transparent;
+            btnSettings.Image = (Image)resources.GetObject("btnSettings.Image");
+            btnSettings.ImageOffset = new Point(1, 0);
+            btnSettings.ImageSize = new Size(90, 90);
+            btnSettings.Location = new Point(7, 334);
+            btnSettings.Name = "btnSettings";
+            btnSettings.ShadowDecoration.BorderRadius = 0;
+            btnSettings.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            btnSettings.ShadowDecoration.Depth = 0;
+            btnSettings.Size = new Size(110, 110);
+            btnSettings.TabIndex = 5;
+            btnSettings.UseTransparentBackground = true;
             // 
-            // guna2ShadowPanel6
+            // guna2CirclePictureBox1
             // 
-            guna2ShadowPanel6.BackColor = Color.Transparent;
-            guna2ShadowPanel6.FillColor = Color.FromArgb(224, 224, 224);
-            guna2ShadowPanel6.Location = new Point(-208, 70);
-            guna2ShadowPanel6.Name = "guna2ShadowPanel6";
-            guna2ShadowPanel6.Radius = 120;
-            guna2ShadowPanel6.ShadowColor = Color.Black;
-            guna2ShadowPanel6.Size = new Size(425, 609);
-            guna2ShadowPanel6.TabIndex = 1;
+            guna2CirclePictureBox1.BackColor = Color.Transparent;
+            guna2CirclePictureBox1.FillColor = Color.FromArgb(224, 224, 224);
+            guna2CirclePictureBox1.ImageRotate = 0F;
+            guna2CirclePictureBox1.Location = new Point(-202, 79);
+            guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            guna2CirclePictureBox1.ShadowDecoration.BorderRadius = 550;
+            guna2CirclePictureBox1.ShadowDecoration.Color = Color.IndianRed;
+            guna2CirclePictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            guna2CirclePictureBox1.ShadowDecoration.Shadow = new Padding(20);
+            guna2CirclePictureBox1.Size = new Size(381, 643);
+            guna2CirclePictureBox1.TabIndex = 1;
+            guna2CirclePictureBox1.TabStop = false;
+            guna2CirclePictureBox1.UseTransparentBackground = true;
             // 
-            // tabPage8
+            // tabPage2
             // 
-            tabPage8.BackgroundImage = (Image)resources.GetObject("tabPage8.BackgroundImage");
-            tabPage8.BackgroundImageLayout = ImageLayout.Stretch;
-            tabPage8.Controls.Add(guna2ShadowPanel7);
-            tabPage8.Location = new Point(4, 4);
-            tabPage8.Name = "tabPage8";
-            tabPage8.Padding = new Padding(3);
-            tabPage8.Size = new Size(1432, 772);
-            tabPage8.TabIndex = 7;
-            tabPage8.Text = "tabPage8";
-            tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // guna2ShadowPanel7
-            // 
-            guna2ShadowPanel7.BackColor = Color.Transparent;
-            guna2ShadowPanel7.FillColor = Color.FromArgb(224, 224, 224);
-            guna2ShadowPanel7.Location = new Point(-208, 70);
-            guna2ShadowPanel7.Name = "guna2ShadowPanel7";
-            guna2ShadowPanel7.Radius = 120;
-            guna2ShadowPanel7.ShadowColor = Color.Black;
-            guna2ShadowPanel7.Size = new Size(425, 609);
-            guna2ShadowPanel7.TabIndex = 1;
-            // 
-            // bunifuShadowPanel1
-            // 
-            bunifuShadowPanel1.BackColor = Color.Transparent;
-            bunifuShadowPanel1.BorderColor = Color.FromArgb(224, 224, 224);
-            bunifuShadowPanel1.BorderRadius = 280;
-            bunifuShadowPanel1.BorderThickness = 1;
-            bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            bunifuShadowPanel1.Location = new Point(-110, 79);
-            bunifuShadowPanel1.Name = "bunifuShadowPanel1";
-            bunifuShadowPanel1.PanelColor = Color.FromArgb(224, 224, 224);
-            bunifuShadowPanel1.PanelColor2 = Color.FromArgb(224, 224, 224);
-            bunifuShadowPanel1.ShadowColor = Color.Black;
-            bunifuShadowPanel1.ShadowDept = 2;
-            bunifuShadowPanel1.ShadowDepth = 5;
-            bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.ForwardDiagonal;
-            bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            bunifuShadowPanel1.Size = new Size(593, 737);
-            bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            bunifuShadowPanel1.TabIndex = 2;
-            // 
-            // bunifuShadowPanel2
-            // 
-            bunifuShadowPanel2.BackColor = Color.Transparent;
-            bunifuShadowPanel2.BorderColor = Color.FromArgb(224, 224, 224);
-            bunifuShadowPanel2.BorderRadius = 260;
-            bunifuShadowPanel2.BorderThickness = 0;
-            bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Gradient;
-            bunifuShadowPanel2.ForeColor = Color.Transparent;
-            bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.ForwardDiagonal;
-            bunifuShadowPanel2.Location = new Point(-208, 70);
-            bunifuShadowPanel2.Name = "bunifuShadowPanel2";
-            bunifuShadowPanel2.PanelColor = Color.FromArgb(224, 224, 224);
-            bunifuShadowPanel2.PanelColor2 = Color.FromArgb(224, 230, 224);
-            bunifuShadowPanel2.RightToLeft = RightToLeft.No;
-            bunifuShadowPanel2.ShadowColor = Color.Black;
-            bunifuShadowPanel2.ShadowDept = 2;
-            bunifuShadowPanel2.ShadowDepth = 3;
-            bunifuShadowPanel2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            bunifuShadowPanel2.ShadowTopLeftVisible = false;
-            bunifuShadowPanel2.Size = new Size(425, 609);
-            bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            bunifuShadowPanel2.TabIndex = 3;
-            // 
-            // guna2ShadowPanel1
-            // 
-            guna2ShadowPanel1.BackColor = Color.Transparent;
-            guna2ShadowPanel1.FillColor = Color.FromArgb(224, 224, 224);
-            guna2ShadowPanel1.Location = new Point(-208, 70);
-            guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            guna2ShadowPanel1.Radius = 120;
-            guna2ShadowPanel1.ShadowColor = Color.Black;
-            guna2ShadowPanel1.Size = new Size(425, 609);
-            guna2ShadowPanel1.TabIndex = 2;
+            tabPage2.Location = new Point(4, 5);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(1292, 771);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "tabPage2";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1440, 800);
-            Controls.Add(bunifuPages1);
+            ClientSize = new Size(1280, 760);
+            Controls.Add(Tabs);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Name = "MainForm";
+            Opacity = 0D;
             Text = "BeautyLab";
             Load += MainForm_Load;
-            adminHome.ResumeLayout(false);
-            bunifuPages1.ResumeLayout(false);
-            adminRecord.ResumeLayout(false);
-            adminMaterial.ResumeLayout(false);
-            adminReport.ResumeLayout(false);
-            tabPage5.ResumeLayout(false);
-            tabPage6.ResumeLayout(false);
-            tabPage7.ResumeLayout(false);
-            tabPage8.ResumeLayout(false);
+            Tabs.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            tabPage1.PerformLayout();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)guna2CirclePictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm BorderForm;
-        private Guna.UI2.WinForms.Guna2Elipse ElipsePanel;
-        private Bunifu.UI.WinForms.BunifuPages bunifuPages1;
-        private TabPage adminHome;
-        private TabPage adminRecord;
-        private TabPage adminMaterial;
-        private TabPage adminReport;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel3;
-        private TabPage tabPage5;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel4;
-        private TabPage tabPage6;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel5;
-        private TabPage tabPage7;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel6;
-        private TabPage tabPage8;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel7;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private TabControl tabControl1;
+        private TabPage tabPage3;
+        private TabPage tabPage4;
+        private Guna.UI2.WinForms.Guna2TabControl Tabs;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private Bunifu.UI.WinForms.BunifuFormCaptionButton btnExit;
+        private Guna.UI2.WinForms.Guna2GroupBox groupTabs;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnProfile;
+        private Guna.UI2.WinForms.Guna2CircleButton btnContact;
+        private Guna.UI2.WinForms.Guna2CircleButton btnSettings;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel textHome;
+        private Guna.UI2.WinForms.Guna2HtmlLabel textContact;
+        private Guna.UI2.WinForms.Guna2HtmlLabel textSettings;
+        private Panel panel1;
     }
 }
