@@ -37,4 +37,8 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Animations\Новая папка\" />
+  </ItemGroup>
+
 </Project>

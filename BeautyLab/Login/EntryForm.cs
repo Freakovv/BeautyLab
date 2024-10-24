@@ -4,6 +4,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Drawing;
 using Guna.UI2.WinForms;
+using BeautyLab.Infrastructure;
 
 namespace BeautyLab
 {

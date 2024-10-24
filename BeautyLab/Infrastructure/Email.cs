@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Mail;
 using Guna.UI2.WinForms;
 
-namespace BeautyLab
+namespace BeautyLab.Infrastructure
 {
     internal class Email(Guna2MessageDialog message)
     {

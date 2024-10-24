@@ -61,8 +61,8 @@ namespace BeautyLab
                     else
                     {
                         timer_animation.Stop();
-                        BeautyLab.EntryForm adEntryForm = new EntryForm();
-                        this.Hide();
+                        EntryForm adEntryForm = new EntryForm();
+                        Hide();
                         adEntryForm.Show();
                     }
                     break;

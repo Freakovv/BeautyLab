@@ -52,7 +52,6 @@
             Name = "Overlay";
             Opacity = 0.5D;
             Text = "Overlay";
-            Load += Overlay_Load;
             ResumeLayout(false);
         }
 

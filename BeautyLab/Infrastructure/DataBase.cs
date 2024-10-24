@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 
-namespace BeautyLab
+namespace BeautyLab.Infrastructure
 {
     internal class DataBase
     {

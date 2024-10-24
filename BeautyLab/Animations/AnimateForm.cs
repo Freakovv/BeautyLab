@@ -1,7 +1,7 @@
 ﻿using System;
 using Timer = System.Windows.Forms.Timer;
 
-namespace BeautyLab
+namespace BeautyLab.Animations
 {
     internal class AnimateForm
     {
