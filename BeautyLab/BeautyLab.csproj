@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Animations\Новая папка\" />
+    <Folder Include="Tabs\Master-Tabs\" />
   </ItemGroup>
 
 </Project>

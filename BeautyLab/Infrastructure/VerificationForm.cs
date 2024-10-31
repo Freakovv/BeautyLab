@@ -45,7 +45,7 @@ namespace BeautyLab
             }
         }
 
-        public bool getResult()
+        public bool GetResult()
         {
             return result;
         }

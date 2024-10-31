@@ -3,6 +3,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Drawing;
+using BeautyLab.Animations;
 using Guna.UI2.WinForms;
 using BeautyLab.Infrastructure;
 
@@ -19,7 +20,8 @@ namespace BeautyLab
 
         private void EntryForm_Load(object sender, EventArgs e)
         {
-            FadeIn.Start();
+            AnimateForm FadeIn = new AnimateForm(this);
+            FadeIn.Start(true);
         }
 
         // Вход в аккаунт
@@ -85,7 +87,7 @@ namespace BeautyLab
             ShowOverlay();
             verification.ShowDialog();
             HideOverlay();
-            return verification.getResult();
+            return verification.GetResult();
         }
 
         // Настройка окна

@@ -13,18 +13,22 @@ using static System.Windows.Forms.LinkLabel;
 
 namespace BeautyLab
 {
+    //TODO: Распределние ролей
+    //Панель с доступным меню пользователя будет расположена вместо админской
+    //Доступ будет осуществляться по сохраненному уровню доступа из бд
     public partial class MainForm : Form
     {
         private readonly Font defaultFont;
         private readonly Font activeFont;
 
-        private admHome mainWindow;
+        private HomeControl mainWindow;
         public MainForm()
         {
             InitializeComponent();
             defaultFont = new Font("Jura", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
             activeFont = new Font(defaultFont, defaultFont.Style | FontStyle.Underline);
-            mainWindow = new admHome();
+            mainWindow = new HomeControl();
+            OpenWindow(mainWindow);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
