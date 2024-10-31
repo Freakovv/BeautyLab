@@ -25,3 +25,6 @@ Desktop.ini
 
 # git directories
 .git/
+
+# Support programs
+jcpicker.exe
