@@ -141,6 +141,7 @@
             btnContact.Size = new Size(110, 110);
             btnContact.TabIndex = 29;
             btnContact.UseTransparentBackground = true;
+            btnContact.Click += btnContact_Click;
             // 
             // txtProfile
             // 

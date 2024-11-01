@@ -27,7 +27,7 @@ namespace BeautyLab
             InitializeComponent();
             defaultFont = new Font("Jura", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
             activeFont = new Font(defaultFont, defaultFont.Style | FontStyle.Underline);
-            mainWindow = new HomeControl();
+            mainWindow = new HomeControl(this);
             OpenWindow(mainWindow);
         }
 
@@ -40,6 +40,7 @@ namespace BeautyLab
         {
             AnimateForm animation = new AnimateForm(this);
             animation.Start(true);
+            ToggleUnderline(linkHome);
         }
         private void ToggleUnderline(Label selectedLabel)
         {
@@ -84,5 +85,6 @@ namespace BeautyLab
             control.BringToFront();
             control.Show();
         }
+
     }
 }

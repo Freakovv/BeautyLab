@@ -97,10 +97,10 @@
             btnExit.Image = (Image)resources.GetObject("btnExit.Image");
             btnExit.ImageMargin = new Padding(1, 1, 0, 0);
             btnExit.ImageSize = new Size(20, 20);
-            btnExit.Location = new Point(1239, -1);
+            btnExit.Location = new Point(1241, -2);
             btnExit.Name = "btnExit";
             btnExit.ShowBorders = true;
-            btnExit.Size = new Size(40, 30);
+            btnExit.Size = new Size(40, 32);
             btnExit.TabIndex = 2;
             btnExit.Click += btnExit_Click;
             // 
@@ -205,7 +205,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2BorderlessForm BorderForm;
+        public Guna.UI2.WinForms.Guna2BorderlessForm BorderForm;
         private Label linkHome;
         private Panel DragPanel;
         private Bunifu.UI.WinForms.BunifuFormCaptionButton btnExit;

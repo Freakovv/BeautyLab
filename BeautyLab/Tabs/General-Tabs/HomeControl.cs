@@ -18,12 +18,17 @@ namespace BeautyLab
     {
         private admProfile profileTab;
         private SettingsControl settingsTab;
-        public HomeControl()
+        private ContactControl contactTab;
+        public HomeControl(MainForm form)
         {
             profileTab = new admProfile();
-            settingsTab = new SettingsControl();
+            settingsTab = new SettingsControl(form);
+            contactTab = new ContactControl();
             InitializeComponent();
+            refForm = form;
         }
+
+        private MainForm? refForm;
 
         private bool isProfileTabOpen = false;
 
@@ -42,11 +47,11 @@ namespace BeautyLab
                 isSettingsTabOpen = false;
             }
 
-            isProfileTabOpen =! isProfileTabOpen;
+            isProfileTabOpen =!isProfileTabOpen;
         }
 
         private UserControl activeControl;
-        private void OpenWindow(UserControl control)
+        private void OpenWindow(UserControl control, MainForm form = null)
         {
             control.Dock = DockStyle.Fill;
             panelWindow.Controls.Add(control);
@@ -61,7 +66,7 @@ namespace BeautyLab
                 if (item is UserControl)
                 {
                     item.Hide();
-                }       
+                }
             }
         }
 
@@ -77,12 +82,17 @@ namespace BeautyLab
             {
                 OpenWindow(settingsTab);
                 btnSettings.Checked = true;
-                
+
                 isProfileTabOpen = false;
             }
 
             isSettingsTabOpen =!isSettingsTabOpen;
         }
+        
         //TODO: Доделать страничку контакты
+        private void btnContact_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
