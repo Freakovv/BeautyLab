@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BeautyLab.Animations;
+using Guna.UI2.AnimatorNS;
+using Guna.UI2.WinForms;
 using static System.Windows.Forms.LinkLabel;
 
 namespace BeautyLab
@@ -22,13 +24,16 @@ namespace BeautyLab
         private readonly Font activeFont;
 
         private HomeControl mainWindow;
+        Guna2Transition animator;
         public MainForm()
         {
             InitializeComponent();
             defaultFont = new Font("Jura", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
             activeFont = new Font(defaultFont, defaultFont.Style | FontStyle.Underline);
             mainWindow = new HomeControl(this);
-            OpenWindow(mainWindow);
+            animator = new Guna2Transition();
+            animator.Interval = 1;
+            animator.AnimationType = AnimationType.Transparent;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -41,6 +46,7 @@ namespace BeautyLab
             AnimateForm animation = new AnimateForm(this);
             animation.Start(true);
             ToggleUnderline(linkHome);
+            OpenTab(mainWindow);
         }
         private void ToggleUnderline(Label selectedLabel)
         {
@@ -57,8 +63,11 @@ namespace BeautyLab
 
         private void linkHome_Click(object sender, EventArgs e)
         {
-            ToggleUnderline(linkHome);
-            OpenWindow(mainWindow);
+            if (!CheckActiveWindow(mainWindow))
+            {
+                ToggleUnderline(linkHome);
+                OpenTab(mainWindow);
+            }
         }
         private void linkRecord_Click(object sender, EventArgs e)
         {
@@ -74,16 +83,41 @@ namespace BeautyLab
         }
 
         private UserControl activeControl = null;
-        private void OpenWindow(UserControl control)
+        private void OpenTab(UserControl control)
         {
             if (activeControl != null)
+            {
                 activeControl.Hide();
+                activeControl.Enabled = false;
+            }
             activeControl = control;
+            activeControl.Enabled = true;
             control.Dock = DockStyle.Fill;
             panelWindow.Controls.Add(control);
             panelWindow.Tag = control;
             control.BringToFront();
+            //animator.ShowSync(control);
             control.Show();
+        }
+        //private void CloseTab(UserControl control)
+        //{
+        //    animator.HideSync(control);
+        //    activeControl = null;
+        //}
+
+        private bool CheckActiveWindow(UserControl control)
+        {
+            foreach (var element in panelWindow.Controls)
+            {
+                if (element == control)
+                {
+                    if (control.Enabled)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
 
     }

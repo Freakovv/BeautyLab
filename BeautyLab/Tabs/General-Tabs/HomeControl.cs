@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using BeautyLab.Tabs;
 using BeautyLab.Tabs.General_Tabs;
+using Guna.UI2.AnimatorNS;
+using Guna.UI2.WinForms;
 using K4os.Hash.xxHash;
 
 namespace BeautyLab
@@ -41,9 +43,11 @@ namespace BeautyLab
             }
             else
             {
-                OpenWindow(profileTab);
+                OpenTab(profileTab);
                 btnProfile.Checked = true;
 
+                isProfileTabOpen = true;
+                isContactTabOpen = false;
                 isSettingsTabOpen = false;
             }
 
@@ -51,12 +55,16 @@ namespace BeautyLab
         }
 
         private UserControl activeControl;
-        private void OpenWindow(UserControl control, MainForm form = null)
+        private void OpenTab(UserControl control, MainForm form = null)
         {
             control.Dock = DockStyle.Fill;
             panelWindow.Controls.Add(control);
             control.BringToFront();
-            control.Show();
+            Guna2Transition trans = new Guna2Transition();
+            trans.AnimationType = AnimationType.Transparent;
+            trans.ShowSync(control);
+            
+            //control.Show();
         }
 
         private void CloseCustomWindows()
@@ -80,19 +88,34 @@ namespace BeautyLab
             }
             else
             {
-                OpenWindow(settingsTab);
+                OpenTab(settingsTab);
                 btnSettings.Checked = true;
 
                 isProfileTabOpen = false;
+                isSettingsTabOpen = true;
+                isContactTabOpen = false;
             }
 
             isSettingsTabOpen =!isSettingsTabOpen;
         }
-        
-        //TODO: Доделать страничку контакты
+        private bool isContactTabOpen = false;
         private void btnContact_Click(object sender, EventArgs e)
         {
+            if (isContactTabOpen)
+            {
+                CloseCustomWindows();
+                btnContact.Checked = false;
+            }
+            else
+            {
+                OpenTab(contactTab);
+                btnContact.Checked = true;
 
+                isProfileTabOpen = false;
+                isSettingsTabOpen = false;
+                isContactTabOpen = true;
+            }
+            isContactTabOpen =!isContactTabOpen;
         }
     }
 }
