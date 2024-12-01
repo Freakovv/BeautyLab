@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
 using System.Net;
 using System.Net.Mail;
-using Guna.UI2.WinForms;
 
 namespace BeautyLab.Infrastructure
 {
@@ -10,7 +9,7 @@ namespace BeautyLab.Infrastructure
         private const string SmtpServer = "smtp.gmail.com";
         private const int SmtpPort = 587;
         private const string SmtpUsername = "beautylab.service@gmail.com";
-        private const string SmtpPassword = "xyrp gwja pdyd mdpe";
+        private const string SmtpPassword = "ckps erik xmxp zywi";
         private readonly Guna2MessageDialog _message = message;
 
         public int GenerateSecurityCode()

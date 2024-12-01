@@ -1,18 +1,15 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
 using System.Data;
-using System.Data.SqlClient;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
 
 namespace BeautyLab.Infrastructure
 {
     internal class DataBase
     {
         private readonly SqlConnection _homeConnection = new SqlConnection(
-            @"Data Source=DESKTOP-MF1UJ07\FREAKOVVSERVER;Initial Catalog=BeautyLab; Integrated Security=True; TrustServerCertificate=True");
+            @"Data Source=Freakovv;Initial Catalog=BeautyLab;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False");
 
         public void OpenConnection()
         {

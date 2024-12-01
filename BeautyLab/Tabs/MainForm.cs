@@ -1,37 +1,53 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using BeautyLab.Animations;
+﻿using BeautyLab.Animations;
 using Guna.UI2.AnimatorNS;
 using Guna.UI2.WinForms;
-using static System.Windows.Forms.LinkLabel;
 
 namespace BeautyLab
 {
-    //TODO: Распределние ролей
-    //Панель с доступным меню пользователя будет расположена вместо админской
-    //Доступ будет осуществляться по сохраненному уровню доступа из бд
+    // TODO: Распределние ролей
+    // Панель с доступными ссылками пользователя будет расположена поверх админской
+    // Доступ будет осуществляться по сохраненному уровню доступа из бд
+
+    /// <summary>
+    /// Основной класс разработанный для управления основной формы
+    /// </summary>
     public partial class MainForm : Form
     {
+
+        /// <summary>
+        /// Объявление шрифтов
+        /// </summary>
         private readonly Font defaultFont;
         private readonly Font activeFont;
 
-        private HomeControl mainWindow;
-        Guna2Transition animator;
+
+        /// <summary>
+        /// Объявление страницы
+        /// </summary>
+        private HomeControl homeWindow;
+        private Guna2Transition animator;
+
+
         public MainForm()
         {
             InitializeComponent();
+
+            /// <summary>
+            /// Настройка стандартных шрифтов
+            /// </summary>
             defaultFont = new Font("Jura", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
             activeFont = new Font(defaultFont, defaultFont.Style | FontStyle.Underline);
-            mainWindow = new HomeControl(this);
+
+
+            /// <summary>
+            /// Создание экземпляров классов
+            /// </summary>
+            homeWindow = new HomeControl(this);
             animator = new Guna2Transition();
+
+            /// <summary>
+            /// Настройки классов
+            /// </summary>
             animator.Interval = 1;
             animator.AnimationType = AnimationType.Transparent;
         }
@@ -46,8 +62,9 @@ namespace BeautyLab
             AnimateForm animation = new AnimateForm(this);
             animation.Start(true);
             ToggleUnderline(linkHome);
-            OpenTab(mainWindow);
+            OpenTab(homeWindow);
         }
+
         private void ToggleUnderline(Label selectedLabel)
         {
             foreach (Control control in panelLinks.Controls)
@@ -61,12 +78,16 @@ namespace BeautyLab
             selectedLabel.Font = activeFont;
         }
 
+        /// <summary>
+        /// Гиперссылки для открытия страниц
+        /// </summary>
+
         private void linkHome_Click(object sender, EventArgs e)
         {
-            if (!CheckActiveWindow(mainWindow))
+            if (!CheckActiveWindow(homeWindow))
             {
                 ToggleUnderline(linkHome);
-                OpenTab(mainWindow);
+                OpenTab(homeWindow);
             }
         }
         private void linkRecord_Click(object sender, EventArgs e)
@@ -82,6 +103,13 @@ namespace BeautyLab
             ToggleUnderline(linkReport);
         }
 
+
+        /// <summary>
+        /// Переменная activeControl записывает текущую страницу на главной панели
+        /// Функция для открытия страницы на главной панели
+        /// Задает окну параметры для корректного отображения
+        /// Уничтожает активный (прошлый) контроллер
+        /// </summary>
         private UserControl activeControl = null;
         private void OpenTab(UserControl control)
         {
@@ -96,15 +124,17 @@ namespace BeautyLab
             panelWindow.Controls.Add(control);
             panelWindow.Tag = control;
             control.BringToFront();
-            //animator.ShowSync(control);
             control.Show();
         }
-        //private void CloseTab(UserControl control)
-        //{
-        //    animator.HideSync(control);
-        //    activeControl = null;
-        //}
 
+
+        /// <summary>
+        /// Проверяет, открыт ли контроллер перебирая все элементы главной панели
+        /// Используется для корректной визуальной работы ссылок (подчеркивания)
+        /// Пренебрежение функцией вызывает проблемы с работой интерфейса
+        /// </summary>
+        /// <param name="control">Активный контроллер для проверки</param>
+        /// <returns>Включает ли панель в себя контроллер</returns>
         private bool CheckActiveWindow(UserControl control)
         {
             foreach (var element in panelWindow.Controls)
