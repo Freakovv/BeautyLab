@@ -12,7 +12,7 @@ namespace BeautyLab.Infrastructure
     internal class DataBase
     {
         private readonly SqlConnection _homeConnection = new SqlConnection(
-            @"Data Source=DESKTOP-16N2RPD\FREAKOVVSERVER;Initial Catalog=BeautyLab; Integrated Security=True; TrustServerCertificate=True");
+            @"Data Source=DESKTOP-MF1UJ07\FREAKOVVSERVER;Initial Catalog=BeautyLab; Integrated Security=True; TrustServerCertificate=True");
 
         public void OpenConnection()
         {

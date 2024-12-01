@@ -144,21 +144,6 @@
         s9PGg3Z25h94VJKYXR586t2boaoydWE2ZsyYRP4DcAskwhiRpG0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="FormCaptionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAV9JREFUeF7t
-        mltKxEAQRe+CBBczn7oBP9VtqAsWGaVgLkjRCZOZdFd15R7oj0kCqXPy+BgCCCGEEEIIITby6DcEMnyW
-        LwBnAC9+RwA2g83y6Xf04gPA72VFR6A857HZuvIA4OffCW3Z7yd/4ACeF2axGbtyAvDtTjz6TvBX3pbN
-        ZLMNITJCuDyJiJBGnoyMkE6ejIiQVp70jJBenvSIMI082TPCdPJkjwjTypN7IkwvT26JUEaebIlQTp5c
-        E6GsPFmLUF6eLEU4hDxpRTiMPDFB/0eGLdtWXt5oPfO2/IuxJEvyh4jQkrfb3j8OJSO05PnCa70YS0VY
-        kydlI1wjT8pF2CJPykS4RZ5MH+EeeTJthD3kyXQR9pQn00ToIU/SR+gpT9JGGCFP0kUYKU/SRIiQJ+ER
-        IuVJWAR9IgPgLfDKe/yd8OoP6MV7AnnCCDbTUIZ/nLhCplmEEEIIIYSYgT/uW6BKJvM8NgAAAABJRU5E
-        rkJggg==
-</value>
-  </data>
-  <metadata name="txtTerms.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <data name="txtTerms.DefaultText" xml:space="preserve">
     <value>Условия использования приложения для мастеров салона красоты
 
@@ -296,21 +281,22 @@
   </data>
   <data name="btnEnter.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAANYAAAAyCAYAAAAgNiW6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALfSURBVHhe7d0tkNNAFMDxSiQSiUQikSeRGNgEcyeRSGQc
-        EonMTHY7lSeRSCTyZCZNZyorT8K8TSdMXtLms1yb/t/MryYfjcib3Wx2XxaLE0Zu7I3IjLvLQxsBT83f
-        i/v7Mr2Nn+l79uxi89G93oTuWx7aNA/dH+CCbNeh/b4Okrf6vn6SkGSSC5ILa7hY4PIYt8uDZSwtmr7f
-        Tx7p+/iF/3N9UcCMZKH7KY2Hvv8nj/Q2fr4J3NfcuEd9EcBsBXaVmtVLnQ+ThGQuz0+4Wsbt1mHyTufF
-        qJAT+r6n/jPgymSB/azzY1DIifTJgasWLONRQ/VZaL/UTgrAP3fpfOkUvvunTwagJA2Pzpuj4QcqGPkD
-        WnUe0PDvqBj9A7ox7jENl690HtWimJbUcAIAjeRFss6jSshLMLqAQH9Hu4S5cff6AADtMpP81vnko5hZ
-        UT8AQDdZ4D7pvFowqRYYJwvcL51X0g1kyhIwUmWyrl9R2bATgH4q3cH9YsXaTgB6+/GvxWIFMDANeWEs
-        E3Tlp7YRwGD+Ocu/FG7YCGAgqZfBwAUwrXWYBIui5l99I4Bh/CpjVggDU7MRXUFgYtILXMhaEr0BwHC+
-        oq7UCtQbAAxXFvlkDRYwHVmFXyRWYFd6I4D+KuuyGHIHpmKjMrH8cxbdQWC8D/ZNmVgSMiu3thOAHmxa
-        SSoJmYZR3xFAV1LhTOeVD3nw0jsD6MC4XTkaqIOy0sAwrV8h4VkL6G3b+vUR6rYD/fi5gV1CCmLogwHU
-        Sb0YnT9HgxruwHFSs721C9gUPG8Bh9hUJlbonOkUcqBkZf2kwDWzaaUw55CQpo66g0Bh3/0b1lI1BUv4
-        ce2kgRn0TNUWsox/bZIH/YfAzG07D6mPif1wPNVzMW/+QyE2OkkrdSiKCro24nvFmB3jdvK66eDcv/8V
-        xUfrbMQkXlwum/p3t1LF9hyj+I6xvSnKqvkWDThLUk1J7tNOX73vGX8BkFa4fN7C7qEAAAAASUVORK5C
-        YII=
+        iVBORw0KGgoAAAANSUhEUgAAAOkAAAA5CAYAAADTCQzMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMaSURBVHhe7d0tkNNAFMDxSiQSiUQikUgkBnYXc0gkElmH
+        RCI7092bSiTyJBKJzKTpTGXlSZi37ZTJS66XafPx5u7/Zn5n8tGIvNvNZvN2NhswKhdfi9Klj1WIc+Ah
+        yff14R4vrhZP9P1vLjYf0stNSN+qEIsqpL/AI7Vdh/h97ZdvdI5MEpKYckFyYS0XCzxuLu0qf72Qllbn
+        zuBRvFs8yz+uLwpAqzKkG2nUdC71HsXV4unGp6+VS7f6IgB04OOqcKvnOrd6CfkvwPMm0AOXduuwfKtz
+        7KKQE+b+tf4xAGcrffysc+2skBPpkwPoib9eXPT6pgzxS+OkAPrl40rnXqfIXVx9MgCDkAZR5+DJyINE
+        jOACo+o8mJTfgTKKC4zPpdsiXL/QOdmI/dS+lhMAGJxMetA5WQt5yUo3F5jWyW5v5dIPfQCAcZVu+Vvn
+        Zo79jKLmAQDGV/r0SefojAnzgB2lT790jkpXl2l/gCG1ifj56/KWnQBMp9blPXy43dgJwKR+/m9JqawA
+        2COTG2TyvfxpbARgQn4uzRMYWjYCMEDqIzFoBNi1Dksvn6R5vQGADbl6A5UXAMvifLavxq03ALCBJAWM
+        I0kB40hSwDiSFDAuzinbCZgmSZrXDtUbANgg3V1mHAFmSSM6kxKCegMAG/JixLKcod4AwIbjmqaU8QRs
+        kmL1+yT1caU3AphWrbQnI7yARXF+TNL8XEqXF7DlfXx1TFIJKXrU2AnARGJRS1AJPv4G7JCF03SO5pAH
+        Vb0zgJG5tDuO6upgdW9gerlkyqng2RSY1DbX2j0VeXU1RnqBSeS5ul1C1qDQBwMYliz3onPxZMjokj4J
+        gGGUId3c281tC55PgTHEQiYU6fzrFHKgZHjzpAD6EYvaOqTnhDTBLI0I9O/QxT2vBW0LKt0D/ZGG76xn
+        0PtCSq2s3fKP/kEAnW07v2a5JA6vaFh4GOjKpZ18ejZI63lX7Bcflpq9sWhcEIA9l3byOvPOubhjRZ6l
+        FOKcCfqAiEWeZyALAFuMvHK4lAnNpUJzSws8eFLVT+55qb6pc+LS+AdjSJJGQ0UPwAAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="btnReg.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -430,6 +416,18 @@
         moFeo6EcY8xdh/Tsimr8loGGnJF0opk0EBzDlGY1XuT8l2cv8qs24hL8us/9OBsEkyFghTEYDLU5776/
         /N7i1KSdbADtQrvhr/CgTBxz9+Pexunc5+eJWrbO4cdgPLaxsbEhAgUaWmHj/1tDMsxBDo7Uct/GxsbG
         xsZi2JLbxsbGxsbq2JLbxsbGxsbq2JLbxsbGxsbqgN/evNrGmzXyf1AD4HC4/mwuAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="FormCaptionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAV9JREFUeF7t
+        mltKxEAQRe+CBBczn7oBP9VtqAsWGaVgLkjRCZOZdFd15R7oj0kCqXPy+BgCCCGEEEIIITby6DcEMnyW
+        LwBnAC9+RwA2g83y6Xf04gPA72VFR6A857HZuvIA4OffCW3Z7yd/4ACeF2axGbtyAvDtTjz6TvBX3pbN
+        ZLMNITJCuDyJiJBGnoyMkE6ejIiQVp70jJBenvSIMI082TPCdPJkjwjTypN7IkwvT26JUEaebIlQTp5c
+        E6GsPFmLUF6eLEU4hDxpRTiMPDFB/0eGLdtWXt5oPfO2/IuxJEvyh4jQkrfb3j8OJSO05PnCa70YS0VY
+        kydlI1wjT8pF2CJPykS4RZ5MH+EeeTJthD3kyXQR9pQn00ToIU/SR+gpT9JGGCFP0kUYKU/SRIiQJ+ER
+        IuVJWAR9IgPgLfDKe/yd8OoP6MV7AnnCCDbTUIZ/nLhCplmEEEIIIYSYgT/uW6BKJvM8NgAAAABJRU5E
+        rkJggg==
 </value>
   </data>
   <metadata name="dragControl.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
