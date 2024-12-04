@@ -4,6 +4,35 @@
         <name>BeautyLab</name>
     </assembly>
     <members>
+        <member name="T:BeautyLab.BeginAnimation">
+            <summary>
+            Отвечает за первоначальный показ анимации0,
+            </summary>
+        </member>
+        <member name="M:BeautyLab.BeginAnimation.#ctor">
+            <summary>
+            Стандартный конструктор
+            </summary>
+        </member>
+        <member name="F:BeautyLab.BeginAnimation.animation_type">
+            <summary>
+            Настройка типов анимаций
+            1 - fade in
+            2 - stay (waiting)
+            3 - fade out
+            </summary>
+        </member>
+        <member name="M:BeautyLab.BeginAnimation.timer_animation_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Таймер, тики которого реализуют анимацию в зависимости от типа
+            </summary>
+        </member>
+        <member name="M:BeautyLab.BeginAnimation.BeginAnimation_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            Корректное закрытие формы при ручном закрытии приложения
+            Предотвращает зависание процесса в системе после закрытия приложения
+            </summary>
+        </member>
         <member name="F:BeautyLab.BeginAnimation.components">
             <summary>
             Required designer variable.
@@ -136,18 +165,79 @@
               Поиск локализованного ресурса типа System.Drawing.Bitmap.
             </summary>
         </member>
-        <member name="F:BeautyLab.Tabs.admProfile.components">
+        <member name="F:BeautyLab.Tabs.Admin_Tabs.RecordControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BeautyLab.Tabs.Admin_Tabs.RecordControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BeautyLab.Tabs.Admin_Tabs.RecordControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BeautyLab.Tabs.ProfileControl">
+            <summary>
+            Класс для изменения пароля, удаления аккаунта, выхода из него
+            </summary>
+        </member>
+        <member name="M:BeautyLab.Tabs.ProfileControl.#ctor(BeautyLab.MainForm@,System.String)">
+            <summary>
+            Стандартный конструктор админской страницы профиля
+            </summary>
+        </member>
+        <member name="F:BeautyLab.Tabs.ProfileControl.components">
             <summary> 
             Обязательная переменная конструктора.
             </summary>
         </member>
-        <member name="M:BeautyLab.Tabs.admProfile.Dispose(System.Boolean)">
+        <member name="M:BeautyLab.Tabs.ProfileControl.Dispose(System.Boolean)">
             <summary> 
             Освободить все используемые ресурсы.
             </summary>
             <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         </member>
-        <member name="M:BeautyLab.Tabs.admProfile.InitializeComponent">
+        <member name="M:BeautyLab.Tabs.ProfileControl.InitializeComponent">
+            <summary> 
+            Требуемый метод для поддержки конструктора — не изменяйте 
+            содержимое этого метода с помощью редактора кода.
+            </summary>
+        </member>
+        <member name="F:BeautyLab.Tabs.Default_tabs.ReportControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BeautyLab.Tabs.Default_tabs.ReportControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BeautyLab.Tabs.Default_tabs.ReportControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BeautyLab.Tabs.General_Tabs.SettingsControl.components">
+            <summary> 
+            Обязательная переменная конструктора.
+            </summary>
+        </member>
+        <member name="M:BeautyLab.Tabs.General_Tabs.SettingsControl.Dispose(System.Boolean)">
+            <summary> 
+            Освободить все используемые ресурсы.
+            </summary>
+            <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        </member>
+        <member name="M:BeautyLab.Tabs.General_Tabs.SettingsControl.InitializeComponent">
             <summary> 
             Требуемый метод для поддержки конструктора — не изменяйте 
             содержимое этого метода с помощью редактора кода.
@@ -170,21 +260,21 @@
             содержимое этого метода с помощью редактора кода.
             </summary>
         </member>
-        <member name="F:BeautyLab.Tabs.General_Tabs.SettingsControl.components">
+        <member name="F:BeautyLab.Tabs.Master_Tabs.RecordAcceptControl.components">
             <summary> 
-            Обязательная переменная конструктора.
+            Required designer variable.
             </summary>
         </member>
-        <member name="M:BeautyLab.Tabs.General_Tabs.SettingsControl.Dispose(System.Boolean)">
+        <member name="M:BeautyLab.Tabs.Master_Tabs.RecordAcceptControl.Dispose(System.Boolean)">
             <summary> 
-            Освободить все используемые ресурсы.
+            Clean up any resources being used.
             </summary>
-            <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:BeautyLab.Tabs.General_Tabs.SettingsControl.InitializeComponent">
+        <member name="M:BeautyLab.Tabs.Master_Tabs.RecordAcceptControl.InitializeComponent">
             <summary> 
-            Требуемый метод для поддержки конструктора — не изменяйте 
-            содержимое этого метода с помощью редактора кода.
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
             </summary>
         </member>
         <member name="F:BeautyLab.HomeControl.components">
@@ -204,17 +294,25 @@
             содержимое этого метода с помощью редактора кода.
             </summary>
         </member>
-        <member name="F:BeautyLab.MainForm.defaultFont">
+        <member name="T:BeautyLab.MainForm">
             <summary>
             Основной класс разработанный для управления основной формы
             </summary>
+        </member>
+        <member name="F:BeautyLab.MainForm.defaultFont">
             <summary>
-            Объявление шрифтов
+            Объявление стандартных шрифтов
             </summary>
         </member>
         <member name="F:BeautyLab.MainForm.homeWindow">
             <summary>
-            Объявление страницы
+            Объявление страниц
+            </summary>
+        </member>
+        <member name="F:BeautyLab.MainForm._localEmail">
+            <summary>
+            Конструктор основной формы
+            Определяет текущего пользователя
             </summary>
         </member>
         <member name="M:BeautyLab.MainForm.linkHome_Click(System.Object,System.EventArgs)">

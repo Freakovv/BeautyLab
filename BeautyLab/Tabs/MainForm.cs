@@ -1,4 +1,8 @@
 ﻿using BeautyLab.Animations;
+using BeautyLab.Infrastructure;
+using BeautyLab.Tabs.Admin_Tabs;
+using BeautyLab.Tabs.Default_tabs;
+using BeautyLab.Tabs.Master_Tabs;
 using Guna.UI2.AnimatorNS;
 using Guna.UI2.WinForms;
 
@@ -15,39 +19,48 @@ namespace BeautyLab
     {
 
         /// <summary>
-        /// Объявление шрифтов
+        /// Объявление стандартных шрифтов
         /// </summary>
         private readonly Font defaultFont;
         private readonly Font activeFont;
 
 
         /// <summary>
-        /// Объявление страницы
+        /// Объявление страниц
         /// </summary>
         private HomeControl homeWindow;
+        private RecordControl recordControl;
+        private RecordAcceptControl recordMasterControl;
+        private ReportControl reportControl;
+
+
         private Guna2Transition animator;
 
 
-        public MainForm()
+        /// <summary>
+        /// Конструктор основной формы
+        /// Определяет текущего пользователя
+        /// </summary>
+
+        string _localEmail;
+
+        public MainForm(string _email)
         {
             InitializeComponent();
 
-            /// <summary>
-            /// Настройка стандартных шрифтов
-            /// </summary>
+            _localEmail = _email;
+
             defaultFont = new Font("Jura", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
             activeFont = new Font(defaultFont, defaultFont.Style | FontStyle.Underline);
 
 
-            /// <summary>
-            /// Создание экземпляров классов
-            /// </summary>
-            homeWindow = new HomeControl(this);
+            homeWindow = new HomeControl(this, _localEmail);
+            recordControl = new RecordControl(this);
+            recordMasterControl = new RecordAcceptControl(this);
+            reportControl = new ReportControl();
+
             animator = new Guna2Transition();
 
-            /// <summary>
-            /// Настройки классов
-            /// </summary>
             animator.Interval = 1;
             animator.AnimationType = AnimationType.Transparent;
         }
@@ -92,15 +105,39 @@ namespace BeautyLab
         }
         private void linkRecord_Click(object sender, EventArgs e)
         {
-            ToggleUnderline(linkRecord);
+            DataBase data = new DataBase();
+            int access = data.GetUserAccess(_localEmail);
+
+            if (access == 1)
+            {
+                if (!CheckActiveWindow(recordControl))
+                {
+                    ToggleUnderline(linkRecord);
+                    OpenTab(recordControl);
+                }
+            }
+            else
+            {
+                if (!CheckActiveWindow(recordMasterControl))
+                {
+                    ToggleUnderline(linkRecord);
+                    OpenTab(recordMasterControl);
+                }
+            }
+
         }
-        private void linkMaterial_Click(object sender, EventArgs e)
-        {
-            ToggleUnderline(linkMaterial);
-        }
+        //private void linkMaterial_Click(object sender, EventArgs e)
+        //{
+        //    ToggleUnderline(linkMaterial);
+        //}
         private void linkReport_Click(object sender, EventArgs e)
         {
-            ToggleUnderline(linkReport);
+            if (!CheckActiveWindow(reportControl))
+            {
+                ToggleUnderline(linkReport);
+                OpenTab(reportControl);
+            }
+
         }
 
 
@@ -110,7 +147,7 @@ namespace BeautyLab
         /// Задает окну параметры для корректного отображения
         /// Уничтожает активный (прошлый) контроллер
         /// </summary>
-        private UserControl activeControl = null;
+        private UserControl? activeControl = null;
         private void OpenTab(UserControl control)
         {
             if (activeControl != null)
@@ -118,15 +155,20 @@ namespace BeautyLab
                 activeControl.Hide();
                 activeControl.Enabled = false;
             }
-            activeControl = control;
-            activeControl.Enabled = true;
-            control.Dock = DockStyle.Fill;
-            panelWindow.Controls.Add(control);
-            panelWindow.Tag = control;
-            control.BringToFront();
-            control.Show();
-        }
 
+            activeControl = control;
+
+            // Проверяем, что control не null перед использованием
+            if (activeControl != null)
+            {
+                activeControl.Enabled = true;
+                activeControl.Dock = DockStyle.Fill;
+                panelWindow.Controls.Add(activeControl);
+                panelWindow.Tag = activeControl;
+                activeControl.BringToFront();
+                activeControl.Show();
+            }
+        }
 
         /// <summary>
         /// Проверяет, открыт ли контроллер перебирая все элементы главной панели

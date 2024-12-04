@@ -6,7 +6,7 @@ namespace BeautyLab
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new BeginAnimation());
+            Application.Run(new MainForm("misha.simanovich@mail.ru"));
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-using BeautyLab.Infrastructure;
+﻿using Guna.UI2.WinForms;
 
 namespace BeautyLab.Tabs.General_Tabs
 {
@@ -46,11 +44,13 @@ namespace BeautyLab.Tabs.General_Tabs
             LoadCfg();
         }
 
-        private static void SaveCfg(int border, int volume)
+        private void SaveCfg(int border, int volume)
         {
-            using var cfg = new AppConfig();
-            cfg.CornerRadius = border;
-            cfg.Volume = volume;
+            var cfg = new AppConfig
+            {
+                CornerRadius = border,
+                Volume = volume
+            };
             cfg.Save();
         }
 
@@ -68,6 +68,17 @@ namespace BeautyLab.Tabs.General_Tabs
             textVolume.Text = $"{cfg.Volume}%";
 
             Form.BorderForm.BorderRadius = cfg.CornerRadius;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SaveCfg(TrackBorder.Value, TrackVolume.Value);
+
+            Guna2MessageDialog msg = new Guna2MessageDialog();
+            msg.Parent = Form;
+            msg.Style = MessageDialogStyle.Light;
+            msg.Show("Настройки сохранены!", "Успешно");
+
         }
     }
 }

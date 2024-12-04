@@ -232,6 +232,7 @@
             btnSave.TextMarginLeft = 0;
             btnSave.TextPadding = new Padding(0, -2, 0, 0);
             btnSave.UseDefaultRadiusAndThickness = true;
+            btnSave.Click += btnSave_Click;
             // 
             // SHADOWBUTTON
             // 
@@ -401,7 +402,6 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2CircleProgressBar ProgressVolume;
         private Guna.UI2.WinForms.Guna2TrackBar TrackVolume;
         private Guna.UI2.WinForms.Guna2TrackBar TrackBorder;

@@ -27,26 +27,55 @@ namespace BeautyLab.Infrastructure
             }
         }
 
-        public void InsertEmailAndPassword(string email, string password)
+        public bool InsertEmailAndPassword(string email, string password)
         {
             string hashedPassword = HashPassword(password);
             using SqlCommand command = new SqlCommand("INSERT INTO Users (email, password) VALUES (@Email, @Password)", _homeConnection);
             command.Parameters.AddWithValue("@Email", email);
             command.Parameters.AddWithValue("@Password", hashedPassword);
 
-            ExecuteNonQuery(command, "Email and password inserted successfully.");
-        }
+            string result = ExecuteNonQueryRegister(command);
 
-        public void InsertLoginNameSurname(string email, string login, string name, string surname)
+            if (result == "Успешно")
+            {
+                return true;
+            }
+            else
+            {
+                throw new ArgumentException(result);
+            }
+        }
+        public void ChangePassword(string email, string newPassword)
         {
-            using SqlCommand command = new SqlCommand("UPDATE Users SET login = @Login, name = @Name, surname = @Surname WHERE email = @Email", _homeConnection);
-            command.Parameters.AddWithValue("@Login", login);
-            command.Parameters.AddWithValue("@Name", name);
-            command.Parameters.AddWithValue("@Surname", surname);
-            command.Parameters.AddWithValue("@Email", email);
+            string hashedPassword = HashPassword(newPassword);
 
-            ExecuteNonQuery(command, "Login, name, and surname inserted successfully.");
+            using SqlCommand command = new SqlCommand(
+                "UPDATE Users SET password = @Password WHERE email = @Email",
+                _homeConnection
+            );
+            command.Parameters.AddWithValue("@Email", email);
+            command.Parameters.AddWithValue("@Password", hashedPassword);
+
+            try
+            {
+                OpenConnection();
+                int rowsAffected = command.ExecuteNonQuery();
+
+                if (rowsAffected <= 0)
+                {
+                    MessageBox.Show("Указанный адрес электронной почты не найден.");
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Ошибка при изменении пароля: " + ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
         }
+
 
         public bool AccountExists(string email)
         {
@@ -69,17 +98,17 @@ namespace BeautyLab.Infrastructure
             return ExecuteScalar(command) > 0;
         }
 
-        private void ExecuteNonQuery(SqlCommand command, string successMessage)
+        private string ExecuteNonQueryRegister(SqlCommand command)
         {
             try
             {
                 OpenConnection();
                 command.ExecuteNonQuery();
-                MessageBox.Show(successMessage);
+                return "Успешно";
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Database error: " + ex.Message);
+                return ex.Message;
             }
             finally
             {
@@ -97,7 +126,7 @@ namespace BeautyLab.Infrastructure
             catch (SqlException ex)
             {
                 MessageBox.Show("Database access error: " + ex.Message);
-                return 0; // Return 0 for error cases
+                return 0;
             }
             finally
             {
@@ -117,5 +146,42 @@ namespace BeautyLab.Infrastructure
 
             return builder.ToString();
         }
+        public int GetUserAccess(string loginOrEmail)
+        {
+            const string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            string loginOrEmailColumn = Regex.IsMatch(loginOrEmail, pattern) ? "email" : "login"; // Определяем, является ли это email или логином
+
+            // Строим SQL запрос для получения значения поля 'access'
+            string query = $"SELECT access FROM Users WHERE {loginOrEmailColumn} = @LoginOrEmail";
+
+            using (SqlCommand command = new SqlCommand(query, _homeConnection))
+            {
+                command.Parameters.AddWithValue("@LoginOrEmail", loginOrEmail);
+
+                // Выполняем запрос и получаем значение поля 'access'
+                object result = ExecuteScalar(command);
+
+                if (result != null && result != DBNull.Value)
+                {
+                    return Convert.ToInt32(result); // Возвращаем значение поля 'access'
+                }
+                else
+                {
+                    return 0; // Если не найдено, возвращаем 0
+                }
+            }
+        }
+
+        //public void InsertLoginNameSurname(string email, string login, string name, string surname)
+        //{
+        //    using SqlCommand command = new SqlCommand("UPDATE Users SET login = @Login, name = @Name, surname = @Surname WHERE email = @Email", _homeConnection);
+        //    command.Parameters.AddWithValue("@Login", login);
+        //    command.Parameters.AddWithValue("@Name", name);
+        //    command.Parameters.AddWithValue("@Surname", surname);
+        //    command.Parameters.AddWithValue("@Email", email);
+
+        //    ExecuteNonQuery(command, "Login, name, and surname inserted successfully.");
+        //}
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace BeautyLab.Tabs
 {
-    partial class admProfile
+    partial class ProfileControl
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admProfile));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileControl));
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
@@ -38,34 +38,35 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            picUser = new PictureBox();
+            pictureBoxAvatar = new PictureBox();
             GroupPicture = new Guna.UI2.WinForms.Guna2GroupBox();
             txtLogin = new Guna.UI2.WinForms.Guna2TextBox();
             txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            btnEnter = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            btnEdit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             SHADOWBUTTON = new Guna.UI2.WinForms.Guna2GradientButton();
             lblTerms = new Label();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)picUser).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar).BeginInit();
             GroupPicture.SuspendLayout();
             SuspendLayout();
             // 
-            // picUser
+            // pictureBoxAvatar
             // 
-            picUser.BackColor = Color.Transparent;
-            picUser.Cursor = Cursors.Hand;
-            picUser.Image = (Image)resources.GetObject("picUser.Image");
-            picUser.Location = new Point(33, 41);
-            picUser.Name = "picUser";
-            picUser.Size = new Size(222, 208);
-            picUser.SizeMode = PictureBoxSizeMode.Zoom;
-            picUser.TabIndex = 0;
-            picUser.TabStop = false;
+            pictureBoxAvatar.BackColor = Color.Transparent;
+            pictureBoxAvatar.Cursor = Cursors.Hand;
+            pictureBoxAvatar.Image = (Image)resources.GetObject("pictureBoxAvatar.Image");
+            pictureBoxAvatar.Location = new Point(33, 41);
+            pictureBoxAvatar.Name = "pictureBoxAvatar";
+            pictureBoxAvatar.Size = new Size(222, 208);
+            pictureBoxAvatar.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxAvatar.TabIndex = 0;
+            pictureBoxAvatar.TabStop = false;
+            pictureBoxAvatar.Click += picUser_Click;
             // 
             // GroupPicture
             // 
             GroupPicture.BorderColor = Color.FromArgb(255, 214, 236);
-            GroupPicture.Controls.Add(picUser);
+            GroupPicture.Controls.Add(pictureBoxAvatar);
             GroupPicture.CustomBorderColor = Color.FromArgb(255, 214, 236);
             GroupPicture.CustomizableEdges = customizableEdges1;
             GroupPicture.FillColor = Color.Transparent;
@@ -76,7 +77,7 @@
             GroupPicture.ShadowDecoration.CustomizableEdges = customizableEdges2;
             GroupPicture.Size = new Size(280, 252);
             GroupPicture.TabIndex = 3;
-            GroupPicture.Text = "Login";
+            GroupPicture.Text = "Administrator";
             GroupPicture.TextAlign = HorizontalAlignment.Center;
             // 
             // txtLogin
@@ -115,6 +116,7 @@
             txtLogin.Size = new Size(460, 56);
             txtLogin.TabIndex = 4;
             txtLogin.TextOffset = new Point(0, -3);
+            txtLogin.TextChanged += txtLogin_TextChanged;
             // 
             // txtPassword
             // 
@@ -151,95 +153,97 @@
             txtPassword.Size = new Size(460, 56);
             txtPassword.TabIndex = 5;
             txtPassword.TextOffset = new Point(0, -3);
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
-            // btnEnter
+            // btnEdit
             // 
-            btnEnter.AllowAnimations = true;
-            btnEnter.AllowMouseEffects = true;
-            btnEnter.AllowToggling = false;
-            btnEnter.AnimationSpeed = 200;
-            btnEnter.AutoGenerateColors = false;
-            btnEnter.AutoRoundBorders = false;
-            btnEnter.AutoSizeLeftIcon = true;
-            btnEnter.AutoSizeRightIcon = true;
-            btnEnter.BackColor = Color.Transparent;
-            btnEnter.BackColor1 = Color.FromArgb(227, 89, 164);
-            btnEnter.BackgroundImage = (Image)resources.GetObject("btnEnter.BackgroundImage");
-            btnEnter.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            btnEnter.ButtonText = "Редактировать";
-            btnEnter.ButtonTextMarginLeft = 0;
-            btnEnter.ColorContrastOnClick = 45;
-            btnEnter.ColorContrastOnHover = 45;
+            btnEdit.AllowAnimations = true;
+            btnEdit.AllowMouseEffects = true;
+            btnEdit.AllowToggling = false;
+            btnEdit.AnimationSpeed = 200;
+            btnEdit.AutoGenerateColors = false;
+            btnEdit.AutoRoundBorders = false;
+            btnEdit.AutoSizeLeftIcon = true;
+            btnEdit.AutoSizeRightIcon = true;
+            btnEdit.BackColor = Color.Transparent;
+            btnEdit.BackColor1 = Color.FromArgb(227, 89, 164);
+            btnEdit.BackgroundImage = (Image)resources.GetObject("btnEdit.BackgroundImage");
+            btnEdit.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnEdit.ButtonText = "Редактировать";
+            btnEdit.ButtonTextMarginLeft = 0;
+            btnEdit.ColorContrastOnClick = 45;
+            btnEdit.ColorContrastOnHover = 45;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
-            btnEnter.CustomizableEdges = borderEdges1;
-            btnEnter.DialogResult = DialogResult.None;
-            btnEnter.DisabledBorderColor = Color.Empty;
-            btnEnter.DisabledFillColor = Color.FromArgb(242, 220, 232);
-            btnEnter.DisabledForecolor = Color.White;
-            btnEnter.Enabled = false;
-            btnEnter.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Idle;
-            btnEnter.Font = new Font("Jura", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            btnEnter.ForeColor = Color.White;
-            btnEnter.IconLeftAlign = ContentAlignment.MiddleLeft;
-            btnEnter.IconLeftCursor = Cursors.Default;
-            btnEnter.IconLeftPadding = new Padding(11, 3, 3, 3);
-            btnEnter.IconMarginLeft = 11;
-            btnEnter.IconPadding = 10;
-            btnEnter.IconRightAlign = ContentAlignment.MiddleRight;
-            btnEnter.IconRightCursor = Cursors.Default;
-            btnEnter.IconRightPadding = new Padding(3, 3, 7, 3);
-            btnEnter.IconSize = 25;
-            btnEnter.IdleBorderColor = Color.Empty;
-            btnEnter.IdleBorderRadius = 50;
-            btnEnter.IdleBorderThickness = 1;
-            btnEnter.IdleFillColor = Color.FromArgb(227, 89, 164);
-            btnEnter.IdleIconLeftImage = null;
-            btnEnter.IdleIconRightImage = null;
-            btnEnter.IndicateFocus = false;
-            btnEnter.Location = new Point(361, 512);
-            btnEnter.Name = "btnEnter";
-            btnEnter.OnDisabledState.BorderColor = Color.Empty;
-            btnEnter.OnDisabledState.BorderRadius = 50;
-            btnEnter.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            btnEnter.OnDisabledState.BorderThickness = 0;
-            btnEnter.OnDisabledState.FillColor = Color.FromArgb(242, 220, 232);
-            btnEnter.OnDisabledState.ForeColor = Color.White;
-            btnEnter.OnDisabledState.IconLeftImage = null;
-            btnEnter.OnDisabledState.IconRightImage = null;
-            btnEnter.onHoverState.BorderColor = Color.Empty;
-            btnEnter.onHoverState.BorderRadius = 50;
-            btnEnter.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            btnEnter.onHoverState.BorderThickness = 0;
-            btnEnter.onHoverState.FillColor = Color.FromArgb(240, 100, 200);
-            btnEnter.onHoverState.ForeColor = Color.White;
-            btnEnter.onHoverState.IconLeftImage = null;
-            btnEnter.onHoverState.IconRightImage = null;
-            btnEnter.OnIdleState.BorderColor = Color.Empty;
-            btnEnter.OnIdleState.BorderRadius = 50;
-            btnEnter.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            btnEnter.OnIdleState.BorderThickness = 0;
-            btnEnter.OnIdleState.FillColor = Color.FromArgb(227, 89, 164);
-            btnEnter.OnIdleState.ForeColor = Color.White;
-            btnEnter.OnIdleState.IconLeftImage = null;
-            btnEnter.OnIdleState.IconRightImage = null;
-            btnEnter.OnPressedState.BorderColor = Color.Empty;
-            btnEnter.OnPressedState.BorderRadius = 50;
-            btnEnter.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            btnEnter.OnPressedState.BorderThickness = 0;
-            btnEnter.OnPressedState.FillColor = Color.FromArgb(230, 80, 170);
-            btnEnter.OnPressedState.ForeColor = Color.White;
-            btnEnter.OnPressedState.IconLeftImage = null;
-            btnEnter.OnPressedState.IconRightImage = null;
-            btnEnter.Size = new Size(300, 50);
-            btnEnter.TabIndex = 12;
-            btnEnter.TextAlign = ContentAlignment.MiddleCenter;
-            btnEnter.TextAlignment = HorizontalAlignment.Center;
-            btnEnter.TextMarginLeft = 0;
-            btnEnter.TextPadding = new Padding(0, -2, 0, 0);
-            btnEnter.UseDefaultRadiusAndThickness = true;
+            btnEdit.CustomizableEdges = borderEdges1;
+            btnEdit.DialogResult = DialogResult.None;
+            btnEdit.DisabledBorderColor = Color.Empty;
+            btnEdit.DisabledFillColor = Color.FromArgb(242, 220, 232);
+            btnEdit.DisabledForecolor = Color.White;
+            btnEdit.Enabled = false;
+            btnEdit.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Idle;
+            btnEdit.Font = new Font("Jura", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            btnEdit.ForeColor = Color.White;
+            btnEdit.IconLeftAlign = ContentAlignment.MiddleLeft;
+            btnEdit.IconLeftCursor = Cursors.Default;
+            btnEdit.IconLeftPadding = new Padding(11, 3, 3, 3);
+            btnEdit.IconMarginLeft = 11;
+            btnEdit.IconPadding = 10;
+            btnEdit.IconRightAlign = ContentAlignment.MiddleRight;
+            btnEdit.IconRightCursor = Cursors.Default;
+            btnEdit.IconRightPadding = new Padding(3, 3, 7, 3);
+            btnEdit.IconSize = 25;
+            btnEdit.IdleBorderColor = Color.Empty;
+            btnEdit.IdleBorderRadius = 50;
+            btnEdit.IdleBorderThickness = 1;
+            btnEdit.IdleFillColor = Color.FromArgb(227, 89, 164);
+            btnEdit.IdleIconLeftImage = null;
+            btnEdit.IdleIconRightImage = null;
+            btnEdit.IndicateFocus = false;
+            btnEdit.Location = new Point(361, 512);
+            btnEdit.Name = "btnEdit";
+            btnEdit.OnDisabledState.BorderColor = Color.Empty;
+            btnEdit.OnDisabledState.BorderRadius = 50;
+            btnEdit.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnEdit.OnDisabledState.BorderThickness = 0;
+            btnEdit.OnDisabledState.FillColor = Color.FromArgb(242, 220, 232);
+            btnEdit.OnDisabledState.ForeColor = Color.White;
+            btnEdit.OnDisabledState.IconLeftImage = null;
+            btnEdit.OnDisabledState.IconRightImage = null;
+            btnEdit.onHoverState.BorderColor = Color.Empty;
+            btnEdit.onHoverState.BorderRadius = 50;
+            btnEdit.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnEdit.onHoverState.BorderThickness = 0;
+            btnEdit.onHoverState.FillColor = Color.FromArgb(240, 100, 200);
+            btnEdit.onHoverState.ForeColor = Color.White;
+            btnEdit.onHoverState.IconLeftImage = null;
+            btnEdit.onHoverState.IconRightImage = null;
+            btnEdit.OnIdleState.BorderColor = Color.Empty;
+            btnEdit.OnIdleState.BorderRadius = 50;
+            btnEdit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnEdit.OnIdleState.BorderThickness = 0;
+            btnEdit.OnIdleState.FillColor = Color.FromArgb(227, 89, 164);
+            btnEdit.OnIdleState.ForeColor = Color.White;
+            btnEdit.OnIdleState.IconLeftImage = null;
+            btnEdit.OnIdleState.IconRightImage = null;
+            btnEdit.OnPressedState.BorderColor = Color.Empty;
+            btnEdit.OnPressedState.BorderRadius = 50;
+            btnEdit.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            btnEdit.OnPressedState.BorderThickness = 0;
+            btnEdit.OnPressedState.FillColor = Color.FromArgb(230, 80, 170);
+            btnEdit.OnPressedState.ForeColor = Color.White;
+            btnEdit.OnPressedState.IconLeftImage = null;
+            btnEdit.OnPressedState.IconRightImage = null;
+            btnEdit.Size = new Size(300, 50);
+            btnEdit.TabIndex = 12;
+            btnEdit.TextAlign = ContentAlignment.MiddleCenter;
+            btnEdit.TextAlignment = HorizontalAlignment.Center;
+            btnEdit.TextMarginLeft = 0;
+            btnEdit.TextPadding = new Padding(0, -2, 0, 0);
+            btnEdit.UseDefaultRadiusAndThickness = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // SHADOWBUTTON
             // 
@@ -302,7 +306,7 @@
             BackColor = Color.Transparent;
             Controls.Add(label1);
             Controls.Add(lblTerms);
-            Controls.Add(btnEnter);
+            Controls.Add(btnEdit);
             Controls.Add(SHADOWBUTTON);
             Controls.Add(txtPassword);
             Controls.Add(txtLogin);
@@ -310,7 +314,8 @@
             DoubleBuffered = true;
             Name = "admProfile";
             Size = new Size(1102, 689);
-            ((System.ComponentModel.ISupportInitialize)picUser).EndInit();
+            Load += admProfile_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBoxAvatar).EndInit();
             GroupPicture.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -318,13 +323,43 @@
 
         #endregion
 
-        private PictureBox picUser;
+        private PictureBox pictureBoxAvatar;
         private Guna.UI2.WinForms.Guna2GroupBox GroupPicture;
         private Guna.UI2.WinForms.Guna2TextBox txtLogin;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEnter;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEdit;
         private Guna.UI2.WinForms.Guna2GradientButton SHADOWBUTTON;
         private Label lblTerms;
         private Label label1;
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+            CheckTxtBoxStates();
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            CheckTxtBoxStates();
+        }
+
+        private void CheckTxtBoxStates()
+        {
+            if (!string.IsNullOrWhiteSpace(txtLogin.Text))
+            {
+                if (!string.IsNullOrWhiteSpace(txtPassword.Text))
+                {
+                    btnEdit.Enabled = true;
+                }
+                else
+                {
+                    btnEdit.Enabled= false;
+                }
+            }
+            else
+            {
+                btnEdit.Enabled = false;
+            }
+        }
+
     }
 }

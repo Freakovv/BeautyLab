@@ -32,11 +32,11 @@
             btnExit = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
             panelLinks = new Panel();
             linkRecord = new Label();
-            linkMaterial = new Label();
             linkReport = new Label();
             linkHome = new Label();
             panelWindow = new Panel();
             DragControl = new Guna.UI2.WinForms.Guna2DragControl(components);
+            MyMessage = new Guna.UI2.WinForms.Guna2MessageDialog();
             DragPanel.SuspendLayout();
             panelLinks.SuspendLayout();
             SuspendLayout();
@@ -104,7 +104,6 @@
             // 
             panelLinks.BackColor = Color.Transparent;
             panelLinks.Controls.Add(linkRecord);
-            panelLinks.Controls.Add(linkMaterial);
             panelLinks.Controls.Add(linkReport);
             panelLinks.Controls.Add(linkHome);
             panelLinks.Dock = DockStyle.Top;
@@ -118,31 +117,19 @@
             linkRecord.AutoSize = true;
             linkRecord.Font = new Font("Jura", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
             linkRecord.ForeColor = Color.FromArgb(227, 89, 164);
-            linkRecord.Location = new Point(467, 1);
+            linkRecord.Location = new Point(594, 3);
             linkRecord.Name = "linkRecord";
             linkRecord.Size = new Size(105, 31);
             linkRecord.TabIndex = 3;
             linkRecord.Text = "ЗАПИСЬ";
             linkRecord.Click += linkRecord_Click;
             // 
-            // linkMaterial
-            // 
-            linkMaterial.AutoSize = true;
-            linkMaterial.Font = new Font("Jura", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            linkMaterial.ForeColor = Color.FromArgb(227, 89, 164);
-            linkMaterial.Location = new Point(682, 1);
-            linkMaterial.Name = "linkMaterial";
-            linkMaterial.Size = new Size(151, 31);
-            linkMaterial.TabIndex = 2;
-            linkMaterial.Text = "МАТЕРИАЛЫ";
-            linkMaterial.Click += linkMaterial_Click;
-            // 
             // linkReport
             // 
             linkReport.AutoSize = true;
             linkReport.Font = new Font("Jura", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
             linkReport.ForeColor = Color.FromArgb(227, 89, 164);
-            linkReport.Location = new Point(917, 1);
+            linkReport.Location = new Point(787, 3);
             linkReport.Name = "linkReport";
             linkReport.Size = new Size(83, 31);
             linkReport.TabIndex = 1;
@@ -154,7 +141,7 @@
             linkHome.AutoSize = true;
             linkHome.Font = new Font("Jura", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 204);
             linkHome.ForeColor = Color.FromArgb(227, 89, 164);
-            linkHome.Location = new Point(247, 1);
+            linkHome.Location = new Point(379, 3);
             linkHome.Name = "linkHome";
             linkHome.Size = new Size(119, 31);
             linkHome.TabIndex = 0;
@@ -175,6 +162,15 @@
             DragControl.DockIndicatorTransparencyValue = 0.6D;
             DragControl.TargetControl = DragPanel;
             DragControl.TransparentWhileDrag = false;
+            // 
+            // MyMessage
+            // 
+            MyMessage.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            MyMessage.Caption = null;
+            MyMessage.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
+            MyMessage.Parent = this;
+            MyMessage.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
+            MyMessage.Text = null;
             // 
             // MainForm
             // 
@@ -207,9 +203,9 @@
         private Bunifu.UI.WinForms.BunifuFormCaptionButton btnExit;
         private Panel panelLinks;
         private Label linkRecord;
-        private Label linkMaterial;
         private Label linkReport;
         private Panel panelWindow;
         private Guna.UI2.WinForms.Guna2DragControl DragControl;
+        private Guna.UI2.WinForms.Guna2MessageDialog MyMessage;
     }
 }

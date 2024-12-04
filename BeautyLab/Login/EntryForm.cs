@@ -1,11 +1,7 @@
-﻿using System;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Windows.Forms;
-using System.Drawing;
-using BeautyLab.Animations;
-using Guna.UI2.WinForms;
+﻿using BeautyLab.Animations;
 using BeautyLab.Infrastructure;
+using Guna.UI2.WinForms;
+using System.Text.RegularExpressions;
 
 namespace BeautyLab
 {
@@ -36,6 +32,9 @@ namespace BeautyLab
             if (_dataBase.GetAccess(login, password))
             {
                 ShowWelcomeMessage(login);
+                MainForm mainForm = new MainForm(login);
+                this.Hide();
+                mainForm.Show();
             }
             else
             {
@@ -61,7 +60,17 @@ namespace BeautyLab
             SendVerificationEmail();
             if (VerifyAccount())
             {
-                _dataBase.InsertEmailAndPassword(_localEmail, _localPassword);
+                try
+                {
+                    if (_dataBase.InsertEmailAndPassword(_localEmail, _localPassword))
+                    {
+                        ShowInfoMsg("Вы успешно зарегестрировались!");
+                    }
+                }
+                catch (ArgumentException ex)
+                {
+                    ShowErrorMsg(ex.Message);
+                }
             }
             else
             {
@@ -101,7 +110,7 @@ namespace BeautyLab
             form.Location = CenterFormPosition(form);
         }
 
-        // Центрирование формы
+        // Центрирование окна
         private Point CenterFormPosition(Form form)
         {
             int centerX = Left + (Width - form.Width) / 2;
@@ -163,19 +172,21 @@ namespace BeautyLab
             return true;
         }
 
+        // Функции для проверки
         private bool IsEmpty(string input) => string.IsNullOrEmpty(input);
 
         private bool IsAnyFieldEmpty(params string[] inputs) => inputs.Any(IsEmpty);
 
         private bool ArePasswordsMatching(string pass1, string pass2) => pass1 == pass2;
-
+        // Валидация строки почты
         private bool IsValidEmail(string email) => Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
 
+        // Приветственное уведомление
         private void ShowWelcomeMessage(string login)
         {
             string msg = "Добро пожаловать";
             if (!IsValidEmail(login)) msg += ", " + login + "!";
-            
+
             MessageDialog.Icon = MessageDialogIcon.Information;
             MessageDialog.Show(msg, "Вход");
         }

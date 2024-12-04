@@ -1,33 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
-using BeautyLab.Tabs;
+﻿using BeautyLab.Tabs;
 using BeautyLab.Tabs.General_Tabs;
 using Guna.UI2.AnimatorNS;
 using Guna.UI2.WinForms;
-using K4os.Hash.xxHash;
 
 namespace BeautyLab
 {
     public partial class HomeControl : UserControl
     {
-        private admProfile profileTab;
+        private ProfileControl profileTab;
         private SettingsControl settingsTab;
         private ContactControl contactTab;
-        public HomeControl(MainForm form)
+
+        private readonly string _localEmail;
+
+        public HomeControl(MainForm form, string email)
         {
-            profileTab = new admProfile();
+            refForm = form;
+            _localEmail = email;
+            InitializeComponent();
+
+
+            profileTab = new ProfileControl(ref refForm, _localEmail);
             settingsTab = new SettingsControl(form);
             contactTab = new ContactControl();
-            InitializeComponent();
-            refForm = form;
+
         }
 
         private MainForm? refForm;
@@ -63,7 +59,7 @@ namespace BeautyLab
             Guna2Transition trans = new Guna2Transition();
             trans.AnimationType = AnimationType.Transparent;
             trans.ShowSync(control);
-            
+
             //control.Show();
         }
 
