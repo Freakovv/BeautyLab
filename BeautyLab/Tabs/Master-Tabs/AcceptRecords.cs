@@ -1,22 +1,18 @@
-﻿using BeautyLab.Infrastructure;
-using Guna.UI2.WinForms;
-using OfficeOpenXml;
+﻿using Guna.UI2.WinForms;
 
 namespace BeautyLab.Tabs.Master_Tabs
 {
-    public partial class RecordAcceptControl : UserControl
+    public partial class AcceptRecords : UserControl
     {
-        ExcelManager excelManager;
         Guna2MessageDialog messageDialog;
-        public RecordAcceptControl(MainForm form)
+        public AcceptRecords(MainForm form)
         {
             InitializeComponent();
-            excelManager = new ExcelManager();
             messageDialog = new Guna2MessageDialog();
             messageDialog.Parent = form;
             messageDialog.Style = MessageDialogStyle.Light;
         }
-        // Добавление кнопки в DataGridView
+
         private void AddDeleteButtonColumn()
         {
             DataGridViewButtonColumn btnDeleteColumn = new DataGridViewButtonColumn();
@@ -48,39 +44,17 @@ namespace BeautyLab.Tabs.Master_Tabs
 
                     if (result == DialogResult.Yes)
                     {
-                        // Удаляем строку
                         Table.Rows.RemoveAt(rowIndex);
-                        DeleteRowFromExcel(rowIndex);
+                        // TODO: Тут удалить из БД
                     }
                 }
             }
         }
 
-        private void DeleteRowFromExcel(int rowIndex)
-        {
-            string filePath = excelManager.GetCurrentExcelFilePath();
-            FileInfo fileInfo = new FileInfo(filePath);
-
-            if (!fileInfo.Exists)
-            {
-                return;
-            }
-
-            using (var package = new ExcelPackage(fileInfo))
-            {
-                var worksheet = package.Workbook.Worksheets[0];
-
-                // Удаляем строку из Excel
-                worksheet.DeleteRow(rowIndex + 2);
-
-                // Сохраняем изменения
-                package.Save();
-            }
-        }
 
         private void RecordAcceptControl_Load(object sender, EventArgs e)
         {
-            excelManager.ImportFromExcel(Table);
+            // TODO: Тут загрузить из БД таблицу
             AddDeleteButtonColumn();
         }
     }

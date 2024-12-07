@@ -5,31 +5,37 @@ using System.Text.RegularExpressions;
 
 namespace BeautyLab
 {
+    /// <summary>
+    /// Форма входа
+    /// Описана регистрация, вход пользователей
+    /// </summary>
     public partial class EntryForm : Form
     {
-        private readonly DataBase _dataBase = new DataBase();
-        private int _securityCode;
-        private string _localEmail = string.Empty;
+        private readonly Users _usersTable;
+
+        private string? _localEmail;
         private string? _localPassword;
+        private int _securityCode;
 
-        public EntryForm() => InitializeComponent();
-
-        private void EntryForm_Load(object sender, EventArgs e)
+        /// <summary>
+        /// Конструктор формы входа по умолочанию 
+        /// </summary>
+        public EntryForm()
         {
+            InitializeComponent();
+
             AnimateForm FadeIn = new AnimateForm(this);
+            _usersTable = new();
             FadeIn.Start(true);
         }
 
         // Вход в аккаунт
         private void btnEnter_Click(object sender, EventArgs e)
         {
-            if (!ValidateLoginInputs())
-                return;
-
             string login = txtLogin.Text;
             string password = txtPassword.Text;
 
-            if (_dataBase.GetAccess(login, password))
+            if (_usersTable.GetAccess(login, password))
             {
                 ShowWelcomeMessage(login);
                 MainForm mainForm = new MainForm(login);
@@ -51,7 +57,7 @@ namespace BeautyLab
             _localEmail = txtLogReg.Text;
             _localPassword = txtPassReg1.Text;
 
-            if (_dataBase.AccountExists(_localEmail))
+            if (_usersTable.AccountExists(_localEmail))
             {
                 ShowErrorMsg("Аккаунт с таким email уже существует");
                 return;
@@ -62,7 +68,7 @@ namespace BeautyLab
             {
                 try
                 {
-                    if (_dataBase.InsertEmailAndPassword(_localEmail, _localPassword))
+                    if (_usersTable.InsertEmailAndPassword(_localEmail, _localPassword))
                     {
                         ShowInfoMsg("Вы успешно зарегестрировались!");
                     }
@@ -119,17 +125,11 @@ namespace BeautyLab
         }
 
         // Валидация для входа
-        private bool ValidateLoginInputs()
+        private bool ValidateInputs()
         {
             if (IsEmpty(txtLogin.Text) || IsEmpty(txtPassword.Text))
             {
                 ShowErrorMsg("Поля не могут быть пустыми");
-                return false;
-            }
-
-            if (txtPassword.Text.Length < 6)
-            {
-                ShowErrorMsg("Неверный логин или пароль");
                 return false;
             }
 
@@ -190,6 +190,5 @@ namespace BeautyLab
             MessageDialog.Icon = MessageDialogIcon.Information;
             MessageDialog.Show(msg, "Вход");
         }
-
     }
 }

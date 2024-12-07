@@ -8,9 +8,6 @@ using Guna.UI2.WinForms;
 
 namespace BeautyLab
 {
-    // TODO: Распределние ролей
-    // Панель с доступными ссылками пользователя будет расположена поверх админской
-    // Доступ будет осуществляться по сохраненному уровню доступа из бд
 
     /// <summary>
     /// Основной класс разработанный для управления основной формы
@@ -30,7 +27,7 @@ namespace BeautyLab
         /// </summary>
         private HomeControl homeWindow;
         private RecordControl recordControl;
-        private RecordAcceptControl recordMasterControl;
+        private AcceptRecords recordMasterControl;
         private ReportControl reportControl;
 
 
@@ -56,7 +53,7 @@ namespace BeautyLab
 
             homeWindow = new HomeControl(this, _localEmail);
             recordControl = new RecordControl(this);
-            recordMasterControl = new RecordAcceptControl(this);
+            recordMasterControl = new AcceptRecords(this);
             reportControl = new ReportControl();
 
             animator = new Guna2Transition();
@@ -105,7 +102,7 @@ namespace BeautyLab
         }
         private void linkRecord_Click(object sender, EventArgs e)
         {
-            DataBase data = new DataBase();
+            Users data = new Users();
             int access = data.GetUserAccess(_localEmail);
 
             if (access == 1)

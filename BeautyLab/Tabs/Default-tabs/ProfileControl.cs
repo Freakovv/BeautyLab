@@ -61,9 +61,9 @@ namespace BeautyLab.Tabs
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            var server = new DataBase();
+            var server = new Users();
             string Login = txtLogin.Text;
-            string Password = DataBase.HashPassword(txtPassword.Text);
+            string Password = Users.HashPassword(txtPassword.Text);
 
 
             SendVerificationEmail();

@@ -1,13 +1,15 @@
-namespace BeautyLab
+namespace WinFormsApp1
 {
     internal static class Program
     {
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
         [STAThread]
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            //Application.Run(new MainForm("misha.simanovich@mail.ru"));
-            Application.Run(new EntryForm());
+            Application.Run(new Form1());
         }
     }
 }

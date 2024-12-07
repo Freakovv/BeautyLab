@@ -202,6 +202,18 @@
 8. Контактная информация
 Если у вас возникли вопросы или предложения по использованию приложения, пожалуйста, свяжитесь с нами по адресу: beautylab.service@gmail.com</value>
   </data>
+  <data name="FormCaptionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAV9JREFUeF7t
+        mltKxEAQRe+CBBczn7oBP9VtqAsWGaVgLkjRCZOZdFd15R7oj0kCqXPy+BgCCCGEEEIIITby6DcEMnyW
+        LwBnAC9+RwA2g83y6Xf04gPA72VFR6A857HZuvIA4OffCW3Z7yd/4ACeF2axGbtyAvDtTjz6TvBX3pbN
+        ZLMNITJCuDyJiJBGnoyMkE6ejIiQVp70jJBenvSIMI082TPCdPJkjwjTypN7IkwvT26JUEaebIlQTp5c
+        E6GsPFmLUF6eLEU4hDxpRTiMPDFB/0eGLdtWXt5oPfO2/IuxJEvyh4jQkrfb3j8OJSO05PnCa70YS0VY
+        kydlI1wjT8pF2CJPykS4RZ5MH+EeeTJthD3kyXQR9pQn00ToIU/SR+gpT9JGGCFP0kUYKU/SRIiQJ+ER
+        IuVJWAR9IgPgLfDKe/yd8OoP6MV7AnnCCDbTUIZ/nLhCplmEEEIIIYSYgT/uW6BKJvM8NgAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
   <data name="linkLabelToPage1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANcAAAAfCAYAAAB0xlhsAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAQ
@@ -416,18 +428,6 @@
         moFeo6EcY8xdh/Tsimr8loGGnJF0opk0EBzDlGY1XuT8l2cv8qs24hL8us/9OBsEkyFghTEYDLU5776/
         /N7i1KSdbADtQrvhr/CgTBxz9+Pexunc5+eJWrbO4cdgPLaxsbEhAgUaWmHj/1tDMsxBDo7Uct/GxsbG
         xsZi2JLbxsbGxsbq2JLbxsbGxsbq2JLbxsbGxsbqgN/evNrGmzXyf1AD4HC4/mwuAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="FormCaptionButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAV9JREFUeF7t
-        mltKxEAQRe+CBBczn7oBP9VtqAsWGaVgLkjRCZOZdFd15R7oj0kCqXPy+BgCCCGEEEIIITby6DcEMnyW
-        LwBnAC9+RwA2g83y6Xf04gPA72VFR6A857HZuvIA4OffCW3Z7yd/4ACeF2axGbtyAvDtTjz6TvBX3pbN
-        ZLMNITJCuDyJiJBGnoyMkE6ejIiQVp70jJBenvSIMI082TPCdPJkjwjTypN7IkwvT26JUEaebIlQTp5c
-        E6GsPFmLUF6eLEU4hDxpRTiMPDFB/0eGLdtWXt5oPfO2/IuxJEvyh4jQkrfb3j8OJSO05PnCa70YS0VY
-        kydlI1wjT8pF2CJPykS4RZ5MH+EeeTJthD3kyXQR9pQn00ToIU/SR+gpT9JGGCFP0kUYKU/SRIiQJ+ER
-        IuVJWAR9IgPgLfDKe/yd8OoP6MV7AnnCCDbTUIZ/nLhCplmEEEIIIYSYgT/uW6BKJvM8NgAAAABJRU5E
-        rkJggg==
 </value>
   </data>
   <metadata name="dragControl.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

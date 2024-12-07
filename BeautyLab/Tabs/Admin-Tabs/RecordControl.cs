@@ -1,22 +1,20 @@
-﻿using BeautyLab.Infrastructure;
-using Guna.UI2.WinForms;
+﻿using Guna.UI2.WinForms;
 namespace BeautyLab.Tabs.Admin_Tabs
 {
     public partial class RecordControl : UserControl
     {
-        private ExcelManager excelManager;
-
+        // TODO: Тут объявить класс БД
 
         public RecordControl(MainForm mainForm)
         {
             InitializeComponent();
-            excelManager = new ExcelManager();
+            //TODO: Тут создать экземпляр класса БД
             msg.Parent = mainForm;
         }
 
         private void RecordControl_Load(object sender, EventArgs e)
         {
-            excelManager.ImportFromExcel(Table);
+            // TODO: Записать функцию которая импортирует из БД в табличку
         }
 
         private void AddRecord(string fullName, string phone, string date, string time, string master, string service, string price)
@@ -38,7 +36,7 @@ namespace BeautyLab.Tabs.Admin_Tabs
             }
 
             Table.Rows.Add(fullName, phone, date, time, master, service, price);
-            excelManager.ExportRowToExcel(fullName, phone, date, time, master, service, price);
+            // TODO: Тут выгрузить в БД
         }
 
         private bool IsValidPhone(string phone)
@@ -99,10 +97,10 @@ namespace BeautyLab.Tabs.Admin_Tabs
 
             if (result == DialogResult.Yes)
             {
-                // Завершаем бизнес-день с сохранением отчета в Excel
+                // Завершаем бизнес-день с сохранением отчета в БД
                 try
                 {
-                    excelManager.EndBusinessDay(Table); // Передаем таблицу для обработки
+                    // TODO: Тут записать функцию которая передает таблицу для отработки и сохраняет в БД
                 }
                 catch (ArgumentException ex)
                 {

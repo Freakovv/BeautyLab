@@ -67,6 +67,13 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="M:BeautyLab.Infrastructure.Users.HashPassword(System.String)">
+            <summary>
+            Функция хеширования пароля
+            </summary>
+            <param name="password"></param>
+            <returns>Зашифрованный пароль</returns>
+        </member>
         <member name="F:BeautyLab.VerificationForm.components">
             <summary>
             Required designer variable.
@@ -82,6 +89,17 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BeautyLab.EntryForm">
+            <summary>
+            Форма входа
+            Описана регистрация, вход пользователей
+            </summary>
+        </member>
+        <member name="M:BeautyLab.EntryForm.#ctor">
+            <summary>
+            Конструктор формы входа по умолочанию 
             </summary>
         </member>
         <member name="T:BeautyLab.Properties.Resources">
@@ -260,18 +278,18 @@
             содержимое этого метода с помощью редактора кода.
             </summary>
         </member>
-        <member name="F:BeautyLab.Tabs.Master_Tabs.RecordAcceptControl.components">
+        <member name="F:BeautyLab.Tabs.Master_Tabs.AcceptRecords.components">
             <summary> 
             Required designer variable.
             </summary>
         </member>
-        <member name="M:BeautyLab.Tabs.Master_Tabs.RecordAcceptControl.Dispose(System.Boolean)">
+        <member name="M:BeautyLab.Tabs.Master_Tabs.AcceptRecords.Dispose(System.Boolean)">
             <summary> 
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:BeautyLab.Tabs.Master_Tabs.RecordAcceptControl.InitializeComponent">
+        <member name="M:BeautyLab.Tabs.Master_Tabs.AcceptRecords.InitializeComponent">
             <summary> 
             Required method for Designer support - do not modify 
             the contents of this method with the code editor.

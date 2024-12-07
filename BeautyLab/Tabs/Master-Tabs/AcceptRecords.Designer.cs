@@ -1,6 +1,6 @@
 ﻿namespace BeautyLab.Tabs.Master_Tabs
 {
-    partial class RecordAcceptControl
+    partial class AcceptRecords
     {
         /// <summary> 
         /// Required designer variable.
