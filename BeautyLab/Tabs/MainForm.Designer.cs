@@ -30,7 +30,7 @@
             BorderForm = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             DragPanel = new Panel();
             btnExit = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
-            panelLinks = new Panel();
+            AdminLinks = new Panel();
             linkRecord = new Label();
             linkReport = new Label();
             linkHome = new Label();
@@ -38,7 +38,7 @@
             DragControl = new Guna.UI2.WinForms.Guna2DragControl(components);
             MyMessage = new Guna.UI2.WinForms.Guna2MessageDialog();
             DragPanel.SuspendLayout();
-            panelLinks.SuspendLayout();
+            AdminLinks.SuspendLayout();
             SuspendLayout();
             // 
             // BorderForm
@@ -100,17 +100,17 @@
             btnExit.TabIndex = 2;
             btnExit.Click += btnExit_Click;
             // 
-            // panelLinks
+            // AdminLinks
             // 
-            panelLinks.BackColor = Color.Transparent;
-            panelLinks.Controls.Add(linkRecord);
-            panelLinks.Controls.Add(linkReport);
-            panelLinks.Controls.Add(linkHome);
-            panelLinks.Dock = DockStyle.Top;
-            panelLinks.Location = new Point(0, 30);
-            panelLinks.Name = "panelLinks";
-            panelLinks.Size = new Size(1280, 41);
-            panelLinks.TabIndex = 20;
+            AdminLinks.BackColor = Color.Transparent;
+            AdminLinks.Controls.Add(linkRecord);
+            AdminLinks.Controls.Add(linkReport);
+            AdminLinks.Controls.Add(linkHome);
+            AdminLinks.Dock = DockStyle.Top;
+            AdminLinks.Location = new Point(0, 30);
+            AdminLinks.Name = "AdminLinks";
+            AdminLinks.Size = new Size(1280, 41);
+            AdminLinks.TabIndex = 20;
             // 
             // linkRecord
             // 
@@ -181,7 +181,7 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1280, 760);
             Controls.Add(panelWindow);
-            Controls.Add(panelLinks);
+            Controls.Add(AdminLinks);
             Controls.Add(DragPanel);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
@@ -190,8 +190,8 @@
             Text = "BeautyLab";
             Load += MainForm_Load;
             DragPanel.ResumeLayout(false);
-            panelLinks.ResumeLayout(false);
-            panelLinks.PerformLayout();
+            AdminLinks.ResumeLayout(false);
+            AdminLinks.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -201,7 +201,7 @@
         private Label linkHome;
         private Panel DragPanel;
         private Bunifu.UI.WinForms.BunifuFormCaptionButton btnExit;
-        private Panel panelLinks;
+        private Panel AdminLinks;
         private Label linkRecord;
         private Label linkReport;
         private Panel panelWindow;

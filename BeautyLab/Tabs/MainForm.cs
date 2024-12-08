@@ -77,7 +77,7 @@ namespace BeautyLab
 
         private void ToggleUnderline(Label selectedLabel)
         {
-            foreach (Control control in panelLinks.Controls)
+            foreach (Control control in AdminLinks.Controls)
             {
                 if (control is Label label)
                 {

@@ -45,11 +45,9 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Table = new Guna.UI2.WinForms.Guna2DataGridView();
             NameColumn = new DataGridViewTextBoxColumn();
             PhoneColumn = new DataGridViewTextBoxColumn();
@@ -64,13 +62,11 @@
             txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtService = new Guna.UI2.WinForms.Guna2HtmlLabel();
             txtTime = new Guna.UI2.WinForms.Guna2TextBox();
             txtDate = new Guna.UI2.WinForms.Guna2TextBox();
             btnCreateRequest = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             SHADOWBUTTON = new Guna.UI2.WinForms.Guna2GradientButton();
-            txtMaster = new Guna.UI2.WinForms.Guna2ComboBox();
             ServiceTxt = new Guna.UI2.WinForms.Guna2ComboBox();
             msg = new Guna.UI2.WinForms.Guna2MessageDialog();
             btnEndDay = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -198,7 +194,7 @@
             txtName.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtName.IconLeftOffset = new Point(12, 0);
             txtName.IconLeftSize = new Size(27, 25);
-            txtName.Location = new Point(18, 46);
+            txtName.Location = new Point(18, 58);
             txtName.Margin = new Padding(43, 46, 43, 46);
             txtName.Name = "txtName";
             txtName.PasswordChar = '\0';
@@ -212,7 +208,7 @@
             txtName.ShadowDecoration.Enabled = true;
             txtName.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             txtName.ShadowDecoration.Shadow = new Padding(2, 0, 2, 5);
-            txtName.Size = new Size(295, 45);
+            txtName.Size = new Size(295, 52);
             txtName.TabIndex = 2;
             txtName.TextOffset = new Point(0, -3);
             // 
@@ -221,7 +217,7 @@
             guna2HtmlLabel1.BackColor = Color.Transparent;
             guna2HtmlLabel1.Font = new Font("Jura", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel1.ForeColor = Color.FromArgb(134, 127, 127);
-            guna2HtmlLabel1.Location = new Point(27, 8);
+            guna2HtmlLabel1.Location = new Point(27, 21);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             guna2HtmlLabel1.Size = new Size(223, 30);
             guna2HtmlLabel1.TabIndex = 3;
@@ -232,7 +228,7 @@
             guna2HtmlLabel2.BackColor = Color.Transparent;
             guna2HtmlLabel2.Font = new Font("Jura", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel2.ForeColor = Color.FromArgb(134, 127, 127);
-            guna2HtmlLabel2.Location = new Point(27, 91);
+            guna2HtmlLabel2.Location = new Point(27, 113);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(294, 30);
             guna2HtmlLabel2.TabIndex = 5;
@@ -255,7 +251,7 @@
             txtPhone.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtPhone.IconLeftOffset = new Point(12, 0);
             txtPhone.IconLeftSize = new Size(27, 25);
-            txtPhone.Location = new Point(18, 129);
+            txtPhone.Location = new Point(18, 147);
             txtPhone.Margin = new Padding(43, 46, 43, 46);
             txtPhone.Name = "txtPhone";
             txtPhone.PasswordChar = '\0';
@@ -269,7 +265,7 @@
             txtPhone.ShadowDecoration.Enabled = true;
             txtPhone.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             txtPhone.ShadowDecoration.Shadow = new Padding(2, 0, 2, 5);
-            txtPhone.Size = new Size(295, 45);
+            txtPhone.Size = new Size(295, 52);
             txtPhone.TabIndex = 4;
             txtPhone.TextOffset = new Point(0, -3);
             // 
@@ -278,7 +274,7 @@
             guna2HtmlLabel3.BackColor = Color.Transparent;
             guna2HtmlLabel3.Font = new Font("Jura", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel3.ForeColor = Color.FromArgb(134, 127, 127);
-            guna2HtmlLabel3.Location = new Point(27, 175);
+            guna2HtmlLabel3.Location = new Point(27, 202);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(160, 30);
             guna2HtmlLabel3.TabIndex = 7;
@@ -289,29 +285,18 @@
             guna2HtmlLabel4.BackColor = Color.Transparent;
             guna2HtmlLabel4.Font = new Font("Jura", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel4.ForeColor = Color.FromArgb(134, 127, 127);
-            guna2HtmlLabel4.Location = new Point(27, 261);
+            guna2HtmlLabel4.Location = new Point(27, 290);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(176, 30);
             guna2HtmlLabel4.TabIndex = 9;
             guna2HtmlLabel4.Text = "Выберите время:";
-            // 
-            // guna2HtmlLabel5
-            // 
-            guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Font = new Font("Jura", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel5.ForeColor = Color.FromArgb(134, 127, 127);
-            guna2HtmlLabel5.Location = new Point(27, 347);
-            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(81, 30);
-            guna2HtmlLabel5.TabIndex = 11;
-            guna2HtmlLabel5.Text = "Мастер:";
             // 
             // txtService
             // 
             txtService.BackColor = Color.Transparent;
             txtService.Font = new Font("Jura", 15.7499981F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtService.ForeColor = Color.FromArgb(134, 127, 127);
-            txtService.Location = new Point(27, 426);
+            txtService.Location = new Point(27, 380);
             txtService.Name = "txtService";
             txtService.Size = new Size(78, 30);
             txtService.TabIndex = 13;
@@ -334,7 +319,7 @@
             txtTime.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtTime.IconLeftOffset = new Point(12, 0);
             txtTime.IconLeftSize = new Size(27, 25);
-            txtTime.Location = new Point(18, 294);
+            txtTime.Location = new Point(18, 325);
             txtTime.Margin = new Padding(43, 46, 43, 46);
             txtTime.Name = "txtTime";
             txtTime.PasswordChar = '\0';
@@ -348,7 +333,7 @@
             txtTime.ShadowDecoration.Enabled = true;
             txtTime.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             txtTime.ShadowDecoration.Shadow = new Padding(2, 0, 2, 5);
-            txtTime.Size = new Size(295, 45);
+            txtTime.Size = new Size(295, 52);
             txtTime.TabIndex = 15;
             txtTime.TextOffset = new Point(0, -3);
             // 
@@ -369,7 +354,7 @@
             txtDate.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtDate.IconLeftOffset = new Point(12, 0);
             txtDate.IconLeftSize = new Size(27, 25);
-            txtDate.Location = new Point(18, 211);
+            txtDate.Location = new Point(18, 233);
             txtDate.Margin = new Padding(43, 46, 43, 46);
             txtDate.Name = "txtDate";
             txtDate.PasswordChar = '\0';
@@ -383,7 +368,7 @@
             txtDate.ShadowDecoration.Enabled = true;
             txtDate.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             txtDate.ShadowDecoration.Shadow = new Padding(2, 0, 2, 5);
-            txtDate.Size = new Size(295, 45);
+            txtDate.Size = new Size(295, 52);
             txtDate.TabIndex = 14;
             txtDate.TextOffset = new Point(0, -3);
             // 
@@ -433,7 +418,7 @@
             btnCreateRequest.IdleIconLeftImage = null;
             btnCreateRequest.IdleIconRightImage = null;
             btnCreateRequest.IndicateFocus = false;
-            btnCreateRequest.Location = new Point(42, 518);
+            btnCreateRequest.Location = new Point(42, 501);
             btnCreateRequest.Name = "btnCreateRequest";
             btnCreateRequest.OnDisabledState.BorderColor = Color.Empty;
             btnCreateRequest.OnDisabledState.BorderRadius = 50;
@@ -492,7 +477,7 @@
             SHADOWBUTTON.FillColor2 = Color.FromArgb(222, 89, 227);
             SHADOWBUTTON.Font = new Font("Jura", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             SHADOWBUTTON.ForeColor = Color.White;
-            SHADOWBUTTON.Location = new Point(42, 518);
+            SHADOWBUTTON.Location = new Point(42, 501);
             SHADOWBUTTON.Margin = new Padding(3, 2, 3, 2);
             SHADOWBUTTON.Name = "SHADOWBUTTON";
             SHADOWBUTTON.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -504,43 +489,23 @@
             SHADOWBUTTON.Text = "Войти";
             SHADOWBUTTON.TextOffset = new Point(0, -3);
             // 
-            // txtMaster
-            // 
-            txtMaster.BackColor = Color.Transparent;
-            txtMaster.BorderRadius = 15;
-            txtMaster.CustomizableEdges = customizableEdges11;
-            txtMaster.DrawMode = DrawMode.OwnerDrawFixed;
-            txtMaster.DropDownStyle = ComboBoxStyle.DropDownList;
-            txtMaster.FocusedColor = Color.FromArgb(94, 148, 255);
-            txtMaster.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtMaster.Font = new Font("Jura", 15.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtMaster.ForeColor = Color.Black;
-            txtMaster.ItemHeight = 30;
-            txtMaster.Items.AddRange(new object[] { "Родионова Мария", "Зайцева Светлана", "Маслова Дарья", "Сальникова Алиса", "Ковалева Ариана", "Кудрявцева Софья", "Литвинова Эмилия", "Мещерякова Изабелла" });
-            txtMaster.Location = new Point(18, 388);
-            txtMaster.Name = "txtMaster";
-            txtMaster.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            txtMaster.Size = new Size(295, 36);
-            txtMaster.StartIndex = 0;
-            txtMaster.TabIndex = 21;
-            // 
             // ServiceTxt
             // 
             ServiceTxt.BackColor = Color.Transparent;
             ServiceTxt.BorderRadius = 15;
-            ServiceTxt.CustomizableEdges = customizableEdges13;
+            ServiceTxt.CustomizableEdges = customizableEdges11;
             ServiceTxt.DrawMode = DrawMode.OwnerDrawFixed;
             ServiceTxt.DropDownStyle = ComboBoxStyle.DropDownList;
             ServiceTxt.FocusedColor = Color.FromArgb(94, 148, 255);
             ServiceTxt.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             ServiceTxt.Font = new Font("Jura", 15.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ServiceTxt.ForeColor = Color.Black;
-            ServiceTxt.ItemHeight = 30;
+            ServiceTxt.ItemHeight = 40;
             ServiceTxt.Items.AddRange(new object[] { "массаж, SPA", "эстетическая косметология", "коррекция фигуры", "маникюр", "педикюр", "наращивание ресниц", "шугаринг", "парикмахерские услуги" });
-            ServiceTxt.Location = new Point(18, 462);
+            ServiceTxt.Location = new Point(18, 416);
             ServiceTxt.Name = "ServiceTxt";
-            ServiceTxt.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            ServiceTxt.Size = new Size(295, 36);
+            ServiceTxt.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            ServiceTxt.Size = new Size(295, 46);
             ServiceTxt.StartIndex = 0;
             ServiceTxt.TabIndex = 22;
             // 
@@ -599,7 +564,7 @@
             btnEndDay.IdleIconLeftImage = null;
             btnEndDay.IdleIconRightImage = null;
             btnEndDay.IndicateFocus = false;
-            btnEndDay.Location = new Point(30, 600);
+            btnEndDay.Location = new Point(30, 583);
             btnEndDay.Name = "btnEndDay";
             btnEndDay.OnDisabledState.BorderColor = Color.Empty;
             btnEndDay.OnDisabledState.BorderRadius = 50;
@@ -648,7 +613,7 @@
             guna2GradientButton1.BackColor = Color.Transparent;
             guna2GradientButton1.BackgroundImageLayout = ImageLayout.Stretch;
             guna2GradientButton1.BorderRadius = 25;
-            guna2GradientButton1.CustomizableEdges = customizableEdges15;
+            guna2GradientButton1.CustomizableEdges = customizableEdges13;
             guna2GradientButton1.DisabledState.BorderColor = Color.DarkGray;
             guna2GradientButton1.DisabledState.CustomBorderColor = Color.DarkGray;
             guna2GradientButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -658,10 +623,10 @@
             guna2GradientButton1.FillColor2 = Color.FromArgb(222, 89, 227);
             guna2GradientButton1.Font = new Font("Jura", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             guna2GradientButton1.ForeColor = Color.White;
-            guna2GradientButton1.Location = new Point(30, 600);
+            guna2GradientButton1.Location = new Point(30, 583);
             guna2GradientButton1.Margin = new Padding(3, 2, 3, 2);
             guna2GradientButton1.Name = "guna2GradientButton1";
-            guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges14;
             guna2GradientButton1.ShadowDecoration.Enabled = true;
             guna2GradientButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             guna2GradientButton1.ShadowDecoration.Shadow = new Padding(1, 1, 1, 3);
@@ -678,13 +643,11 @@
             Controls.Add(btnEndDay);
             Controls.Add(guna2GradientButton1);
             Controls.Add(ServiceTxt);
-            Controls.Add(txtMaster);
             Controls.Add(btnCreateRequest);
             Controls.Add(SHADOWBUTTON);
             Controls.Add(txtTime);
             Controls.Add(txtDate);
             Controls.Add(txtService);
-            Controls.Add(guna2HtmlLabel5);
             Controls.Add(guna2HtmlLabel4);
             Controls.Add(guna2HtmlLabel3);
             Controls.Add(guna2HtmlLabel2);
@@ -709,13 +672,11 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPhone;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel txtService;
         private Guna.UI2.WinForms.Guna2TextBox txtTime;
         private Guna.UI2.WinForms.Guna2TextBox txtDate;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnCreateRequest;
         private Guna.UI2.WinForms.Guna2GradientButton SHADOWBUTTON;
-        private Guna.UI2.WinForms.Guna2ComboBox txtMaster;
         private Guna.UI2.WinForms.Guna2ComboBox ServiceTxt;
         private Guna.UI2.WinForms.Guna2MessageDialog msg;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEndDay;

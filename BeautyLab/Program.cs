@@ -7,7 +7,7 @@ namespace BeautyLab
         {
             ApplicationConfiguration.Initialize();
             //Application.Run(new MainForm("misha.simanovich@mail.ru"));
-            Application.Run(new EntryForm());
+            Application.Run(new MainForm("misha.simanovich@mail.ru"));
         }
     }
 }

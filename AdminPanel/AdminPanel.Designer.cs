@@ -45,19 +45,24 @@
             btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             Tabs = new Guna.UI2.WinForms.Guna2TabControl();
             TabCreateAdmin = new TabPage();
-            btnAddAdmin = new Guna.UI2.WinForms.Guna2Button();
-            label2 = new Label();
-            txtPass = new Guna.UI2.WinForms.Guna2TextBox();
-            label1 = new Label();
-            txtLogin = new Guna.UI2.WinForms.Guna2TextBox();
+            panelButtons = new Panel();
             labelAdd = new Label();
+            btnAddAdmin = new Guna.UI2.WinForms.Guna2Button();
+            txtLogin = new Guna.UI2.WinForms.Guna2TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            txtPass = new Guna.UI2.WinForms.Guna2TextBox();
             TableAdmins = new Guna.UI2.WinForms.Guna2DataGridView();
             Администраторы = new DataGridViewTextBoxColumn();
             btnReject = new DataGridViewButtonColumn();
-            tabUsers = new TabPage();
+            TabUsers = new TabPage();
             msg = new Guna.UI2.WinForms.Guna2MessageDialog();
+            dragPage = new Guna.UI2.WinForms.Guna2DragControl(components);
+            dragPage1 = new Guna.UI2.WinForms.Guna2DragControl(components);
+            dragTabs = new Guna.UI2.WinForms.Guna2DragControl(components);
             Tabs.SuspendLayout();
             TabCreateAdmin.SuspendLayout();
+            panelButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)TableAdmins).BeginInit();
             SuspendLayout();
             // 
@@ -67,6 +72,7 @@
             borderForm.BorderRadius = 15;
             borderForm.ContainerControl = this;
             borderForm.DockIndicatorTransparencyValue = 0.6D;
+            borderForm.ResizeForm = false;
             borderForm.TransparentWhileDrag = true;
             // 
             // btnExit
@@ -85,7 +91,7 @@
             // Tabs
             // 
             Tabs.Controls.Add(TabCreateAdmin);
-            Tabs.Controls.Add(tabUsers);
+            Tabs.Controls.Add(TabUsers);
             Tabs.ItemSize = new Size(633, 40);
             Tabs.Location = new Point(0, 0);
             Tabs.Name = "Tabs";
@@ -113,13 +119,8 @@
             // 
             // TabCreateAdmin
             // 
-            TabCreateAdmin.Controls.Add(btnAddAdmin);
-            TabCreateAdmin.Controls.Add(label2);
-            TabCreateAdmin.Controls.Add(txtPass);
-            TabCreateAdmin.Controls.Add(label1);
-            TabCreateAdmin.Controls.Add(txtLogin);
-            TabCreateAdmin.Controls.Add(labelAdd);
             TabCreateAdmin.Controls.Add(TableAdmins);
+            TabCreateAdmin.Controls.Add(panelButtons);
             TabCreateAdmin.Location = new Point(4, 44);
             TabCreateAdmin.Name = "TabCreateAdmin";
             TabCreateAdmin.Padding = new Padding(3);
@@ -127,6 +128,30 @@
             TabCreateAdmin.TabIndex = 0;
             TabCreateAdmin.Text = "Администраторы";
             TabCreateAdmin.UseVisualStyleBackColor = true;
+            // 
+            // panelButtons
+            // 
+            panelButtons.Controls.Add(labelAdd);
+            panelButtons.Controls.Add(btnAddAdmin);
+            panelButtons.Controls.Add(txtLogin);
+            panelButtons.Controls.Add(label2);
+            panelButtons.Controls.Add(label1);
+            panelButtons.Controls.Add(txtPass);
+            panelButtons.Dock = DockStyle.Left;
+            panelButtons.Location = new Point(3, 3);
+            panelButtons.Name = "panelButtons";
+            panelButtons.Size = new Size(428, 666);
+            panelButtons.TabIndex = 7;
+            // 
+            // labelAdd
+            // 
+            labelAdd.AutoSize = true;
+            labelAdd.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelAdd.Location = new Point(64, 163);
+            labelAdd.Name = "labelAdd";
+            labelAdd.Size = new Size(268, 25);
+            labelAdd.TabIndex = 1;
+            labelAdd.Text = "Добавление администратора";
             // 
             // btnAddAdmin
             // 
@@ -138,7 +163,7 @@
             btnAddAdmin.FillColor = SystemColors.ActiveCaption;
             btnAddAdmin.Font = new Font("Segoe UI", 9F);
             btnAddAdmin.ForeColor = Color.White;
-            btnAddAdmin.Location = new Point(118, 425);
+            btnAddAdmin.Location = new Point(125, 414);
             btnAddAdmin.Name = "btnAddAdmin";
             btnAddAdmin.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnAddAdmin.Size = new Size(146, 38);
@@ -146,50 +171,9 @@
             btnAddAdmin.Text = "Добавить";
             btnAddAdmin.Click += btnAddAdmin_Click;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(57, 328);
-            label2.Name = "label2";
-            label2.Size = new Size(65, 20);
-            label2.TabIndex = 5;
-            label2.Text = "Пароль:";
-            // 
-            // txtPass
-            // 
-            txtPass.CustomizableEdges = customizableEdges5;
-            txtPass.DefaultText = "";
-            txtPass.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtPass.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtPass.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtPass.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtPass.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPass.Font = new Font("Segoe UI", 9F);
-            txtPass.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtPass.Location = new Point(57, 351);
-            txtPass.Name = "txtPass";
-            txtPass.PasswordChar = '●';
-            txtPass.PlaceholderText = "";
-            txtPass.SelectedText = "";
-            txtPass.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtPass.Size = new Size(268, 36);
-            txtPass.TabIndex = 4;
-            txtPass.UseSystemPasswordChar = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(57, 240);
-            label1.Name = "label1";
-            label1.Size = new Size(55, 20);
-            label1.TabIndex = 3;
-            label1.Text = "Логин:";
-            // 
             // txtLogin
             // 
-            txtLogin.CustomizableEdges = customizableEdges7;
+            txtLogin.CustomizableEdges = customizableEdges5;
             txtLogin.DefaultText = "";
             txtLogin.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtLogin.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -198,24 +182,55 @@
             txtLogin.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtLogin.Font = new Font("Segoe UI", 9F);
             txtLogin.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtLogin.Location = new Point(57, 263);
+            txtLogin.Location = new Point(64, 252);
             txtLogin.Name = "txtLogin";
             txtLogin.PasswordChar = '\0';
             txtLogin.PlaceholderText = "";
             txtLogin.SelectedText = "";
-            txtLogin.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtLogin.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtLogin.Size = new Size(268, 36);
             txtLogin.TabIndex = 2;
             // 
-            // labelAdd
+            // label2
             // 
-            labelAdd.AutoSize = true;
-            labelAdd.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelAdd.Location = new Point(57, 174);
-            labelAdd.Name = "labelAdd";
-            labelAdd.Size = new Size(268, 25);
-            labelAdd.TabIndex = 1;
-            labelAdd.Text = "Добавление администратора";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(64, 317);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 20);
+            label2.TabIndex = 5;
+            label2.Text = "Пароль:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(64, 229);
+            label1.Name = "label1";
+            label1.Size = new Size(55, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Логин:";
+            // 
+            // txtPass
+            // 
+            txtPass.CustomizableEdges = customizableEdges7;
+            txtPass.DefaultText = "";
+            txtPass.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtPass.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtPass.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtPass.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtPass.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPass.Font = new Font("Segoe UI", 9F);
+            txtPass.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtPass.Location = new Point(64, 340);
+            txtPass.Name = "txtPass";
+            txtPass.PasswordChar = '●';
+            txtPass.PlaceholderText = "";
+            txtPass.SelectedText = "";
+            txtPass.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            txtPass.Size = new Size(268, 36);
+            txtPass.TabIndex = 4;
+            txtPass.UseSystemPasswordChar = true;
             // 
             // TableAdmins
             // 
@@ -244,14 +259,15 @@
             dataGridViewCellStyle3.SelectionForeColor = Color.Black;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
             TableAdmins.DefaultCellStyle = dataGridViewCellStyle3;
+            TableAdmins.Dock = DockStyle.Right;
             TableAdmins.EditMode = DataGridViewEditMode.EditOnEnter;
             TableAdmins.GridColor = Color.FromArgb(187, 222, 251);
-            TableAdmins.Location = new Point(399, 6);
+            TableAdmins.Location = new Point(425, 3);
             TableAdmins.Name = "TableAdmins";
             TableAdmins.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Sunken;
             TableAdmins.RowHeadersVisible = false;
             TableAdmins.ScrollBars = ScrollBars.Vertical;
-            TableAdmins.Size = new Size(850, 658);
+            TableAdmins.Size = new Size(837, 666);
             TableAdmins.StandardTab = true;
             TableAdmins.TabIndex = 0;
             TableAdmins.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
@@ -296,15 +312,15 @@
             btnReject.UseColumnTextForButtonValue = true;
             btnReject.Width = 200;
             // 
-            // tabUsers
+            // TabUsers
             // 
-            tabUsers.Location = new Point(4, 44);
-            tabUsers.Name = "tabUsers";
-            tabUsers.Padding = new Padding(3);
-            tabUsers.Size = new Size(1265, 672);
-            tabUsers.TabIndex = 1;
-            tabUsers.Text = "Пользователи";
-            tabUsers.UseVisualStyleBackColor = true;
+            TabUsers.Location = new Point(4, 44);
+            TabUsers.Name = "TabUsers";
+            TabUsers.Padding = new Padding(3);
+            TabUsers.Size = new Size(1265, 672);
+            TabUsers.TabIndex = 1;
+            TabUsers.Text = "Пользователи";
+            TabUsers.UseVisualStyleBackColor = true;
             // 
             // msg
             // 
@@ -314,6 +330,24 @@
             msg.Parent = this;
             msg.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
             msg.Text = null;
+            // 
+            // dragPage
+            // 
+            dragPage.DockIndicatorTransparencyValue = 0.6D;
+            dragPage.TargetControl = TabCreateAdmin;
+            dragPage.UseTransparentDrag = true;
+            // 
+            // dragPage1
+            // 
+            dragPage1.DockIndicatorTransparencyValue = 0.6D;
+            dragPage1.TargetControl = TabUsers;
+            dragPage1.UseTransparentDrag = true;
+            // 
+            // dragTabs
+            // 
+            dragTabs.DockIndicatorTransparencyValue = 0.6D;
+            dragTabs.TargetControl = Tabs;
+            dragTabs.TransparentWhileDrag = false;
             // 
             // AdminPanel
             // 
@@ -330,7 +364,8 @@
             Load += AdminPanel_Load;
             Tabs.ResumeLayout(false);
             TabCreateAdmin.ResumeLayout(false);
-            TabCreateAdmin.PerformLayout();
+            panelButtons.ResumeLayout(false);
+            panelButtons.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)TableAdmins).EndInit();
             ResumeLayout(false);
         }
@@ -341,7 +376,7 @@
         private Guna.UI2.WinForms.Guna2ControlBox btnExit;
         private Guna.UI2.WinForms.Guna2TabControl Tabs;
         private TabPage TabCreateAdmin;
-        private TabPage tabUsers;
+        private TabPage TabUsers;
         private Guna.UI2.WinForms.Guna2DataGridView TableAdmins;
         private Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txtPass;
@@ -352,5 +387,9 @@
         private Guna.UI2.WinForms.Guna2MessageDialog msg;
         private DataGridViewTextBoxColumn Администраторы;
         private DataGridViewButtonColumn btnReject;
+        private Guna.UI2.WinForms.Guna2DragControl dragPage;
+        private Guna.UI2.WinForms.Guna2DragControl dragPage1;
+        private Guna.UI2.WinForms.Guna2DragControl dragTabs;
+        private Panel panelButtons;
     }
 }

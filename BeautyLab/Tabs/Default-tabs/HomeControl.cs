@@ -50,7 +50,6 @@ namespace BeautyLab
             isProfileTabOpen =!isProfileTabOpen;
         }
 
-        private UserControl activeControl;
         private void OpenTab(UserControl control, MainForm form = null)
         {
             control.Dock = DockStyle.Fill;
