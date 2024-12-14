@@ -17,7 +17,7 @@ namespace BeautyLab.Tabs.Admin_Tabs
             // TODO: Записать функцию которая импортирует из БД в табличку
         }
 
-        private void AddRecord(string fullName, string phone, string date, string time, string master, string service, string price)
+        private void AddRecord(string fullName, string phone, string date, string time, string service, string price)
         {
             if (!IsValidPhone(phone))
             {
@@ -35,7 +35,9 @@ namespace BeautyLab.Tabs.Admin_Tabs
                 return;
             }
 
-            Table.Rows.Add(fullName, phone, date, time, master, service, price);
+            Table.Rows.Add(fullName, phone, date, time, service, price);
+
+
             // TODO: Тут выгрузить в БД
         }
 
@@ -72,12 +74,11 @@ namespace BeautyLab.Tabs.Admin_Tabs
             string phone = txtPhone.Text;
             string date = txtDate.Text;
             string time = txtTime.Text;
-            string master = txtMaster.Text;
             string service = ServiceTxt.Text;
 
             if (priceDictionary.TryGetValue(service, out string price))
             {
-                AddRecord(name, phone, date, time, master, service, price);
+                AddRecord(name, phone, date, time, service, price);
                 msg.Show("Запись успешно добавлена!", "Сохранено");
             }
             else
@@ -120,6 +121,5 @@ namespace BeautyLab.Tabs.Admin_Tabs
                 msg.Show("Завершение бизнес-дня отменено.", "Отмена");
             }
         }
-
     }
 }

@@ -49,13 +49,6 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Table = new Guna.UI2.WinForms.Guna2DataGridView();
-            NameColumn = new DataGridViewTextBoxColumn();
-            PhoneColumn = new DataGridViewTextBoxColumn();
-            DateColumn = new DataGridViewTextBoxColumn();
-            TimeColumn = new DataGridViewTextBoxColumn();
-            MasterColumn = new DataGridViewTextBoxColumn();
-            ServiceColumn = new DataGridViewTextBoxColumn();
-            PriceColumn = new DataGridViewTextBoxColumn();
             txtName = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -71,6 +64,15 @@
             msg = new Guna.UI2.WinForms.Guna2MessageDialog();
             btnEndDay = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            idColumn = new DataGridViewTextBoxColumn();
+            NameColumn = new DataGridViewTextBoxColumn();
+            PhoneColumn = new DataGridViewTextBoxColumn();
+            DateColumn = new DataGridViewTextBoxColumn();
+            TimeColumn = new DataGridViewTextBoxColumn();
+            ServiceColumn = new DataGridViewTextBoxColumn();
+            PriceColumn = new DataGridViewTextBoxColumn();
+            StateColumn = new DataGridViewTextBoxColumn();
+            btnColumn = new DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)Table).BeginInit();
             SuspendLayout();
             // 
@@ -88,7 +90,7 @@
             Table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             Table.ColumnHeadersHeight = 27;
             Table.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            Table.Columns.AddRange(new DataGridViewColumn[] { NameColumn, PhoneColumn, DateColumn, TimeColumn, MasterColumn, ServiceColumn, PriceColumn });
+            Table.Columns.AddRange(new DataGridViewColumn[] { idColumn, NameColumn, PhoneColumn, DateColumn, TimeColumn, ServiceColumn, PriceColumn, StateColumn, btnColumn });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.White;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -125,57 +127,6 @@
             Table.ThemeStyle.RowsStyle.Height = 25;
             Table.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(231, 229, 255);
             Table.ThemeStyle.RowsStyle.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            // 
-            // NameColumn
-            // 
-            NameColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            NameColumn.FillWeight = 568.5279F;
-            NameColumn.HeaderText = "ФИО клиента";
-            NameColumn.Name = "NameColumn";
-            NameColumn.ReadOnly = true;
-            NameColumn.Width = 190;
-            // 
-            // PhoneColumn
-            // 
-            PhoneColumn.FillWeight = 21.9120178F;
-            PhoneColumn.HeaderText = "Номер тел.";
-            PhoneColumn.Name = "PhoneColumn";
-            PhoneColumn.ReadOnly = true;
-            // 
-            // DateColumn
-            // 
-            DateColumn.FillWeight = 21.9120178F;
-            DateColumn.HeaderText = "Дата";
-            DateColumn.Name = "DateColumn";
-            DateColumn.ReadOnly = true;
-            // 
-            // TimeColumn
-            // 
-            TimeColumn.FillWeight = 21.9120178F;
-            TimeColumn.HeaderText = "Время";
-            TimeColumn.Name = "TimeColumn";
-            TimeColumn.ReadOnly = true;
-            // 
-            // MasterColumn
-            // 
-            MasterColumn.FillWeight = 21.9120178F;
-            MasterColumn.HeaderText = "Мастер";
-            MasterColumn.Name = "MasterColumn";
-            MasterColumn.ReadOnly = true;
-            // 
-            // ServiceColumn
-            // 
-            ServiceColumn.FillWeight = 21.9120178F;
-            ServiceColumn.HeaderText = "Услуга";
-            ServiceColumn.Name = "ServiceColumn";
-            ServiceColumn.ReadOnly = true;
-            // 
-            // PriceColumn
-            // 
-            PriceColumn.FillWeight = 21.9120178F;
-            PriceColumn.HeaderText = "Стоимость";
-            PriceColumn.Name = "PriceColumn";
-            PriceColumn.ReadOnly = true;
             // 
             // txtName
             // 
@@ -635,6 +586,80 @@
             guna2GradientButton1.Text = "Войти";
             guna2GradientButton1.TextOffset = new Point(0, -3);
             // 
+            // idColumn
+            // 
+            idColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            idColumn.HeaderText = "ID";
+            idColumn.Name = "idColumn";
+            idColumn.ReadOnly = true;
+            idColumn.Width = 50;
+            // 
+            // NameColumn
+            // 
+            NameColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            NameColumn.FillWeight = 20F;
+            NameColumn.HeaderText = "ФИО клиента";
+            NameColumn.Name = "NameColumn";
+            NameColumn.ReadOnly = true;
+            // 
+            // PhoneColumn
+            // 
+            PhoneColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            PhoneColumn.FillWeight = 21.9120178F;
+            PhoneColumn.HeaderText = "Номер тел.";
+            PhoneColumn.Name = "PhoneColumn";
+            PhoneColumn.ReadOnly = true;
+            // 
+            // DateColumn
+            // 
+            DateColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DateColumn.FillWeight = 21.9120178F;
+            DateColumn.HeaderText = "Дата";
+            DateColumn.Name = "DateColumn";
+            DateColumn.ReadOnly = true;
+            // 
+            // TimeColumn
+            // 
+            TimeColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            TimeColumn.FillWeight = 21.9120178F;
+            TimeColumn.HeaderText = "Время";
+            TimeColumn.Name = "TimeColumn";
+            TimeColumn.ReadOnly = true;
+            // 
+            // ServiceColumn
+            // 
+            ServiceColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            ServiceColumn.FillWeight = 21.9120178F;
+            ServiceColumn.HeaderText = "Услуга";
+            ServiceColumn.Name = "ServiceColumn";
+            ServiceColumn.ReadOnly = true;
+            // 
+            // PriceColumn
+            // 
+            PriceColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            PriceColumn.FillWeight = 21.9120178F;
+            PriceColumn.HeaderText = "Стоимость";
+            PriceColumn.Name = "PriceColumn";
+            PriceColumn.ReadOnly = true;
+            // 
+            // StateColumn
+            // 
+            StateColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            StateColumn.HeaderText = "Состояние";
+            StateColumn.Name = "StateColumn";
+            StateColumn.ReadOnly = true;
+            StateColumn.Width = 130;
+            // 
+            // btnColumn
+            // 
+            btnColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            btnColumn.HeaderText = "Управление";
+            btnColumn.Name = "btnColumn";
+            btnColumn.ReadOnly = true;
+            btnColumn.Resizable = DataGridViewTriState.True;
+            btnColumn.SortMode = DataGridViewColumnSortMode.Automatic;
+            btnColumn.Width = 120;
+            // 
             // RecordControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -681,12 +706,14 @@
         private Guna.UI2.WinForms.Guna2MessageDialog msg;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnEndDay;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private DataGridViewTextBoxColumn idColumn;
         private DataGridViewTextBoxColumn NameColumn;
         private DataGridViewTextBoxColumn PhoneColumn;
         private DataGridViewTextBoxColumn DateColumn;
         private DataGridViewTextBoxColumn TimeColumn;
-        private DataGridViewTextBoxColumn MasterColumn;
         private DataGridViewTextBoxColumn ServiceColumn;
         private DataGridViewTextBoxColumn PriceColumn;
+        private DataGridViewTextBoxColumn StateColumn;
+        private DataGridViewButtonColumn btnColumn;
     }
 }
